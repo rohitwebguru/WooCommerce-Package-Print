@@ -1,0 +1,5027 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce PDF Invoices, Packing Slips, Delivery Notes "
+"& Shipping Labels\n"
+"POT-Creation-Date: 2021-01-27 19:02+0530\n"
+"PO-Revision-Date: 2022-10-24 08:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wf-woocommerce-packing-list.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.5.3; wp-6.0.2"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:111
+msgid "Settings updated."
+msgstr "Paramètres mis à jour."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:112
+msgid "All fields are mandatory"
+msgstr "Tous les champs sont obligatoires"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:113
+#: admin/class-wf-woocommerce-packing-list-admin.php:1873
+#, fuzzy
+msgid "Please enter mandatory fields"
+msgstr "Veuillez saisir les champs obligatoires"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:114
+#, fuzzy, php-format
+msgid ""
+"Unable to update settings due to an internal error. %s To troubleshoot "
+"please click %s here. %s"
+msgstr ""
+"Impossible de mettre à jour les paramètres en raison d'une erreur interne. "
+"%s Pour résoudre le problème, cliquez %s ici. %s"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:115
+msgid "You have to select order(s) first!"
+msgstr "Vous devez d'abord sélectionner les commandes!"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:116
+msgid "One or more order do not have invoice generated. Generate manually?"
+msgstr "Aucune facture n'a généré de facture. Générer manuellement?"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:117
+msgid "Sorry, something went wrong."
+msgstr ""
+"Désolé, un problème est survenu. Contactez-nous pour décrire votre problème"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:118
+msgid "Please wait"
+msgstr "Veuillez patienter"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:119
+#: admin/modules/customizer/customizer.php:225
+msgid "You can't undo this action. Are you sure?"
+msgstr "Vous ne pouvez pas annuler cette action. Êtes-vous sûr?"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:120
+#, fuzzy
+msgid "is required"
+msgstr "Sender Ville (Obligatoire pour de l'adresse ) ."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:121
+msgid "Close"
+msgstr "Fermer"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:122
+#: admin/modules/customizer/views/customize.php:230
+#: admin/modules/customizer/views/customize.php:248
+#: admin/modules/customizer/views/customize.php:298
+#: admin/views/admin-settings-documents.php:101
+msgid "Save"
+msgstr "enregistrer"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:123
+msgid "Default"
+msgstr "Par défaut"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:572
+#: admin/class-wf-woocommerce-packing-list-admin.php:659
+#, fuzzy
+msgid "Invoice/Packing"
+msgstr "Facture/Liste de collissage"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:582
+#: admin/modules/cloud-print/views/settings.php:72
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:21
+#: admin/views/admin-settings-documents.php:84
+#: public/modules/addresslabel/views/admin-settings.php:11
+#: public/modules/creditnote/views/creditnote-admin-settings.php:11
+#: public/modules/deliverynote/views/admin-settings.php:11
+#: public/modules/dispatchlabel/views/dispatchlabel-admin-settings.php:11
+#: public/modules/invoice/views/invoice-admin-settings.php:12
+#: public/modules/packinglist/views/admin-settings.php:11
+#: public/modules/picklist/views/admin-settings.php:11
+#: public/modules/proformainvoice/views/proformainvoice-admin-settings.php:11
+#: public/modules/shippinglabel/views/admin-settings.php:11
+msgid "Settings"
+msgstr "réglages"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:583
+#: admin/views/admin-settings-help.php:57
+#: admin/views/admin-settings-help.php:60
+msgid "Documentation"
+msgstr "Documentation"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:584
+msgid "Support"
+msgstr "Soutien"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:609
+#, fuzzy
+msgid "Document details"
+msgstr "Signalétique du document"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:631
+#, fuzzy
+msgid "Print/Download"
+msgstr "Imprimer / télécharger"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:658
+#: admin/class-wf-woocommerce-packing-list-admin.php:670
+msgid "General Settings"
+msgstr "réglages généraux"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:755
+#: admin/class-wf-woocommerce-packing-list-admin.php:1170
+msgid "You are not allowed to view this page."
+msgstr "Vous n’êtes pas autorisé à voir cette page."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:756
+msgid "Access denied !!!."
+msgstr "Accès refusé !!!."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1459
+#, php-format
+msgid "Every %d minutes"
+msgstr "Toutes les %d minutes"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1498
+#: admin/class-wf-woocommerce-packing-list-admin.php:1573
+#: admin/class-wf-woocommerce-packing-list-admin.php:1872
+#: admin/class-wf-woocommerce-packing-list-admin.php:1960
+#: admin/modules/cloud-print/classes/class-google-cloud-print.php:56
+#: admin/modules/cloud-print/cloud-print.php:367
+#: admin/modules/cloud-print/cloud-print.php:468
+#: admin/modules/cloud-print/cloud-print.php:473
+#: admin/modules/cloud-print/cloud-print.php:841
+#: admin/modules/customizer/customizer.php:46
+#: admin/modules/customizer/customizer.php:223
+#: admin/modules/licence_manager/licence_manager.php:689
+#: public/modules/invoice/invoice.php:896
+msgid "Error"
+msgstr "Erreur"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1511
+#, fuzzy
+msgid "Successfully cleared all temp files."
+msgstr "Effacement réussi de tous les fichiers temporaires."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1512
+#: admin/views/admin-settings-advanced.php:349
+msgid "No files found."
+msgstr "Aucun fichier trouvé."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1723
+#: admin/views/admin-settings-advanced.php:45
+#, fuzzy
+msgid "required"
+msgstr "Sender Ville (Obligatoire pour de l'adresse ) ."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1836
+#: admin/modules/customizer/views/customize.php:312
+msgid "Delete"
+msgstr "Effacer"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1837
+#: admin/views/_custom_field_editor_form.php:8
+#: admin/views/admin-settings-advanced.php:56
+msgid "Edit"
+msgstr "Modifier"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:1855
+msgid "No data found"
+msgstr "Aucune donnée n'a été trouvée"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:2026
+#, fuzzy
+msgid "Settings Updated"
+msgstr "Paramètres mis à jour."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:2111
+msgid "All"
+msgstr "Tout"
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:2141
+#, php-format
+msgid ""
+"%sNote%s: Google, after December 31st, 2020, will no longer support Cloud "
+"Print. %sLearn more here%s. We at WebToffee are looking at alternative "
+"services and have already zeroed in some choices. Before we decide on this, "
+"we would like to hear from you if you have any preferred or alternative "
+"service in mind. If you are a cloud print user please %scontact support%s "
+"(support@webtoffee.com) with your opinion so that we can collectively decide "
+"what is best for us."
+msgstr ""
+"%sNote%s : Google, après le 31 décembre 2020, ne prendra plus en charge "
+"Cloud Print. %sLearn more here%s. Chez WebToffee, nous étudions des services "
+"alternatifs et avons déjà arrêté certains choix. Avant de prendre une "
+"décision, nous aimerions savoir si vous avez une préférence ou un service "
+"alternatif en tête. Si vous êtes un utilisateur de cloud print, veuillez "
+"%scontacter le support%s (support@webtoffee.com) pour nous faire part de "
+"votre opinion afin que nous puissions décider collectivement de ce qui est "
+"le mieux pour nous."
+
+#: admin/class-wf-woocommerce-packing-list-admin.php:2143
+#, fuzzy, php-format
+msgid ""
+"We have launched an alternative service in tie up with PrintNode, try out "
+"the product %s here %s."
+msgstr ""
+"Nous avons lancé un service alternatif en association avec PrintNode. "
+"Essayez le produit %s ici %s."
+
+#: admin/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Specify your company name in the field provided. You can choose to display "
+"the name or logo in the respective documents from the customize tab "
+"pertaining to these documents."
+msgstr ""
+"Indiquez le nom de votre entreprise dans le champ prévu à cet effet. Vous "
+"pouvez choisir d'afficher le nom ou le logo dans les documents respectifs à "
+"partir de l'onglet de personnalisation correspondant à ces documents."
+
+#: admin/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"Upload a company logo (preferably of size 150x50px for better usability) "
+"from the media library."
+msgstr ""
+"Téléchargez un logo d'entreprise (de préférence de taille 150x50px pour une "
+"meilleure convivialité) à partir de la médiathèque."
+
+#: admin/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"The norms and rules regarding the return, exchange and associated refund-"
+"related procedures of your business can be stated in the expandable text "
+"area provided. You can choose to display it or not in your shipping "
+"documents from the concerned documents customize tab."
+msgstr ""
+"Les normes et règles concernant le retour, l'échange et les procédures de "
+"remboursement associées de votre entreprise peuvent être énoncées dans la "
+"zone de texte extensible fournie. Vous pouvez choisir de l'afficher ou non "
+"dans vos documents d'expédition à partir de l'onglet de personnalisation des "
+"documents concernés."
+
+#: admin/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Additional details like the terms and conditions, any specific messages that "
+"have to be displayed at the bottom of the document can be specified in the "
+"expandable text area provided. You can choose to display it or not in your "
+"shipping documents from the concerned documents customize tab."
+msgstr ""
+"Des détails supplémentaires comme les termes et conditions, tous les "
+"messages spécifiques qui doivent être affichés au bas du document peuvent "
+"être spécifiés dans la zone de texte extensible fournie. Vous pouvez choisir "
+"de l'afficher ou non dans vos documents d'expédition à partir de l'onglet de "
+"personnalisation des documents concernés."
+
+#: admin/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"The ‘From Address’ to be displayed in the shipping documents will be loaded "
+"from details specified in these fields."
+msgstr ""
+"L '«Adresse d'expédition» à afficher dans les documents d'expédition sera "
+"chargée à partir des détails spécifiés dans ces champs."
+
+#: admin/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Click here to load the default WooCommerce store address details into the "
+"respective fields."
+msgstr ""
+"Cliquez ici pour charger les détails de l'adresse par défaut de la boutique "
+"WooCommerce dans les champs respectifs."
+
+#: admin/data/data.tooltip.php:9
+#, fuzzy
+msgid ""
+"Lets you add additional text input fields on the checkout page which would "
+"be stored along with order details among the custom fields.\n"
+"\tDefaulted to VAT and SSN, you may also include additional custom metadata "
+"by specifying concerned field name and meta key in which it would be stored "
+"in database. Provisions to set the field mandatory or not is also allowed."
+msgstr ""
+"Vous permet d'ajouter des champs de saisie de texte supplémentaires sur la "
+"page de paiement qui seraient stockés avec les détails de la commande parmi "
+"les champs personnalisés.&#10; Par défaut, TVA et SSN, vous pouvez également "
+"inclure des métadonnées personnalisées supplémentaires en spécifiant le nom "
+"du champ concerné et la clé méta dans laquelle il serait stocké dans la base "
+"de données. Des dispositions pour définir le champ obligatoire ou non sont "
+"également autorisées."
+
+#: admin/data/data.tooltip.php:11
+#, fuzzy
+msgid ""
+"Enable to obtain a preview of the document whenever a user initiates a print."
+msgstr ""
+"Activez pour obtenir un aperçu du document chaque fois qu'un utilisateur "
+"lance une impression."
+
+#: admin/data/data.tooltip.php:12
+#, fuzzy
+msgid ""
+"Enable to obtain the document in right to left alignment. (P.S: Use it only "
+"for languages with the right to left text direction)"
+msgstr ""
+"Activez pour obtenir le document aligné de droite à gauche. (PS: utilisez-le "
+"uniquement pour les langues avec le sens du texte de droite à gauche)"
+
+#: admin/data/data.tooltip.php:13
+#, fuzzy
+msgid ""
+"Include a tracking number in your documents by specifying an appropriate "
+"tracking number meta(usually from a third-party plugin) in the field "
+"provided. "
+msgstr ""
+"Incluez un numéro de suivi dans vos documents en spécifiant un méta de "
+"numéro de suivi approprié (généralement à partir d'un plugin tiers) dans le "
+"champ fourni."
+
+#: admin/data/data.tooltip.php:14
+#, fuzzy
+msgid ""
+"Displays the state name instead of state code in billing and shipping "
+"address across all documents."
+msgstr ""
+"Affiche le nom de l'état au lieu du code d'état dans l'adresse de "
+"facturation et de livraison sur tous les documents."
+
+#: admin/data/data.tooltip.php:15
+#, fuzzy
+msgid ""
+"Configure the product price/subtotal inclusive or exclusive of tax. "
+"Provision to set up tax also provided."
+msgstr ""
+"Configurez le prix / sous-total du produit TTC ou hors taxes. Disposition "
+"pour mettre en place une taxe également prévue."
+
+#: admin/data/data.tooltip.php:16
+#, fuzzy
+msgid ""
+"Choose appropriate option from the drop down either to have all items or "
+"individual items of an order in the packing slip/shipping label."
+msgstr ""
+"Choisissez l'option appropriée dans la liste déroulante pour avoir tous les "
+"articles ou les articles individuels d'une commande dans le bon de livraison "
+"/ l'étiquette d'expédition."
+
+#: admin/modules/cloud-print/classes/class-google-cloud-print.php:62
+#, fuzzy
+msgid "Necessary arguments are missing."
+msgstr "Les arguments nécessaires manquent."
+
+#: admin/modules/cloud-print/classes/class-google-cloud-print.php:67
+#, fuzzy
+msgid "File input is missing."
+msgstr "L'entrée de fichier est manquante."
+
+#: admin/modules/cloud-print/classes/class-google-cloud-print.php:78
+#, fuzzy
+msgid "Input file not exists."
+msgstr "Le fichier d'entrée n'existe pas."
+
+#: admin/modules/cloud-print/cloud-print.php:169
+#: admin/modules/cloud-print/cloud-print.php:768
+#: admin/modules/cloud-print/cloud-print.php:773
+#, fuzzy
+msgid "Cloud print"
+msgstr "Impression en nuage"
+
+#: admin/modules/cloud-print/cloud-print.php:172
+#, fuzzy
+msgid "Invoice Cloud print"
+msgstr "Impression de factures en nuage"
+
+#: admin/modules/cloud-print/cloud-print.php:224
+#: admin/modules/cloud-print/cloud-print.php:406
+#, fuzzy
+msgid "Please set up a default printer"
+msgstr "Veuillez configurer une imprimante par défaut"
+
+#: admin/modules/cloud-print/cloud-print.php:296
+#, fuzzy, php-format
+msgid "Cloud print error: %s"
+msgstr "Erreur d'impression dans le cloud: %s"
+
+#: admin/modules/cloud-print/cloud-print.php:298
+#, fuzzy, php-format
+msgid ""
+"Automatic cloud printing of order number %s was failed because of these "
+"reason(s)."
+msgstr ""
+"L'impression automatique dans le cloud du numéro de commande %s a échoué "
+"pour ces raisons."
+
+#: admin/modules/cloud-print/cloud-print.php:328
+#: admin/modules/cloud-print/cloud-print.php:496
+#: admin/modules/cloud-print/cloud-print.php:842
+#: admin/modules/customizer/customizer.php:224
+#: admin/modules/licence_manager/licence_manager.php:690
+msgid "Success"
+msgstr "Succès"
+
+#: admin/modules/cloud-print/cloud-print.php:341
+msgid "Unable to generate access token."
+msgstr "Impossible de générer le jeton d’accès."
+
+#: admin/modules/cloud-print/cloud-print.php:347
+#, fuzzy
+msgid "Client ID / Client secret is missing."
+msgstr "ID client / secret client manquant."
+
+#: admin/modules/cloud-print/cloud-print.php:392
+#, fuzzy
+msgid "Invalid document type."
+msgstr "Type de document non valide"
+
+#: admin/modules/cloud-print/cloud-print.php:399
+msgid "Invalid order id."
+msgstr "Id de commande invalide."
+
+#: admin/modules/cloud-print/cloud-print.php:440
+#, fuzzy
+msgid "Failed to generate document template."
+msgstr "Échec de la génération du modèle de document."
+
+#: admin/modules/cloud-print/cloud-print.php:500
+#: admin/modules/cloud-print/cloud-print.php:538
+#, fuzzy
+msgid "Invalid Printer ID"
+msgstr "ID d'imprimante non valide"
+
+#: admin/modules/cloud-print/cloud-print.php:525
+#, fuzzy
+msgid "Printer test"
+msgstr "Test d&apos; impression"
+
+#: admin/modules/cloud-print/cloud-print.php:595
+#, fuzzy
+msgid ""
+"Unable to generate access token. Please disconnect and then connect again."
+msgstr ""
+"Impossible de générer le jeton d'accès. Veuillez vous déconnecter puis vous "
+"reconnecter."
+
+#: admin/modules/cloud-print/cloud-print.php:599
+#, fuzzy
+msgid ""
+"Unable to establish connection. Please disconnect and then connect again."
+msgstr ""
+"Impossible d'établir la connexion. Veuillez vous déconnecter puis vous "
+"reconnecter."
+
+#: admin/modules/cloud-print/cloud-print.php:608
+#, fuzzy
+msgid "Unable to establish connection."
+msgstr "Impossible d’établir une connexion"
+
+#: admin/modules/cloud-print/cloud-print.php:639
+#: admin/modules/cloud-print/cloud-print.php:844
+#, fuzzy
+msgid "Client ID is mandatory"
+msgstr "L'ID client est obligatoire"
+
+#: admin/modules/cloud-print/cloud-print.php:644
+#: admin/modules/cloud-print/cloud-print.php:845
+#, fuzzy
+msgid "Client secret is mandatory"
+msgstr "Le secret du client est obligatoire"
+
+#: admin/modules/cloud-print/cloud-print.php:799
+#, fuzzy
+msgid "Cloud print error"
+msgstr "Erreur d'impression dans le cloud"
+
+#: admin/modules/cloud-print/cloud-print.php:800
+#, fuzzy
+msgid "Successfully send to Cloud print"
+msgstr "Envoi réussi à Cloud Print"
+
+#: admin/modules/cloud-print/cloud-print.php:801
+#: admin/modules/licence_manager/licence_manager.php:688
+msgid "Please wait..."
+msgstr "Veuillez patienter..."
+
+#: admin/modules/cloud-print/cloud-print.php:818
+msgid "Disconnect"
+msgstr "Déconnecter"
+
+#: admin/modules/cloud-print/cloud-print.php:819
+msgid "Connect"
+msgstr "Connecter"
+
+#: admin/modules/cloud-print/cloud-print.php:843
+#, fuzzy
+msgid "Unable to generate Auth URL"
+msgstr "Impossible de générer l'URL d'authentification"
+
+#: admin/modules/cloud-print/cloud-print.php:846
+msgid "Working..."
+msgstr "En cours…"
+
+#: admin/modules/cloud-print/cloud-print.php:847
+msgid "Waiting..."
+msgstr "Veuillez patienter..."
+
+#: admin/modules/cloud-print/cloud-print.php:850
+#, fuzzy
+msgid "Searching for printers..."
+msgstr "Recherche d&apos;imprimantesOther device"
+
+#: admin/modules/cloud-print/cloud-print.php:851
+msgid "Set as default"
+msgstr "Définir ces valeurs par défaut"
+
+#: admin/modules/cloud-print/cloud-print.php:852
+#, fuzzy
+msgid "Remove from default"
+msgstr "Supprimer de la valeur par défaut"
+
+#: admin/modules/cloud-print/cloud-print.php:853
+#, fuzzy, php-format
+msgid "An error occurred. Please %stry again.%s"
+msgstr "Une erreur est survenue. Veuillez réessayer."
+
+#: admin/modules/cloud-print/cloud-print.php:854
+#, fuzzy
+msgid "Testing failed."
+msgstr "Le test a échoué."
+
+#: admin/modules/cloud-print/cloud-print.php:855
+#, fuzzy
+msgid "Tested OK. Verify print."
+msgstr "Testé OK. Vérifiez l'impression."
+
+#: admin/modules/cloud-print/cloud-print.php:856
+#, fuzzy, php-format
+msgid "Tested OK. Verify the print %shere%s"
+msgstr "Testé OK. Vérifiez les %shere% impressions"
+
+#: admin/modules/cloud-print/cloud-print.php:857
+#, fuzzy
+msgid ""
+"Default printer. This printer will be the default one to print documents."
+msgstr ""
+"Imprimante par défaut. Cette imprimante sera celle par défaut pour imprimer "
+"les documents."
+
+#: admin/modules/cloud-print/cloud-print.php:990
+msgid "Connected"
+msgstr "Connecté"
+
+#: admin/modules/cloud-print/cloud-print.php:990
+#, fuzzy
+msgid "Add a printer"
+msgstr "Ajouter une Imprimante"
+
+#: admin/modules/cloud-print/data/data.tooltip.php:3
+#, fuzzy, php-format
+msgid ""
+"%sOnline%s: The online status indicates that the printer configured with "
+"your account is available for print. %s %sOffline%s: The offline status "
+"indicates that the printer configured with your account is not available for "
+"print e.g, switched off etc."
+msgstr ""
+"%sOnline% s: l'état en ligne indique que l'imprimante configurée avec votre "
+"compte est disponible pour l'impression. %s %sOffline% s: l'état hors ligne "
+"indique que l'imprimante configurée avec votre compte n'est pas disponible "
+"pour l'impression, par exemple, désactivée, etc."
+
+#: admin/modules/cloud-print/data/data.tooltip.php:4
+#, fuzzy, php-format
+msgid ""
+"%sTest Printer%s: Click to test if the printer works properly. %s %sSet as "
+"default%s: Set a printer as default to have the prints redirected to it "
+"automatically."
+msgstr ""
+"%s Tester l'imprimante %s: cliquez pour tester si l'imprimante fonctionne "
+"correctement. %s %s Définir par défaut %s: définissez une imprimante par "
+"défaut pour que les impressions y soient automatiquement redirigées."
+
+#: admin/modules/cloud-print/views/_printer_list.php:16
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#: admin/modules/cloud-print/views/_printer_list.php:17
+#: admin/views/admin-settings-advanced.php:268
+#: admin/views/admin-settings-general.php:14
+msgid "Name"
+msgstr "prénom"
+
+#: admin/modules/cloud-print/views/_printer_list.php:18
+msgid "ID"
+msgstr "ID"
+
+#: admin/modules/cloud-print/views/_printer_list.php:21
+msgid "Connection Status"
+msgstr "Etat de la connexion"
+
+#: admin/modules/cloud-print/views/_printer_list.php:27
+#: admin/modules/licence_manager/views/_licence_list.php:13
+#, fuzzy
+msgid "Actions"
+msgstr "Imprimer Actions"
+
+#: admin/modules/cloud-print/views/_printer_list.php:44
+msgid "Offline"
+msgstr "Hors ligne"
+
+#: admin/modules/cloud-print/views/_printer_list.php:48
+msgid "Online"
+msgstr "En ligne"
+
+#: admin/modules/cloud-print/views/_printer_list.php:55
+#, fuzzy
+msgid "Test printer by printing a sample document"
+msgstr "Tester l'imprimante en imprimant un exemple de document"
+
+#: admin/modules/cloud-print/views/_printer_list.php:55
+#, fuzzy
+msgid "Test printer"
+msgstr "Tester l'imprimante..."
+
+#: admin/modules/cloud-print/views/_printer_list.php:69
+#, fuzzy
+msgid "No printers found."
+msgstr "Aucune imprimante trouvée."
+
+#: admin/modules/cloud-print/views/_printer_list.php:70
+msgid "Need help?"
+msgstr "Besoin d’aide?"
+
+#: admin/modules/cloud-print/views/_printer_list.php:71
+#: admin/modules/cloud-print/views/settings.php:29
+#, fuzzy, php-format
+msgid ""
+"Click %shere%s to find how to set up your printer with Google Cloud Print"
+msgstr ""
+"Cliquez sur %shere% s pour savoir comment configurer votre imprimante avec "
+"Google Cloud Print"
+
+#: admin/modules/cloud-print/views/deprecated.php:8
+#: admin/modules/cloud-print/views/no_cloud_enabled_docs.php:8
+#, fuzzy
+msgid "Oops !!!"
+msgstr ""
+"Oups ! Vous avez essayé d’installer la version premium sans désactiver et "
+"supprimer la version de base. Veuillez désactiver et supprimer l’impression "
+"de factures, liste d’emballage & étiquettes pour WooCommerce (BASIC) et puis "
+"essayez à nouveau"
+
+#: admin/modules/cloud-print/views/deprecated.php:8
+#, fuzzy, php-format
+msgid ""
+"Cloud printing service has been deprecated by Google. We have launched an "
+"alternative service in tie up with PrintNode, try out the product %s here %s."
+msgstr ""
+"Le service d'impression dans le cloud a été abandonné par Google. Nous avons "
+"lancé un service alternatif en association avec PrintNode. Essayez le "
+"produit %s ici %s."
+
+#: admin/modules/cloud-print/views/no_cloud_enabled_docs.php:8
+#, fuzzy
+msgid "No Cloud printing enabled documents found."
+msgstr ""
+"Aucun document compatible avec l'impression dans le cloud n'a été trouvé."
+
+#: admin/modules/cloud-print/views/settings.php:22
+#, fuzzy, php-format
+msgid ""
+"%s Note %s: Google, after December 31st, 2020, will no longer support Cloud "
+"Print. Learn more %s here %s. We have launched an alternative service in tie "
+"up with PrintNode, try out the product %s here %s."
+msgstr ""
+"%s Remarque %s: Google, après le 31 décembre 2020, ne prendra plus en charge "
+"Cloud Print. En savoir plus %s ici %s. Nous avons lancé un service "
+"alternatif en liaison avec PrintNode, essayez le produit %s ici %s."
+
+#: admin/modules/cloud-print/views/settings.php:26
+msgid "Google account"
+msgstr "Compte Google"
+
+#: admin/modules/cloud-print/views/settings.php:28
+#, fuzzy, php-format
+msgid ""
+"To have a Cloud Print, you will need to obtain client ID and client secret "
+"from Google developer console. Refer %sGoogle developer documentation%s to "
+"know more."
+msgstr ""
+"Pour disposer d'un Cloud Print, vous devrez obtenir l'ID client et le secret "
+"client à partir de la console des développeurs Google. Consultez la %s "
+"documentation Google destinée aux développeurs %s pour en savoir plus."
+
+#: admin/modules/cloud-print/views/settings.php:32
+#, fuzzy
+msgid ""
+"If you need to update the credentials, please disconnect from the existing "
+"connection then update the credentials and authenticate again."
+msgstr ""
+"Si vous devez mettre à jour les informations d'identification, veuillez vous "
+"déconnecter de la connexion existante, puis mettre à jour les informations "
+"d'identification et vous authentifier à nouveau."
+
+#: admin/modules/cloud-print/views/settings.php:40
+msgid "Client ID"
+msgstr "ID Client"
+
+#: admin/modules/cloud-print/views/settings.php:42
+#, fuzzy
+msgid ""
+"Specify the Client ID obtained from Google developer console for "
+"authentication."
+msgstr ""
+"Spécifiez l'ID client obtenu à partir de la console des développeurs Google "
+"pour l'authentification."
+
+#: admin/modules/cloud-print/views/settings.php:46
+msgid "Client secret"
+msgstr "Secret de client"
+
+#: admin/modules/cloud-print/views/settings.php:48
+#, fuzzy
+msgid ""
+"Specify the Client Secret obtained from Google developer console for "
+"authentication."
+msgstr ""
+"Spécifiez le secret client obtenu à partir de la console des développeurs "
+"Google pour l'authentification."
+
+#: admin/modules/cloud-print/views/settings.php:52
+msgid "Redirect URI"
+msgstr "URL de redirection"
+
+#: admin/modules/cloud-print/views/settings.php:55
+#, fuzzy
+msgid "Use this redirect URI when setting up Google API credentials."
+msgstr ""
+"Utilisez cet URI de redirection lors de la configuration des informations "
+"d'identification de l'API Google."
+
+#: admin/modules/cloud-print/views/settings.php:79
+#, fuzzy
+msgid "Enable manual printing"
+msgstr "Activer l'impression manuelle"
+
+#: admin/modules/cloud-print/views/settings.php:81
+#, fuzzy
+msgid ""
+"Choose ‘Yes’ to have a ‘Cloud Print’ button in the WooCommerce Orders page."
+msgstr ""
+"Choisissez «Oui» pour avoir un bouton «Cloud Print» dans la page Commandes "
+"WooCommerce."
+
+#: admin/modules/cloud-print/views/settings.php:83
+#: admin/modules/cloud-print/views/settings.php:93
+#: admin/modules/cloud-print/views/settings.php:107
+#: admin/modules/sequential-number/views/sequential-number.php:119
+#: admin/views/admin-settings-advanced.php:129
+#: admin/views/admin-settings-advanced.php:202
+#: admin/views/admin-settings-advanced.php:370
+#: public/modules/creditnote/views/general.php:43
+#: public/modules/creditnote/views/general.php:52
+#: public/modules/deliverynote/views/general.php:18
+#: public/modules/deliverynote/views/general.php:27
+#: public/modules/dispatchlabel/views/general.php:16
+#: public/modules/invoice/views/general.php:16
+#: public/modules/invoice/views/general.php:25
+#: public/modules/invoice/views/general.php:35
+#: public/modules/invoice/views/general.php:59
+#: public/modules/invoice/views/general.php:69
+#: public/modules/invoice/views/general.php:95
+#: public/modules/invoice/views/general.php:104
+#: public/modules/packinglist/views/general.php:18
+#: public/modules/packinglist/views/general.php:27
+#: public/modules/packinglist/views/general.php:80
+#: public/modules/picklist/views/general.php:18
+#: public/modules/picklist/views/general.php:28
+#: public/modules/picklist/views/general.php:38
+#: public/modules/picklist/views/general.php:47
+#: public/modules/picklist/views/general.php:84
+#: public/modules/proformainvoice/views/general.php:17
+#: public/modules/proformainvoice/views/general.php:26
+#: public/modules/proformainvoice/views/general.php:50
+#: public/modules/proformainvoice/views/general.php:60
+#: public/modules/proformainvoice/views/general.php:118
+#: public/modules/shippinglabel/views/general.php:16
+msgid "Yes"
+msgstr "Oui"
+
+#: admin/modules/cloud-print/views/settings.php:84
+#: admin/modules/cloud-print/views/settings.php:94
+#: admin/modules/cloud-print/views/settings.php:108
+#: admin/modules/sequential-number/views/sequential-number.php:120
+#: admin/views/admin-settings-advanced.php:130
+#: admin/views/admin-settings-advanced.php:203
+#: admin/views/admin-settings-advanced.php:371
+#: public/modules/creditnote/views/general.php:44
+#: public/modules/creditnote/views/general.php:53
+#: public/modules/deliverynote/views/general.php:19
+#: public/modules/deliverynote/views/general.php:28
+#: public/modules/dispatchlabel/views/general.php:17
+#: public/modules/invoice/views/general.php:17
+#: public/modules/invoice/views/general.php:26
+#: public/modules/invoice/views/general.php:36
+#: public/modules/invoice/views/general.php:60
+#: public/modules/invoice/views/general.php:70
+#: public/modules/invoice/views/general.php:96
+#: public/modules/invoice/views/general.php:105
+#: public/modules/packinglist/views/general.php:19
+#: public/modules/packinglist/views/general.php:28
+#: public/modules/packinglist/views/general.php:81
+#: public/modules/picklist/views/general.php:19
+#: public/modules/picklist/views/general.php:29
+#: public/modules/picklist/views/general.php:39
+#: public/modules/picklist/views/general.php:48
+#: public/modules/picklist/views/general.php:85
+#: public/modules/proformainvoice/views/general.php:18
+#: public/modules/proformainvoice/views/general.php:27
+#: public/modules/proformainvoice/views/general.php:51
+#: public/modules/proformainvoice/views/general.php:61
+#: public/modules/proformainvoice/views/general.php:119
+#: public/modules/shippinglabel/views/general.php:17
+msgid "No"
+msgstr "non"
+
+#: admin/modules/cloud-print/views/settings.php:89
+#, fuzzy
+msgid "Enable automatic printing"
+msgstr "Activer l'impression automatique"
+
+#: admin/modules/cloud-print/views/settings.php:91
+#, fuzzy
+msgid ""
+"Prints the document automatically whenever an order status is updated. "
+"Ensure that a default printer is set up for this to work."
+msgstr ""
+"Imprime le document automatiquement chaque fois qu'un statut de commande est "
+"mis à jour. Assurez-vous qu'une imprimante par défaut est configurée pour "
+"que cela fonctionne."
+
+#: admin/modules/cloud-print/views/settings.php:103
+msgid "Notify by email"
+msgstr "Avertir par e-mail"
+
+#: admin/modules/cloud-print/views/settings.php:105
+#, fuzzy
+msgid ""
+"Failure to print due to any reasons will be notified to the site admin via "
+"email upon enabling this option."
+msgstr ""
+"Le défaut d'impression pour quelque raison que ce soit sera notifié à "
+"l'administrateur du site par e-mail lors de l'activation de cette option."
+
+#: admin/modules/cloud-print/views/settings.php:128
+#, fuzzy, php-format
+msgid "Choose the order statuses for which the %s has to be printed."
+msgstr ""
+"Choisissez les statuts de commande pour lesquels le %s doit être imprimé."
+
+#: admin/modules/customizer/classes/class-customizer-product-table.php:444
+#: public/modules/creditnote/creditnote.php:237
+msgid "Refund"
+msgstr "Rembourser"
+
+#: admin/modules/customizer/classes/class-customizer-product-table.php:618
+#: admin/modules/customizer/classes/class-customizer.php:274
+#: includes/class-wf-woocommerce-packing-list-box_packing.php:111
+#: includes/class-wf-woocommerce-packing-list-box_packing.php:118
+msgid "n/a"
+msgstr "n / a"
+
+#: admin/modules/customizer/classes/class-customizer-product-table.php:964
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: admin/modules/customizer/classes/class-customizer-product-table.php:968
+#: admin/modules/customizer/views/_pdf_preview.php:28
+#: admin/modules/customizer/views/_pdf_preview.php:29
+#, fuzzy
+msgid "Order number"
+msgstr "Numéro de commande"
+
+#: admin/modules/customizer/classes/class-customizer-product-table.php:971
+#, fuzzy
+msgid "Invoice number"
+msgstr "Numéro de facture"
+
+#: admin/modules/customizer/classes/class-customizer.php:112
+#: public/modules/picklist/picklist.php:131
+msgid "Box name"
+msgstr "Nom de la boîte"
+
+#: admin/modules/customizer/classes/class-customizer.php:640
+msgid "incl. tax"
+msgstr "TVA incluse"
+
+#: admin/modules/customizer/customizer.php:72
+#, fuzzy
+msgid "Unable to generate PDF."
+msgstr "Impossible de générer le PDF."
+
+#: admin/modules/customizer/customizer.php:155
+#: admin/modules/customizer/customizer.php:160
+msgid "Customize"
+msgstr "Personnaliser"
+
+#: admin/modules/customizer/customizer.php:226
+msgid "Click here to add Company logo"
+msgstr "Cliquez ici pour ajouter le logo de l'entreprise"
+
+#: admin/modules/customizer/customizer.php:227
+msgid "Click here to add Company name"
+msgstr "Cliquez ici pour ajouter le nom de l'entreprise"
+
+#: admin/modules/customizer/customizer.php:228
+msgid "Click here to add From address"
+msgstr "Cliquez ici pour ajouter l'adresse de l'expéditeur"
+
+#: admin/modules/customizer/customizer.php:229
+msgid "Click here to add Signature"
+msgstr "Cliquez ici pour ajouter une signature"
+
+#: admin/modules/customizer/customizer.php:230
+#, fuzzy
+msgid ""
+"Please save all data before leaving this page. All unsaved data will be lost."
+" Are you sure?"
+msgstr ""
+"Veuillez enregistrer toutes les données avant de quitter cette page. Toutes "
+"les données non enregistrées seront perdues. Êtes-vous sûr?"
+
+#: admin/modules/customizer/customizer.php:231
+#: admin/modules/customizer/views/customize.php:294
+msgid "Create new template"
+msgstr "Créer un nouveau modèle"
+
+#: admin/modules/customizer/customizer.php:232
+msgid "Change layout"
+msgstr "Modifier la mise en page"
+
+#: admin/modules/customizer/customizer.php:233
+msgid "Saving"
+msgstr "Sauvegarde"
+
+#: admin/modules/customizer/customizer.php:234
+#, fuzzy
+msgid "Please enter order number"
+msgstr "Veuillez entrer votre numéro de commande :"
+
+#: admin/modules/customizer/customizer.php:235
+msgid "Generating"
+msgstr "Génération"
+
+#: admin/modules/customizer/customizer.php:275
+#: admin/modules/customizer/customizer.php:598
+msgid "Active"
+msgstr "Actif"
+
+#: admin/modules/customizer/customizer.php:570
+msgid "Error."
+msgstr "Erreur"
+
+#: admin/modules/customizer/customizer.php:601
+#: admin/modules/customizer/views/customize.php:311
+#: admin/modules/licence_manager/views/licence-settings.php:57
+msgid "Activate"
+msgstr "Activer"
+
+#: admin/modules/customizer/customizer.php:628
+msgid "No template found."
+msgstr "Aucun modèle trouvé."
+
+#: admin/modules/customizer/customizer.php:647
+msgid "Unable to save theme."
+msgstr "Impossible de sauvegarder le thème."
+
+#: admin/modules/customizer/customizer.php:687
+msgid "Template created."
+msgstr "Modèle créé."
+
+#: admin/modules/customizer/customizer.php:722
+msgid "Template updated."
+msgstr "Modèle mis à jour."
+
+#: admin/modules/customizer/customizer.php:743
+msgid "Unable to switch view."
+msgstr "Impossible de changer de vue."
+
+#: admin/modules/customizer/customizer.php:1053
+msgid "Unable to load template."
+msgstr "Impossible de charger le modèle."
+
+#: admin/modules/customizer/customizer.php:1076
+#, fuzzy
+msgid "Untitled template"
+msgstr "Modèle sans titre"
+
+#: admin/modules/customizer/customizer.php:1167
+msgid "Lighter"
+msgstr "Plus léger"
+
+#: admin/modules/customizer/customizer.php:1168
+msgid "Normal"
+msgstr "Ordinaire"
+
+#: admin/modules/customizer/customizer.php:1169
+msgid "Bold"
+msgstr "Audacieuse"
+
+#: admin/modules/customizer/customizer.php:1170
+msgid "Bolder"
+msgstr "Plus audacieux"
+
+#: admin/modules/customizer/customizer.php:1184
+msgid "Select One"
+msgstr "Choisissez un"
+
+#: admin/modules/customizer/customizer.php:1199
+msgid "Left"
+msgstr "Gauche"
+
+#: admin/modules/customizer/customizer.php:1200
+msgid "Right"
+msgstr "Droite"
+
+#: admin/modules/customizer/customizer.php:1201
+msgid "Center"
+msgstr "Centre"
+
+#: admin/modules/customizer/customizer.php:1202
+#, fuzzy
+msgid "Start"
+msgstr "Numéro de début de facture"
+
+#: admin/modules/customizer/customizer.php:1203
+msgid "End"
+msgstr "Fin"
+
+#: admin/modules/customizer/customizer.php:1211
+#, fuzzy
+msgid "None"
+msgstr "Aucun"
+
+#: admin/modules/customizer/customizer.php:1224
+msgid "Solid"
+msgstr "Solide"
+
+#: admin/modules/customizer/customizer.php:1225
+msgid "Dotted"
+msgstr "Pointillés"
+
+#: admin/modules/customizer/customizer.php:1226
+msgid "Dashed"
+msgstr "Tirets"
+
+#: admin/modules/customizer/data/data.tooltip.php:3
+#, fuzzy
+msgid "Click to view predefined templates."
+msgstr "Cliquez pour afficher les modèles prédéfinis."
+
+#: admin/modules/customizer/data/data.tooltip.php:4
+#, fuzzy
+msgid "Create a new template or edit an existing template."
+msgstr "Créez un nouveau modèle ou modifiez un modèle existant."
+
+#: admin/modules/customizer/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Lists general guidelines and the plugin placeholders that can help you while "
+"modifying the template via code editor, custom code."
+msgstr ""
+"Répertorie les directives générales et les espaces réservés du plugin qui "
+"peuvent vous aider lors de la modification du modèle via l'éditeur de code, "
+"le code personnalisé."
+
+#: admin/modules/customizer/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Use CSS to make additional modifications to the layout other than the one "
+"listed in the visual editor."
+msgstr ""
+"Utilisez CSS pour apporter des modifications supplémentaires à la mise en "
+"page autres que celle répertoriée dans l'éditeur visuel."
+
+#: admin/modules/customizer/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Displays the currently chosen document template with provisions to modify."
+msgstr ""
+"Affiche le modèle de document actuellement choisi avec les dispositions à "
+"modifier."
+
+#: admin/modules/customizer/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Shows a preview of the template on an actual order. Key in an order number "
+"to view the same."
+msgstr ""
+"Affiche un aperçu du modèle sur une commande réelle. Entrez un numéro de "
+"commande pour afficher la même chose."
+
+#: admin/modules/customizer/data/data.translation_strings.php:1
+msgid "Credit note"
+msgstr "Note de crédit"
+
+#: admin/modules/customizer/data/data.translation_strings.php:2
+#, fuzzy
+msgid "VAT:"
+msgstr "TVA :"
+
+#: admin/modules/customizer/data/data.translation_strings.php:3
+#, fuzzy
+msgid "SSN:"
+msgstr "SSN : "
+
+#: admin/modules/customizer/data/data.translation_strings.php:4
+#: admin/modules/licence_manager/views/licence-settings.php:52
+#, fuzzy
+msgid "Email:"
+msgstr "Email:"
+
+#: admin/modules/customizer/data/data.translation_strings.php:5
+#, fuzzy
+msgid "Tel:"
+msgstr "Tel :"
+
+#: admin/modules/customizer/data/data.translation_strings.php:6
+msgid "Shipping Method:"
+msgstr "Mode de livraison :"
+
+#: admin/modules/customizer/data/data.translation_strings.php:7
+#, fuzzy
+msgid "Tracking number:"
+msgstr "Numéro de suivi"
+
+#: admin/modules/customizer/data/data.translation_strings.php:8
+msgid "From Address:"
+msgstr "De l’adresse:"
+
+#: admin/modules/customizer/data/data.translation_strings.php:9
+msgid "Billing Address:"
+msgstr "Adresse de facturation:"
+
+#: admin/modules/customizer/data/data.translation_strings.php:10
+msgid "Shipping Address:"
+msgstr "Adresse de livraison:"
+
+#: admin/modules/customizer/data/data.translation_strings.php:11
+#, fuzzy
+msgid "Credit note No:"
+msgstr "Note de crédit"
+
+#: admin/modules/customizer/data/data.translation_strings.php:12
+#, fuzzy
+msgid "Invoice No:"
+msgstr "facture d’achat"
+
+#: admin/modules/customizer/data/data.translation_strings.php:13
+#, fuzzy
+msgid "Order Date:"
+msgstr "Date de commande"
+
+#: admin/modules/customizer/data/data.translation_strings.php:14
+msgid "Image"
+msgstr "image"
+
+#: admin/modules/customizer/data/data.translation_strings.php:15
+msgid "SKU"
+msgstr "SKU"
+
+#: admin/modules/customizer/data/data.translation_strings.php:16
+#: admin/modules/licence_manager/views/_licence_list.php:12
+msgid "Product"
+msgstr "Produit"
+
+#: admin/modules/customizer/data/data.translation_strings.php:17
+msgid "Quantity"
+msgstr "Quantité"
+
+#: admin/modules/customizer/data/data.translation_strings.php:18
+#, fuzzy
+msgid "Price"
+msgstr "Prix texte aligner"
+
+#: admin/modules/customizer/data/data.translation_strings.php:19
+msgid "Total Price"
+msgstr "Prix ​​total"
+
+#: admin/modules/customizer/data/data.translation_strings.php:20
+#: admin/modules/customizer/views/_customize_properties.php:606
+#: public/modules/creditnote/creditnote.php:347
+#: public/modules/dispatchlabel/dispatchlabel.php:172
+#: public/modules/invoice/invoice.php:561
+#: public/modules/proformainvoice/proformainvoice.php:454
+msgid "Subtotal"
+msgstr "Total partiel"
+
+#: admin/modules/customizer/data/data.translation_strings.php:21
+#: admin/modules/customizer/views/_customize_properties.php:612
+#: public/modules/creditnote/creditnote.php:348
+#: public/modules/dispatchlabel/dispatchlabel.php:173
+#: public/modules/invoice/invoice.php:562
+#: public/modules/proformainvoice/proformainvoice.php:455
+msgid "Shipping"
+msgstr "livraison"
+
+#: admin/modules/customizer/data/data.translation_strings.php:22
+#: admin/modules/customizer/views/_customize_properties.php:619
+#: public/modules/creditnote/creditnote.php:349
+#: public/modules/dispatchlabel/dispatchlabel.php:174
+#: public/modules/invoice/invoice.php:563
+#: public/modules/proformainvoice/proformainvoice.php:456
+msgid "Cart Discount"
+msgstr "Remise de panier"
+
+#: admin/modules/customizer/data/data.translation_strings.php:23
+#: admin/modules/customizer/views/_customize_properties.php:625
+#: public/modules/creditnote/creditnote.php:350
+#: public/modules/dispatchlabel/dispatchlabel.php:175
+#: public/modules/invoice/invoice.php:564
+#: public/modules/proformainvoice/proformainvoice.php:457
+msgid "Order Discount"
+msgstr "Remise sur commande"
+
+#: admin/modules/customizer/data/data.translation_strings.php:24
+#: admin/modules/customizer/views/_customize_properties.php:632
+#: public/modules/creditnote/creditnote.php:351
+#: public/modules/dispatchlabel/dispatchlabel.php:176
+#: public/modules/invoice/invoice.php:565
+#: public/modules/proformainvoice/proformainvoice.php:458
+msgid "Total Tax"
+msgstr "Taxe total"
+
+#: admin/modules/customizer/data/data.translation_strings.php:25
+#: admin/modules/customizer/views/_customize_properties.php:638
+#: public/modules/creditnote/creditnote.php:352
+#: public/modules/dispatchlabel/dispatchlabel.php:177
+#: public/modules/invoice/invoice.php:566
+#: public/modules/proformainvoice/proformainvoice.php:459
+msgid "Fee"
+msgstr "Frais"
+
+#: admin/modules/customizer/data/data.translation_strings.php:26
+msgid "Coupon Used"
+msgstr "Coupon déjà utilisé"
+
+#: admin/modules/customizer/data/data.translation_strings.php:27
+#: admin/modules/customizer/views/_customize_properties.php:645
+#: public/modules/creditnote/creditnote.php:354
+#: public/modules/dispatchlabel/dispatchlabel.php:179
+#: public/modules/invoice/invoice.php:568
+#: public/modules/proformainvoice/proformainvoice.php:461
+msgid "Payment Method"
+msgstr "Mode de paiement"
+
+#: admin/modules/customizer/data/data.translation_strings.php:28
+#: admin/modules/customizer/views/_customize_properties.php:651
+#: public/modules/creditnote/creditnote.php:355
+#: public/modules/dispatchlabel/dispatchlabel.php:180
+#: public/modules/invoice/invoice.php:569
+#: public/modules/proformainvoice/proformainvoice.php:462
+msgid "Total"
+msgstr "Total"
+
+#: admin/modules/customizer/data/data.translation_strings.php:29
+#, fuzzy
+msgid "Return Address:"
+msgstr "adresse de retour"
+
+#: admin/modules/customizer/views/_customize_properties.php:113
+#: admin/modules/customizer/views/_customize_properties.php:289
+#: admin/modules/customizer/views/_customize_properties.php:313
+#: admin/modules/customizer/views/_customize_properties.php:565
+#: public/modules/shippinglabel/shippinglabel.php:230
+#: public/modules/shippinglabel/shippinglabel.php:255
+msgid "Title"
+msgstr "Titre"
+
+#: admin/modules/customizer/views/_customize_properties.php:119
+#: admin/modules/customizer/views/_customize_properties.php:208
+#: admin/modules/customizer/views/_customize_properties.php:260
+#: admin/modules/customizer/views/_customize_properties.php:318
+#: admin/modules/customizer/views/_customize_properties.php:570
+#: public/modules/addresslabel/addresslabel.php:217
+#: public/modules/invoice/invoice.php:311
+#: public/modules/shippinglabel/shippinglabel.php:162
+#: public/modules/shippinglabel/shippinglabel.php:260
+msgid "Font size"
+msgstr "Taille de police"
+
+#: admin/modules/customizer/views/_customize_properties.php:126
+#: admin/modules/customizer/views/_customize_properties.php:294
+#: public/modules/addresslabel/addresslabel.php:225
+msgid "Text align"
+msgstr "Aligner le texte"
+
+#: admin/modules/customizer/views/_customize_properties.php:136
+#: public/modules/addresslabel/addresslabel.php:235
+#, fuzzy
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+#: admin/modules/customizer/views/_customize_properties.php:148
+#: public/modules/shippinglabel/shippinglabel.php:195
+msgid "Display"
+msgstr "Afficher"
+
+#: admin/modules/customizer/views/_customize_properties.php:152
+#: public/modules/creditnote/creditnote.php:335
+#: public/modules/deliverynote/deliverynote.php:157
+#: public/modules/dispatchlabel/dispatchlabel.php:159
+#: public/modules/invoice/invoice.php:545
+#: public/modules/packinglist/packinglist.php:315
+#: public/modules/picklist/picklist.php:324
+#: public/modules/proformainvoice/proformainvoice.php:441
+#: public/modules/shippinglabel/shippinglabel.php:199
+#: public/modules/shippinglabel/shippinglabel.php:365
+msgid "Company Logo"
+msgstr "Logo d’entreprise"
+
+#: admin/modules/customizer/views/_customize_properties.php:153
+#: public/modules/shippinglabel/shippinglabel.php:200
+msgid "Company Name"
+msgstr "Nom de la compagnie"
+
+#: admin/modules/customizer/views/_customize_properties.php:157
+#: public/modules/shippinglabel/shippinglabel.php:204
+msgid "Logo Width"
+msgstr "Logo Largeur"
+
+#: admin/modules/customizer/views/_customize_properties.php:164
+#: public/modules/shippinglabel/shippinglabel.php:211
+msgid "Logo Height"
+msgstr "Hauteur du logo"
+
+#: admin/modules/customizer/views/_customize_properties.php:172
+#: public/modules/shippinglabel/shippinglabel.php:219
+msgid "Company name font size"
+msgstr "Nom de l’entreprise taille de la police"
+
+#: admin/modules/customizer/views/_customize_properties.php:178
+msgid "Extra Details"
+msgstr "Détails supplémentaires"
+
+#: admin/modules/customizer/views/_customize_properties.php:184
+msgid "Extra detail font size"
+msgstr "Taille de police supplémentaire"
+
+#: admin/modules/customizer/views/_customize_properties.php:190
+msgid "Header Color"
+msgstr "Couleur d’en-tête"
+
+#: admin/modules/customizer/views/_customize_properties.php:203
+#: admin/modules/customizer/views/_customize_properties.php:237
+#: public/modules/invoice/invoice.php:305
+msgid "Text"
+msgstr "Texte"
+
+#: admin/modules/customizer/views/_customize_properties.php:216
+#: admin/modules/customizer/views/_customize_properties.php:268
+msgid "Style"
+msgstr "Style"
+
+#: admin/modules/customizer/views/_customize_properties.php:226
+#: admin/modules/customizer/views/_customize_properties.php:278
+#: admin/modules/customizer/views/_customize_properties.php:302
+#: admin/modules/customizer/views/_customize_properties.php:336
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: admin/modules/customizer/views/_customize_properties.php:242
+#: admin/modules/sequential-number/views/sequential-number.php:36
+msgid "Format"
+msgstr "Formats"
+
+#: admin/modules/customizer/views/_customize_properties.php:347
+msgid "Table head background"
+msgstr "Fond de tête de table"
+
+#: admin/modules/customizer/views/_customize_properties.php:354
+msgid "Table head text color"
+msgstr "Couleur du texte de la tête de table"
+
+#: admin/modules/customizer/views/_customize_properties.php:361
+msgid "Table body text color"
+msgstr "Couleur du texte du corps du tableau"
+
+#: admin/modules/customizer/views/_customize_properties.php:375
+msgid "Image label"
+msgstr "Étiquette d'image"
+
+#: admin/modules/customizer/views/_customize_properties.php:381
+msgid "Image text align"
+msgstr "Aligner le texte de l'image"
+
+#: admin/modules/customizer/views/_customize_properties.php:398
+msgid "SKU label"
+msgstr "Etiquette SKU"
+
+#: admin/modules/customizer/views/_customize_properties.php:404
+msgid "SKU text align"
+msgstr "SKU text align"
+
+#: admin/modules/customizer/views/_customize_properties.php:421
+msgid "Product label"
+msgstr "Produit label"
+
+#: admin/modules/customizer/views/_customize_properties.php:427
+msgid "Product text align"
+msgstr "Produit aligner"
+
+#: admin/modules/customizer/views/_customize_properties.php:444
+msgid "Qty label"
+msgstr "Étiquette de quantité"
+
+#: admin/modules/customizer/views/_customize_properties.php:450
+msgid "Qty text align"
+msgstr "Quantité de texte aligner"
+
+#: admin/modules/customizer/views/_customize_properties.php:467
+msgid "Price label"
+msgstr "Étiquette de prix"
+
+#: admin/modules/customizer/views/_customize_properties.php:473
+msgid "Price text align"
+msgstr "Prix texte aligner"
+
+#: admin/modules/customizer/views/_customize_properties.php:490
+#, fuzzy
+msgid "Tax label"
+msgstr "Libellé de la TVA"
+
+#: admin/modules/customizer/views/_customize_properties.php:496
+#, fuzzy
+msgid "Tax text align"
+msgstr "Alignement Texte"
+
+#: admin/modules/customizer/views/_customize_properties.php:513
+msgid "Total weight label"
+msgstr "Étiquette de poids total"
+
+#: admin/modules/customizer/views/_customize_properties.php:519
+msgid "Total weight text align"
+msgstr "Poids total texte aligné"
+
+#: admin/modules/customizer/views/_customize_properties.php:536
+msgid "Total label"
+msgstr "Étiquette totale"
+
+#: admin/modules/customizer/views/_customize_properties.php:542
+msgid "Total text align"
+msgstr "Texte total aligné"
+
+#: admin/modules/customizer/views/_customize_properties.php:556
+msgid "Signature type"
+msgstr "Type de signature"
+
+#: admin/modules/customizer/views/_customize_properties.php:560
+msgid "Manual Signature"
+msgstr "Signature manuelle"
+
+#: admin/modules/customizer/views/_customize_properties.php:561
+msgid "Image Signature"
+msgstr "Signature d'image"
+
+#: admin/modules/customizer/views/_customize_properties.php:578
+msgid "Align"
+msgstr "Aligner"
+
+#: admin/modules/customizer/views/_customize_properties.php:595
+msgid "Label"
+msgstr "Étiquette"
+
+#: admin/modules/customizer/views/_pdf_preview.php:23
+#, fuzzy
+msgid "Preview sample PDF"
+msgstr "Aperçu d'un exemple de PDF"
+
+#: admin/modules/customizer/views/_pdf_preview.php:24
+#, fuzzy
+msgid "Order"
+msgstr "Commande"
+
+#: admin/modules/customizer/views/customize.php:110
+#: admin/modules/customizer/views/customize.php:328
+msgid "Help"
+msgstr "Aide"
+
+#: admin/modules/customizer/views/customize.php:114
+msgid "Instructions"
+msgstr "Instructions"
+
+#: admin/modules/customizer/views/customize.php:117
+#, fuzzy
+msgid "Always write placeholders inside"
+msgstr "Écrivez toujours des espaces réservés à l'intérieur"
+
+#: admin/modules/customizer/views/customize.php:117
+#, fuzzy
+msgid "brackets."
+msgstr "Supports"
+
+#: admin/modules/customizer/views/customize.php:120
+#, fuzzy
+msgid "Text inside"
+msgstr "Texte à l’intérieur de la barre"
+
+#: admin/modules/customizer/views/customize.php:120
+#, fuzzy
+msgid "in code view ensures that the string is translation compatible."
+msgstr "en mode code garantit que la chaîne est compatible avec la traduction."
+
+#: admin/modules/customizer/views/customize.php:123
+msgid "Please specify"
+msgstr "Préciser"
+
+#: admin/modules/customizer/views/customize.php:123
+#, fuzzy
+msgid "attribute while adding new column in product table."
+msgstr ""
+"attribut lors de l'ajout d'une nouvelle colonne dans la table des produits."
+
+#: admin/modules/customizer/views/customize.php:126
+#, fuzzy
+msgid ""
+"Use predefined classes for some CSS properties, as listed below, for a "
+"better RTL support."
+msgstr ""
+"Utilisez des classes prédéfinies pour certaines propriétés CSS, comme "
+"indiqué ci-dessous, pour une meilleure prise en charge RTL."
+
+#: admin/modules/customizer/views/customize.php:127
+msgid "Eg:"
+msgstr "Par ex.:"
+
+#: admin/modules/customizer/views/customize.php:133
+#, fuzzy
+msgid "Alternate Class"
+msgstr "Classe alternative"
+
+#: admin/modules/customizer/views/customize.php:169
+#, fuzzy
+msgid ""
+"Below listed are some in-built placeholders used in the templates. "
+"Additionally you can add your own placeholders in the template and give "
+"values via filters"
+msgstr ""
+"Vous trouverez ci-dessous la liste des espaces réservés intégrés utilisés "
+"dans les modèles. De plus, vous pouvez ajouter vos propres espaces réservés "
+"dans le modèle et donner des valeurs via des filtres"
+
+#: admin/modules/customizer/views/customize.php:169
+#, fuzzy
+msgid "See"
+msgstr "Shortcodes autorisés: voir l'onglet Help Guide"
+
+#: admin/modules/customizer/views/customize.php:169
+msgid "Help tab"
+msgstr "Onglet Help"
+
+#: admin/modules/customizer/views/customize.php:169
+#, fuzzy
+msgid "General settings"
+msgstr "réglages généraux"
+
+#: admin/modules/customizer/views/customize.php:169
+#, fuzzy
+msgid "for more details about filters"
+msgstr "pour plus de détails sur les filtres"
+
+#: admin/modules/customizer/views/customize.php:173
+#: admin/views/admin-settings-advanced.php:77
+msgid "Placeholder"
+msgstr "Etiquette"
+
+#: admin/modules/customizer/views/customize.php:173
+#: public/modules/addresslabel/addresslabel.php:211
+msgid "Description"
+msgstr "La description"
+
+#: admin/modules/customizer/views/customize.php:200
+msgid "Templates"
+msgstr "Modèles"
+
+#: admin/modules/customizer/views/customize.php:205
+msgid "Type template name to search"
+msgstr "Tapez le nom du modèle à rechercher"
+
+#: admin/modules/customizer/views/customize.php:215
+#, fuzzy
+msgid "Enter a name for your template"
+msgstr "Entrer un nom pour votre nouveau modèle"
+
+#: admin/modules/customizer/views/customize.php:220
+msgid "Please enter name"
+msgstr "S’il vous plaît entrer le nom"
+
+#: admin/modules/customizer/views/customize.php:227
+#: admin/modules/customizer/views/customize.php:302
+msgid "Cancel"
+msgstr "Annuler"
+
+#: admin/modules/customizer/views/customize.php:238
+msgid "Choose a layout."
+msgstr "Choisissez la mise en page."
+
+#: admin/modules/customizer/views/customize.php:244
+#, fuzzy
+msgid "All unsaved changes will be lost upon switching to a new layout."
+msgstr ""
+"Toutes les modifications non enregistrées seront perdues lors du passage à "
+"une nouvelle mise en page."
+
+#: admin/modules/customizer/views/customize.php:246
+#, fuzzy
+msgid "Save before you proceed."
+msgstr "Enregistrez avant de continuer."
+
+#: admin/modules/customizer/views/customize.php:247
+msgid "Saving..."
+msgstr "Enregistrement en cours..."
+
+#: admin/modules/customizer/views/customize.php:275
+msgid "Use"
+msgstr "Utilisation"
+
+#: admin/modules/customizer/views/customize.php:313
+msgid "Create new"
+msgstr "Créer un nouveau"
+
+#: admin/modules/customizer/views/customize.php:314
+msgid "My templates"
+msgstr "Mes modèles"
+
+#: admin/modules/customizer/views/customize.php:339
+msgid "Visual"
+msgstr "Visuelle"
+
+#: admin/modules/customizer/views/customize.php:340
+msgid "Code"
+msgstr "Code"
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:94
+#, fuzzy, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account %s dashboard %s."
+msgstr ""
+"La clé de licence pour %s a expiré. Vous pouvez réactiver ou acheter une clé "
+"de licence à partir du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:105
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account %s dashboard %s."
+msgstr ""
+"L'abonnement à %s est suspendu. Vous pouvez réactiver l'abonnement à partir "
+"du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:116
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account %s dashboard %s. A new license key will be emailed to you "
+"after your order has been completed."
+msgstr ""
+"L'abonnement à %s a été annulé. Vous pouvez renouveler l'abonnement à partir "
+"du %s tableau de bord %s de votre compte. Une nouvelle clé de licence vous "
+"sera envoyée par e-mail une fois votre commande terminée."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:127
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account %s dashboard %s."
+msgstr ""
+"L'abonnement à %s a expiré. Vous pouvez réactiver l'abonnement à partir du "
+"%s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:138
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account %s dashboard %s."
+msgstr ""
+"L'abonnement à %s a été suspendu. Vous pouvez réactiver l'abonnement à "
+"partir du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:149
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account %s dashboard %s."
+msgstr ""
+"L'abonnement à %s est toujours en attente. Vous pouvez vérifier l'état de "
+"l'abonnement à partir du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:160
+#, fuzzy, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account %s dashboard %s."
+msgstr ""
+"L'abonnement à %s a été placé dans la corbeille et sera bientôt supprimé. "
+"Vous pouvez acheter un nouvel abonnement à partir du %s tableau de bord %s "
+"de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:171
+#, fuzzy, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account %s dashboard %s."
+msgstr ""
+"Un abonnement pour %s est introuvable. Vous pouvez acheter un abonnement à "
+"partir du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:182
+#, fuzzy, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin %s."
+msgstr ""
+"Une clé de licence pour %s est introuvable. Vous avez peut-être oublié de "
+"saisir une clé de licence lors de la configuration de %s, ou la clé a été "
+"désactivée dans votre compte. Vous pouvez réactiver la clé de licence sur "
+"votre plug-in %s."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:193
+#, fuzzy, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account %s dashboard %s."
+msgstr ""
+"L'autorisation de téléchargement pour %s a été révoquée, peut-être en raison "
+"d'une clé de licence ou d'un abonnement expirant. Vous pouvez réactiver ou "
+"acheter une clé de licence à partir du %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:204
+#, fuzzy, php-format
+msgid ""
+"%s has not been activated. Go to the plugin %s and enter the license key and "
+"license email to activate %s."
+msgstr ""
+"%s n'a pas été activé. Accédez au plug-in %s et saisissez la clé de licence "
+"et l'adresse e-mail de licence pour activer %s."
+
+#: admin/modules/licence_manager/classes/class-wt-response-error-messages.php:215
+#, fuzzy, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account %s "
+"dashboard %s."
+msgstr ""
+"Vous avez modifié l'abonnement pour %s, vous devrez donc saisir votre "
+"nouvelle clé de licence API dans la page des paramètres. La clé de licence "
+"doit être arrivée dans votre boîte de réception. Sinon, vous pouvez "
+"l'obtenir en vous connectant au %s tableau de bord %s de votre compte."
+
+#: admin/modules/licence_manager/licence_manager.php:385
+#: admin/modules/licence_manager/licence_manager.php:391
+#: admin/modules/licence_manager/licence_manager.php:417
+#: admin/modules/licence_manager/licence_manager.php:423
+#: admin/modules/licence_manager/licence_manager.php:433
+msgid "Error !!!"
+msgstr "Erreur !!!"
+
+#: admin/modules/licence_manager/licence_manager.php:398
+#, fuzzy
+msgid "Successfully deleted."
+msgstr "Le contenu a bien été supprimé"
+
+#: admin/modules/licence_manager/licence_manager.php:453
+#: admin/modules/licence_manager/licence_manager.php:594
+#, fuzzy
+msgid "Request failed, Please try again"
+msgstr "La requête a échoué. Veuillez réessayer."
+
+#: admin/modules/licence_manager/licence_manager.php:464
+#, fuzzy
+msgid "Successfully deactivated."
+msgstr "Paramètres enregistrés avec succès!"
+
+#: admin/modules/licence_manager/licence_manager.php:511
+#: admin/modules/licence_manager/licence_manager.php:687
+msgid "Please select a product"
+msgstr "Veuillez sélectionner un produit"
+
+#: admin/modules/licence_manager/licence_manager.php:517
+msgid "Invalid product"
+msgstr "Produit non valide"
+
+#: admin/modules/licence_manager/licence_manager.php:523
+#: admin/modules/licence_manager/licence_manager.php:685
+#, fuzzy
+msgid "Please enter Licence key"
+msgstr "Veuillez saisir votre clé de licence"
+
+#: admin/modules/licence_manager/licence_manager.php:536
+#, fuzzy
+msgid ""
+"The chosen plugin already have an active licence. Please activate after "
+"expiring the current licence."
+msgstr ""
+"Le plugin choisi a déjà une licence active. Veuillez l'activer après "
+"l'expiration de la licence actuelle."
+
+#: admin/modules/licence_manager/licence_manager.php:545
+#, fuzzy
+msgid ""
+"The given licence key was already activated for another product. Please "
+"provide another licence key."
+msgstr ""
+"La clé de licence donnée a déjà été activée pour un autre produit. Veuillez "
+"fournir une autre clé de licence."
+
+#: admin/modules/licence_manager/licence_manager.php:553
+#: admin/modules/licence_manager/licence_manager.php:686
+msgid "Please enter Email"
+msgstr "Veuillez saisir votre email"
+
+#: admin/modules/licence_manager/licence_manager.php:562
+#, fuzzy
+msgid "This Licence key already exits in this site."
+msgstr "Cette clé de licence existe déjà sur ce site."
+
+#: admin/modules/licence_manager/licence_manager.php:610
+#, fuzzy
+msgid "Successfully activated."
+msgstr "Activation réussie"
+
+#: admin/modules/licence_manager/licence_manager.php:669
+msgid "Licence"
+msgstr "Licence"
+
+#: admin/modules/licence_manager/licence_manager.php:691
+#, fuzzy
+msgid "Unable to fetch Licence details"
+msgstr "Impossible de récupérer les détails de la licence"
+
+#: admin/modules/licence_manager/licence_manager.php:692
+#: admin/modules/licence_manager/views/_licence_list.php:48
+#, fuzzy
+msgid "No Licence details found."
+msgstr "Aucun détail de licence trouvé."
+
+#: admin/modules/licence_manager/licence_manager.php:693
+msgid "Are you sure?"
+msgstr "Êtes-vous sûr?"
+
+#: admin/modules/licence_manager/views/_licence_list.php:9
+#, fuzzy
+msgid "Licence key"
+msgstr "Clé de la licence"
+
+#: admin/modules/licence_manager/views/_licence_list.php:10
+msgid "Email"
+msgstr "Email:"
+
+#: admin/modules/licence_manager/views/_licence_list.php:11
+msgid "Status"
+msgstr "Statut"
+
+#: admin/modules/licence_manager/views/licence-settings.php:15
+#, fuzzy
+msgid "Activate new Licence"
+msgstr "Activer une nouvelle licence"
+
+#: admin/modules/licence_manager/views/licence-settings.php:30
+#, fuzzy
+msgid "Product:"
+msgstr "Produit"
+
+#: admin/modules/licence_manager/views/licence-settings.php:48
+#, fuzzy
+msgid "Licence Key:"
+msgstr "Clé de la licence"
+
+#: admin/modules/licence_manager/views/licence-settings.php:62
+#, fuzzy
+msgid "Licence details"
+msgstr "Détails de la licence"
+
+#: admin/modules/sequential-number/sequential-number.php:110
+#, php-format
+msgid "%s Number"
+msgstr "%s Numéro"
+
+#: admin/modules/sequential-number/views/sequential-number.php:5
+#, fuzzy
+msgid "Click to append with existing data"
+msgstr "Cliquez pour ajouter avec les données existantes"
+
+#: admin/modules/sequential-number/views/sequential-number.php:17
+msgid "Date formats"
+msgstr "Formats de date"
+
+#: admin/modules/sequential-number/views/sequential-number.php:23
+#, fuzzy
+msgid ""
+"By default the arguments will consider the document date(date on which the "
+"document invoice, shipping label etc is generated) as the input. "
+msgstr ""
+"Par défaut, les arguments prendront en compte la date du document (date à "
+"laquelle la facture du document, l'étiquette d'expédition, etc. est générée) "
+"comme entrée."
+
+#: admin/modules/sequential-number/views/sequential-number.php:26
+#, fuzzy
+msgid "User order date as input instead."
+msgstr "Date de la commande de l'utilisateur comme entrée à la place."
+
+#: admin/modules/sequential-number/views/sequential-number.php:31
+#, fuzzy
+msgid "Select from any of the formats below:"
+msgstr "Sélectionnez l'un des formats ci-dessous:"
+
+#: admin/modules/sequential-number/views/sequential-number.php:36
+msgid "Output"
+msgstr "Sortie"
+
+#: admin/modules/sequential-number/views/sequential-number.php:87
+#, fuzzy, php-format
+msgid ""
+"Use the configurations below to set up a custom %s number with "
+"prefix/suffix/number series or mirror the order number respectively."
+msgstr ""
+"Utilisez les configurations ci-dessous pour définir un numéro %s "
+"personnalisé avec préfixe / suffixe / série de numéros ou refléter le numéro "
+"de commande respectivement."
+
+#: admin/modules/sequential-number/views/sequential-number.php:104
+#, fuzzy, php-format
+msgid "%s number format"
+msgstr "Format de nombre\\"
+
+#: admin/modules/sequential-number/views/sequential-number.php:107
+msgid "[number]"
+msgstr "[number]"
+
+#: admin/modules/sequential-number/views/sequential-number.php:108
+msgid "[number][suffix]"
+msgstr "[number][suffix]"
+
+#: admin/modules/sequential-number/views/sequential-number.php:109
+msgid "[prefix][number]"
+msgstr "[prefix][number]"
+
+#: admin/modules/sequential-number/views/sequential-number.php:110
+msgid "[prefix][number][suffix]"
+msgstr "[prefix][number][suffix]"
+
+#: admin/modules/sequential-number/views/sequential-number.php:116
+#, fuzzy, php-format
+msgid "Use order number as %s number"
+msgstr "Utilisez le numéro de commande comme numéro %s"
+
+#: admin/modules/sequential-number/views/sequential-number.php:126
+#, fuzzy
+msgid ""
+"While using this option multiple refunds(via partial refunds) from the same "
+"order will carry the same credit note number unless prefixed or suffixed "
+"accordingly with an appropriate date format."
+msgstr ""
+"Lors de l'utilisation de cette option, plusieurs remboursements (via des "
+"remboursements partiels) de la même commande porteront le même numéro de "
+"note de crédit, à moins qu'ils ne soient préfixés ou suffixés en conséquence "
+"avec un format de date approprié."
+
+#: admin/modules/sequential-number/views/sequential-number.php:136
+#, fuzzy, php-format
+msgid "%s Start Number"
+msgstr "Numéro de départ"
+
+#: admin/modules/sequential-number/views/sequential-number.php:154
+msgid "Prefix"
+msgstr "Préfixe"
+
+#: admin/modules/sequential-number/views/sequential-number.php:156
+#: admin/modules/sequential-number/views/sequential-number.php:161
+#, fuzzy, php-format
+msgid "Use any of the %s date formats %s or alphanumeric characters."
+msgstr ""
+"Utilisez l'un des %s formats de date %s ou des caractères alphanumériques."
+
+#: admin/modules/sequential-number/views/sequential-number.php:159
+msgid "Suffix"
+msgstr "Suffixe"
+
+#: admin/modules/sequential-number/views/sequential-number.php:165
+#, fuzzy, php-format
+msgid "%s number length"
+msgstr "Longueur du Nombre"
+
+#: admin/modules/sequential-number/views/sequential-number.php:168
+#, fuzzy, php-format
+msgid ""
+"Indicates the total length of the %s number, excluding the length of prefix "
+"and suffix if added. If the length of the generated %s number is less than "
+"the provided, it will be padded with ‘0’. E.g if you specify 7 as %s number "
+"length and your %s number is 8009, it will be represented as 0008009 in the "
+"respective documents."
+msgstr ""
+"Indique la longueur totale du nombre %s, à l'exclusion de la longueur du "
+"préfixe et du suffixe s'ils sont ajoutés. Si la longueur du nombre %s généré "
+"est inférieure à celle fournie, elle sera complétée par «0». Par exemple, si "
+"vous spécifiez 7 comme %s nombre de longueur et que votre %s nombre est 8009,"
+" il sera représenté par 0008009 dans les documents respectifs."
+
+#: admin/modules/sequential-number/views/sequential-number.php:174
+#, fuzzy
+msgid "Update"
+msgstr "Impossible de mettre à jour les paramètres."
+
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:22
+msgid ""
+"WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels"
+msgstr ""
+"WooCommerce PDF Factures, bordereaux d’expédition, bons de livraison et "
+"étiquettes d’expédition"
+
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:27
+msgid "Documents"
+msgstr "Documents"
+
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:28
+#: public/modules/creditnote/views/creditnote-admin-settings.php:6
+#: public/modules/deliverynote/views/admin-settings.php:6
+#: public/modules/dispatchlabel/views/dispatchlabel-admin-settings.php:6
+#: public/modules/invoice/views/invoice-admin-settings.php:6
+#: public/modules/packinglist/views/admin-settings.php:6
+#: public/modules/picklist/views/admin-settings.php:6
+#: public/modules/proformainvoice/views/proformainvoice-admin-settings.php:6
+#: public/modules/shippinglabel/views/admin-settings.php:6
+msgid "General"
+msgstr "Générale"
+
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:29
+#: admin/views/admin-settings-advanced.php:7
+#: public/modules/invoice/views/invoice-admin-settings.php:7
+msgid "Advanced"
+msgstr "Avancée"
+
+#: admin/partials/wf-woocommerce-packing-list-admin-display.php:30
+msgid "Help Guide"
+msgstr "Guide d’aide"
+
+#: admin/views/_custom_field_editor_form.php:8
+#: admin/views/_custom_field_editor_form.php:9
+#: admin/views/_custom_field_editor_form.php:16
+#: admin/views/admin-settings-advanced.php:56
+#: admin/views/admin-settings-advanced.php:57
+#: admin/views/admin-settings-advanced.php:64
+#, fuzzy
+msgid "Add new"
+msgstr "Ajouter un nouveau"
+
+#: admin/views/_custom_field_editor_form.php:13
+#: admin/views/admin-settings-advanced.php:61
+#, fuzzy
+msgid "Previously added"
+msgstr "Ajouté précédemment"
+
+#: admin/views/_custom_field_editor_form.php:22
+#, fuzzy
+msgid "You can edit an existing item by using its key."
+msgstr "Vous pouvez modifier un élément existant en utilisant sa clé."
+
+#: admin/views/_custom_field_editor_form.php:25
+#: admin/views/admin-settings-advanced.php:73
+msgid "Field Name"
+msgstr "Nom du champ"
+
+#: admin/views/_custom_field_editor_form.php:26
+#: admin/views/admin-settings-advanced.php:74
+msgid "Meta Key"
+msgstr "Clé méta"
+
+#: admin/views/_form_field_generator.php:118
+msgid "Choose Order Status"
+msgstr "Choisir le statut de la commande"
+
+#: admin/views/_form_field_generator.php:153
+msgid "Upload"
+msgstr "Télécharger"
+
+#: admin/views/_form_field_generator.php:209
+msgid "Order Meta"
+msgstr "Méta de commande"
+
+#: admin/views/_form_field_generator.php:210
+#, fuzzy
+msgid "Add/Edit Order Meta Field"
+msgstr "Ajouter / modifier un champ de méta de commande"
+
+#: admin/views/_form_field_generator.php:229
+#, fuzzy
+msgid "Product Meta"
+msgstr "Ajouter un méta de produit"
+
+#: admin/views/_form_field_generator.php:231
+#, fuzzy
+msgid "Add/Edit Product Meta"
+msgstr "Ajouter / modifier une méta de produit"
+
+#: admin/views/_form_field_generator.php:235
+msgid "Product Attribute"
+msgstr ""
+"Type d'attribut de produit non valide - le type d'attribut de produit doit "
+"être un de ceux-ci : %s"
+
+#: admin/views/_form_field_generator.php:236
+#, fuzzy
+msgid "Add/Edit Product Attribute"
+msgstr "Modifier l'Attribut du Produit"
+
+#: admin/views/_form_field_generator.php:302
+#, fuzzy
+msgid "--Select One --"
+msgstr "Choisissez un"
+
+#: admin/views/_form_field_generator.php:303
+msgid "Name ascending"
+msgstr "Nom croissant"
+
+#: admin/views/_form_field_generator.php:304
+msgid "Name descending"
+msgstr "Nom décroissant"
+
+#: admin/views/_form_field_generator.php:305
+#, fuzzy
+msgid "SKU ascending"
+msgstr "SKU croissant"
+
+#: admin/views/_form_field_generator.php:306
+#, fuzzy
+msgid "SKU descending"
+msgstr "SKU décroissant"
+
+#: admin/views/admin-settings-advanced.php:9
+#, fuzzy
+msgid ""
+"The below settings can be used to configure additional information with "
+"respect to custom data, RTL support, packaging formats etc"
+msgstr ""
+"Les paramètres ci-dessous peuvent être utilisés pour configurer des "
+"informations supplémentaires concernant les données personnalisées, la prise "
+"en charge RTL, les formats d'emballage, etc."
+
+#: admin/views/admin-settings-advanced.php:14
+#, fuzzy
+msgid "Add additional fields on checkout page"
+msgstr "Ajouter des champs supplémentaires sur la page de paiement"
+
+#: admin/views/admin-settings-advanced.php:31
+msgid "Additional Fields"
+msgstr "Champs supplémentaires"
+
+#: admin/views/admin-settings-advanced.php:51
+#, fuzzy
+msgid "Add/Edit Custom Field"
+msgstr "Modifier le champ personnalisé"
+
+#: admin/views/admin-settings-advanced.php:70
+#, fuzzy
+msgid "You can edit existing Meta items by using Meta key of the item."
+msgstr ""
+"Vous pouvez modifier les éléments Meta existants en utilisant la clé Meta de "
+"l'élément."
+
+#: admin/views/admin-settings-advanced.php:78
+#, fuzzy
+msgid "Is mandatory field?"
+msgstr "Champ obligatoire"
+
+#: admin/views/admin-settings-advanced.php:90
+#, fuzzy
+msgid "Please use only alphabets and underscore for meta key."
+msgstr ""
+"Veuillez n'utiliser que des alphabets et des traits de soulignement pour la "
+"clé méta."
+
+#: admin/views/admin-settings-advanced.php:91
+msgid "Correct"
+msgstr "Correct"
+
+#: admin/views/admin-settings-advanced.php:92
+msgid "Incorrect"
+msgstr "Incorrect"
+
+#: admin/views/admin-settings-advanced.php:102
+#, fuzzy
+msgid "Select/add additional fields in the checkout page e.g VAT, SSN etc"
+msgstr ""
+"Sélectionnez / ajoutez des champs supplémentaires dans la page de paiement, "
+"par exemple TVA, SSN, etc."
+
+#: admin/views/admin-settings-advanced.php:112
+#, fuzzy
+msgid "Preview before printing"
+msgstr "Aperçu avant impression"
+
+#: admin/views/admin-settings-advanced.php:115
+#: admin/views/admin-settings-advanced.php:274
+msgid "Enabled"
+msgstr "activée"
+
+#: admin/views/admin-settings-advanced.php:116
+msgid "Disabled"
+msgstr "désactivé"
+
+#: admin/views/admin-settings-advanced.php:120
+#, fuzzy
+msgid "Tracking number meta"
+msgstr "Indiquer un numéro de suivi"
+
+#: admin/views/admin-settings-advanced.php:122
+#, fuzzy
+msgid "Enter the tracking number meta field to add tracking number information"
+msgstr ""
+"Entrez le champ méta du numéro de suivi pour ajouter des informations sur le "
+"numéro de suivi"
+
+#: admin/views/admin-settings-advanced.php:126
+#, fuzzy
+msgid "Display state name"
+msgstr "Voir Région"
+
+#: admin/views/admin-settings-advanced.php:132
+#, fuzzy
+msgid ""
+"Displays the state name instead of state code in billing and shipping address"
+msgstr ""
+"Affiche le nom de l'état au lieu du code d'état dans l'adresse de "
+"facturation et de livraison"
+
+#: admin/views/admin-settings-advanced.php:136
+#: public/modules/proformainvoice/proformainvoice.php:463
+#, fuzzy
+msgid "Transport terms"
+msgstr "Conditions de transport"
+
+#: admin/views/admin-settings-advanced.php:138
+#: admin/views/admin-settings-advanced.php:144
+#, fuzzy
+msgid "Now only applicable for Proforma invoice"
+msgstr "Désormais applicable uniquement pour la facture pro forma"
+
+#: admin/views/admin-settings-advanced.php:142
+#: public/modules/proformainvoice/proformainvoice.php:464
+msgid "Sale terms"
+msgstr "Conditions de vente"
+
+#: admin/views/admin-settings-advanced.php:149
+#, fuzzy
+msgid "Show tax"
+msgstr "Afficher la taxe"
+
+#: admin/views/admin-settings-advanced.php:165
+#, fuzzy
+msgid "Exclude tax"
+msgstr "Exclure la taxe"
+
+#: admin/views/admin-settings-advanced.php:169
+msgid "Include tax"
+msgstr "Taxes incluses"
+
+#: admin/views/admin-settings-advanced.php:176
+#, fuzzy
+msgid "Setup Tax"
+msgstr "Configuration"
+
+#: admin/views/admin-settings-advanced.php:182
+#, fuzzy
+msgid "Display the product price/subtotal inclusive or exclusive of tax."
+msgstr "Afficher le prix du produit / sous-total TTC ou hors taxes."
+
+#: admin/views/admin-settings-advanced.php:187
+#, fuzzy, php-format
+msgid ""
+"%sNote:%s You have not enabled tax option in WooCommerce. If you need to "
+"apply tax for new orders you need to enable it %s here. %s"
+msgstr ""
+"%s Remarque: %s Vous n'avez pas activé l'option de taxe dans WooCommerce. Si "
+"vous devez appliquer une taxe pour les nouvelles commandes, vous devez "
+"l'activer %s ici. %s"
+
+#: admin/views/admin-settings-advanced.php:199
+msgid "Enable RTL support"
+msgstr "Activer le support RTL"
+
+#: admin/views/admin-settings-advanced.php:205
+#, fuzzy, php-format
+msgid ""
+"RTL support for documents. For better RTL integration in PDF documents "
+"please use our %s mPDF addon %s."
+msgstr ""
+"Prise en charge RTL des documents. Pour une meilleure intégration RTL dans "
+"les documents PDF, veuillez utiliser notre %s module complémentaire mPDF %s."
+
+#: admin/views/admin-settings-advanced.php:226
+#, fuzzy
+msgid "PDF library"
+msgstr "Bibliothèque PDF"
+
+#: admin/views/admin-settings-advanced.php:229
+#, fuzzy
+msgid "The default library to generate PDF"
+msgstr "La bibliothèque par défaut pour générer un PDF"
+
+#: admin/views/admin-settings-advanced.php:235
+msgid "Packaging Type"
+msgstr "Type d’emballage"
+
+#: admin/views/admin-settings-advanced.php:238
+#, fuzzy
+msgid "Pack items individually"
+msgstr "Paquet Articles Individuellement"
+
+#: admin/views/admin-settings-advanced.php:239
+#, fuzzy
+msgid "Box packing"
+msgstr "Box Emballage"
+
+#: admin/views/admin-settings-advanced.php:240
+#, fuzzy
+msgid "Single package per order"
+msgstr "Forfait unique par commande"
+
+#: admin/views/admin-settings-advanced.php:242
+#, fuzzy, php-format
+msgid ""
+"%sSingle package(per order)%s - All the items belonging to an order are "
+"packed together into a single package. Every order will have a respective "
+"package."
+msgstr ""
+"%s Colis unique (par commande) %s: tous les articles appartenant à une "
+"commande sont emballés ensemble dans un seul colis. Chaque commande aura un "
+"colis respectif."
+
+#: admin/views/admin-settings-advanced.php:243
+#, fuzzy, php-format
+msgid ""
+"%sBox packing(per order)%s - All the items belonging to an order are packed "
+"into the respective boxes as per the configuration. Every order may have one "
+"or more boxes based on the configuration."
+msgstr ""
+"%s Boîte d'emballage (par commande) %s - Tous les articles appartenant à une "
+"commande sont emballés dans les boîtes respectives conformément à la "
+"configuration. Chaque commande peut avoir une ou plusieurs boîtes en "
+"fonction de la configuration."
+
+#: admin/views/admin-settings-advanced.php:244
+#, fuzzy, php-format
+msgid ""
+"%sPack items individually%s - Every item from the order/s are packed "
+"individually. e.g if an order has 2 quantities of product A and 1 quantity "
+"of product B, there will be three packages consisting one item each from the "
+"order."
+msgstr ""
+"%s Emballer les articles individuellement %s: chaque article de la ou des "
+"commandes est emballé individuellement. Par exemple, si une commande "
+"comporte 2 quantités de produit A et 1 quantité de produit B, il y aura "
+"trois paquets comprenant un article chacun de la commande."
+
+#: admin/views/admin-settings-advanced.php:263
+msgid "Box Sizes"
+msgstr "tailles de boîte"
+
+#: admin/views/admin-settings-advanced.php:269
+msgid "Length"
+msgstr "Longueur"
+
+#: admin/views/admin-settings-advanced.php:270
+#: public/modules/addresslabel/addresslabel.php:114
+#: public/modules/invoice/invoice.php:288
+msgid "Width"
+msgstr "Largeur"
+
+#: admin/views/admin-settings-advanced.php:271
+#: public/modules/addresslabel/addresslabel.php:124
+#: public/modules/invoice/invoice.php:296
+msgid "Height"
+msgstr "la taille"
+
+#: admin/views/admin-settings-advanced.php:272
+msgid "Box Weight"
+msgstr "Poids de la boîte"
+
+#: admin/views/admin-settings-advanced.php:273
+msgid "Max Weight"
+msgstr "Poids maximum"
+
+#: admin/views/admin-settings-advanced.php:281
+msgid "Add Box"
+msgstr "ajouter une boîte"
+
+#: admin/views/admin-settings-advanced.php:282
+msgid "Remove selected box(es)"
+msgstr "Supprimer la ou les boîtes sélectionnées"
+
+#: admin/views/admin-settings-advanced.php:284
+#, fuzzy
+msgid ""
+"Items will be packed into these boxes depending on its dimensions and volume,"
+" those that do not fit will be packed individually."
+msgstr ""
+"Les articles seront emballés dans ces boîtes en fonction de leurs dimensions "
+"et de leur volume, ceux qui ne rentrent pas seront emballés individuellement."
+
+#: admin/views/admin-settings-advanced.php:321
+#, fuzzy
+msgid "Temp files"
+msgstr "Gardez les fichiers temporaires"
+
+#: admin/views/admin-settings-advanced.php:327
+msgid "File path"
+msgstr "Chemin du fichier"
+
+#: admin/views/admin-settings-advanced.php:338
+msgid "Total files"
+msgstr "Nombre total de fichiers"
+
+#: admin/views/admin-settings-advanced.php:345
+#, fuzzy
+msgid "Temp file(s) found."
+msgstr "Fichier (s) temporaire (s) trouvé (s)."
+
+#: admin/views/admin-settings-advanced.php:354
+msgid "Delete all"
+msgstr "Supprimer tout"
+
+#: admin/views/admin-settings-advanced.php:355
+msgid "Download all"
+msgstr "Tout télécharger"
+
+#: admin/views/admin-settings-advanced.php:366
+msgid "Automatic cleanup"
+msgstr "Nettoyage automatique"
+
+#: admin/views/admin-settings-advanced.php:380
+msgid "Interval"
+msgstr "Intervalle"
+
+#: admin/views/admin-settings-advanced.php:382
+#, fuzzy
+msgid "In minutes. Eg: 1440 for 1 day."
+msgstr "En quelques minutes. Exemple: 1440 pour 1 jour."
+
+#: admin/views/admin-settings-debug.php:7
+msgid "Debug"
+msgstr "Débogage"
+
+#: admin/views/admin-settings-debug.php:8
+#, fuzzy
+msgid "Caution: Settings here are only for advanced users."
+msgstr "Attention: les paramètres ici sont réservés aux utilisateurs avancés."
+
+#: admin/views/admin-settings-debug.php:79
+#, fuzzy
+msgid "Export settings (JSON)"
+msgstr "Paramètres d'exportation (JSON)"
+
+#: admin/views/admin-settings-debug.php:81
+msgid "Export"
+msgstr "Exporter le produit au format CSV:"
+
+#: admin/views/admin-settings-debug.php:96
+#, fuzzy
+msgid "Import settings (JSON)"
+msgstr "Importer les paramètres"
+
+#: admin/views/admin-settings-debug.php:99
+msgid "Import"
+msgstr "Importer"
+
+#: admin/views/admin-settings-documents.php:32
+#, fuzzy
+msgid ""
+"The document types(Invoice, Packing  slip, Shipping label, Dispatch label, "
+"Address label and Delivery note) have been enabled by default for use. Click "
+"on the Settings under the document types to configure the respective "
+"settings. You can use the toggle button to activate/deactivate the "
+"respective document type."
+msgstr ""
+"Les types de documents (facture, bon de livraison, étiquette d'expédition, "
+"étiquette d'expédition, étiquette d'adresse et bon de livraison) ont été "
+"activés par défaut pour l'utilisation. Cliquez sur Paramètres sous les types "
+"de documents pour configurer les paramètres respectifs. Vous pouvez utiliser "
+"le bouton bascule pour activer / désactiver le type de document "
+"correspondant."
+
+#: admin/views/admin-settings-documents.php:35
+msgid "Note:"
+msgstr "Remarque:"
+
+#: admin/views/admin-settings-documents.php:37
+#, fuzzy
+msgid ""
+"Also make sure to fill-up the Company and Address information from the "
+"General tab above prior to customization of the respective document types."
+msgstr ""
+"Assurez-vous également de remplir les informations sur la société et "
+"l'adresse dans l'onglet Général ci-dessus avant de personnaliser les types "
+"de documents respectifs."
+
+#: admin/views/admin-settings-documents.php:38
+#, fuzzy, php-format
+msgid ""
+"For better Unicode/RTL support use our free %s mPDF add-on %s along with "
+"this plugin."
+msgstr ""
+"Pour une meilleure compatibilité Unicode / RTL, utilisez notre %s module "
+"complémentaire mPDF %s gratuit avec ce plug-in."
+
+#: admin/views/admin-settings-general.php:8
+#, fuzzy
+msgid ""
+"The company and shipping from address details from the sections below will "
+"be used to fill up the invoice and related documents accordingly."
+msgstr ""
+"La société et les coordonnées d'expédition à partir des adresses ci-dessous "
+"seront utilisées pour remplir la facture et les documents connexes en "
+"conséquence."
+
+#: admin/views/admin-settings-general.php:9
+msgid "Company Info"
+msgstr "Information d’entreprise"
+
+#: admin/views/admin-settings-general.php:19
+msgid "Logo"
+msgstr "Logo"
+
+#: admin/views/admin-settings-general.php:24
+#, fuzzy
+msgid "Return policy/conditions"
+msgstr "Politique / conditions de retour"
+
+#: admin/views/admin-settings-general.php:29
+#: public/modules/creditnote/creditnote.php:356
+#: public/modules/deliverynote/deliverynote.php:171
+#: public/modules/dispatchlabel/dispatchlabel.php:181
+#: public/modules/invoice/invoice.php:572
+#: public/modules/packinglist/packinglist.php:328
+#: public/modules/picklist/picklist.php:327
+#: public/modules/proformainvoice/proformainvoice.php:466
+#: public/modules/shippinglabel/shippinglabel.php:373
+msgid "Footer"
+msgstr "Bas de page"
+
+#: admin/views/admin-settings-general.php:31
+#, fuzzy
+msgid "Set up a footer which will be used across the respective documents."
+msgstr "Créez un pied de page qui sera utilisé dans les documents respectifs."
+
+#: admin/views/admin-settings-general.php:38
+#, fuzzy
+msgid "Address(Sender details)"
+msgstr "Adresse (détails de l'expéditeur)"
+
+#: admin/views/admin-settings-general.php:42
+#, fuzzy
+msgid "Load from WooCommerce"
+msgstr "Charger depuis WooCommerce"
+
+#: admin/views/admin-settings-general.php:49
+#, fuzzy
+msgid "Department/Business Unit/Sender"
+msgstr "Département / Business Unit / Expéditeur"
+
+#: admin/views/admin-settings-general.php:54
+msgid "Address line 1"
+msgstr "Adresse ligne 1"
+
+#: admin/views/admin-settings-general.php:59
+msgid "Address line 2"
+msgstr "Adresse ligne 2"
+
+#: admin/views/admin-settings-general.php:63
+msgid "City"
+msgstr "Ville"
+
+#: admin/views/admin-settings-general.php:83
+msgid "Country/State"
+msgstr "Pays / État"
+
+#: admin/views/admin-settings-general.php:85
+msgid "Choose a country&hellip;"
+msgstr "Choisissez un pays & hellip;"
+
+#: admin/views/admin-settings-general.php:86
+msgid "Select country"
+msgstr "Sélectionnez un pays"
+
+#: admin/views/admin-settings-general.php:95
+#, fuzzy
+msgid "Postal code"
+msgstr "Sender Code postal"
+
+#: admin/views/admin-settings-general.php:100
+#, fuzzy
+msgid "Contact number"
+msgstr "Activer le numéro de téléphone"
+
+#: admin/views/admin-settings-general.php:104
+msgid "VAT"
+msgstr "T.V.A"
+
+#: admin/views/admin-settings-help.php:48
+#: admin/views/admin-settings-help.php:77
+msgid "Filters"
+msgstr "Filtres"
+
+#: admin/views/admin-settings-help.php:49
+#: admin/views/admin-settings-help.php:53
+msgid "Help Links"
+msgstr "Liens d’aide"
+
+#: admin/views/admin-settings-help.php:58
+msgid "Refer to our documentation to set and get started"
+msgstr "Reportez-vous à notre documentation pour définir et commencer"
+
+#: admin/views/admin-settings-help.php:65
+msgid "Help and Support"
+msgstr "Aide et support"
+
+#: admin/views/admin-settings-help.php:66
+msgid "We would love to help you on any queries or issues."
+msgstr ""
+"Nous serions ravis de vous aider si vous avez des questions ou des problèmes."
+
+#: admin/views/admin-settings-help.php:68
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+#: admin/views/admin-settings-help.php:79
+#, fuzzy
+msgid "Some useful `filters` to extend plugin's functionality"
+msgstr "Quelques `filtres` utiles pour étendre les fonctionnalités du plugin"
+
+#: admin/views/admin-settings-help.php:112
+#, fuzzy
+msgid "Example Code"
+msgstr "Exemple de code"
+
+#: admin/views/admin-settings-save-button.php:6
+msgid "Update Settings"
+msgstr "mettre à jour les paramètres"
+
+#: includes/class-wf-woocommerce-packing-list-box_packing.php:107
+msgid "0"
+msgstr "0"
+
+#: includes/class-wf-woocommerce-packing-list-pdf_generator.php:52
+#: includes/class-wf-woocommerce-packing-list-pdf_generator.php:59
+#, fuzzy
+msgid "Activated PDF library is not found."
+msgstr "La bibliothèque PDF activée est introuvable."
+
+#: public/modules/addresslabel/addresslabel.php:80
+#, fuzzy
+msgid "Preview for font size will not work here."
+msgstr "L'aperçu de la taille de la police ne fonctionnera pas ici."
+
+#: public/modules/addresslabel/addresslabel.php:93
+#, fuzzy
+msgid "Select one"
+msgstr "Choisissez un"
+
+#: public/modules/addresslabel/addresslabel.php:103
+#: public/modules/addresslabel/addresslabel.php:527
+msgid "Layouts"
+msgstr "Mises en page"
+
+#: public/modules/addresslabel/addresslabel.php:135
+msgid "Rows"
+msgstr "Rangées"
+
+#: public/modules/addresslabel/addresslabel.php:141
+msgid "Columns"
+msgstr "Les colonnes"
+
+#: public/modules/addresslabel/addresslabel.php:148
+msgid "Margin top"
+msgstr "Margin top"
+
+#: public/modules/addresslabel/addresslabel.php:158
+msgid "Margin right"
+msgstr "Margin right"
+
+#: public/modules/addresslabel/addresslabel.php:169
+msgid "Margin bottom"
+msgstr "Fond de la marge"
+
+#: public/modules/addresslabel/addresslabel.php:179
+msgid "Margin left"
+msgstr "Marge à gauche"
+
+#: public/modules/addresslabel/addresslabel.php:190
+msgid "Column spacing"
+msgstr "Espacement des colonnes"
+
+#: public/modules/addresslabel/addresslabel.php:200
+msgid "Rows spacing"
+msgstr "Espacement des rangées"
+
+#: public/modules/addresslabel/addresslabel.php:242
+#: public/modules/shippinglabel/shippinglabel.php:270
+msgid "Border size"
+msgstr "Taille de la bordure"
+
+#: public/modules/addresslabel/addresslabel.php:251
+#: public/modules/shippinglabel/shippinglabel.php:279
+msgid "Border type"
+msgstr "Type de bordure"
+
+#: public/modules/addresslabel/addresslabel.php:261
+#: public/modules/shippinglabel/shippinglabel.php:289
+msgid "Border color"
+msgstr "Couleur de la bordure"
+
+#: public/modules/addresslabel/addresslabel.php:528
+#, fuzzy
+msgid "Layout Properties"
+msgstr "Propriétés de la disposition de page"
+
+#: public/modules/addresslabel/addresslabel.php:596
+#: public/modules/addresslabel/addresslabel.php:597
+#: public/modules/addresslabel/addresslabel.php:619
+#: public/modules/addresslabel/addresslabel.php:643
+#: public/modules/addresslabel/views/admin-settings.php:11
+msgid "Address Label"
+msgstr "Étiquette d’adresse"
+
+#: public/modules/addresslabel/addresslabel.php:606
+#: public/modules/addresslabel/addresslabel.php:626
+#: public/modules/addresslabel/addresslabel.php:644
+msgid "Print Address Label"
+msgstr "Étiquette d’adresse d’impression"
+
+#: public/modules/addresslabel/addresslabel.php:620
+#, fuzzy
+msgid "Print/Download Address Label"
+msgstr "Imprimer / télécharger une étiquette d'adresse"
+
+#: public/modules/addresslabel/addresslabel.php:625
+#: public/modules/creditnote/creditnote.php:452
+#: public/modules/deliverynote/deliverynote.php:262
+#: public/modules/dispatchlabel/dispatchlabel.php:281
+#: public/modules/invoice/invoice.php:715
+#: public/modules/packinglist/packinglist.php:429
+#: public/modules/picklist/picklist.php:417
+#: public/modules/proformainvoice/proformainvoice.php:599
+#: public/modules/shippinglabel/shippinglabel.php:471
+msgid "Print"
+msgstr "Impression"
+
+#: public/modules/addresslabel/addresslabel.php:632
+#: public/modules/creditnote/creditnote.php:459
+#: public/modules/deliverynote/deliverynote.php:269
+#: public/modules/dispatchlabel/dispatchlabel.php:288
+#: public/modules/invoice/invoice.php:716
+#: public/modules/packinglist/packinglist.php:436
+#: public/modules/picklist/picklist.php:424
+#: public/modules/proformainvoice/proformainvoice.php:600
+#: public/modules/shippinglabel/shippinglabel.php:481
+#, fuzzy
+msgid "Download"
+msgstr "Télécharger l’étiquette d’expédition"
+
+#: public/modules/addresslabel/addresslabel.php:633
+#, fuzzy
+msgid "Download Address Label"
+msgstr "Télécharger l'étiquette d'adresse"
+
+#: public/modules/addresslabel/addresslabel.php:694
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+"Vous ne disposez pas des autorisations suffisantes pour accéder à cette page."
+
+#: public/modules/addresslabel/addresslabel.php:715
+#: public/modules/creditnote/creditnote.php:620
+#: public/modules/deliverynote/deliverynote.php:354
+#: public/modules/dispatchlabel/dispatchlabel.php:357
+#: public/modules/invoice/invoice.php:968
+#: public/modules/packinglist/packinglist.php:531
+#: public/modules/picklist/picklist.php:498
+#: public/modules/proformainvoice/proformainvoice.php:722
+#: public/modules/shippinglabel/shippinglabel.php:597
+#, fuzzy
+msgid "Customizer module is not active."
+msgstr "Le module de personnalisation n'est pas actif."
+
+#: public/modules/addresslabel/data/data.templates.php:5
+#, fuzzy
+msgid "WL-875(10x3)"
+msgstr "WL-875 (10 x 3)"
+
+#: public/modules/addresslabel/data/data.templates.php:9
+#, fuzzy
+msgid "WL-125(5X2)"
+msgstr "WL-125 (5X2)"
+
+#: public/modules/addresslabel/data/data.templates.php:13
+#, fuzzy
+msgid "WL-150(3X2)"
+msgstr "WL-150 (3X2)"
+
+#: public/modules/addresslabel/data/data.templates.php:17
+#, fuzzy
+msgid "WL-100(7X2)"
+msgstr "WL-100 (7X2)"
+
+#: public/modules/addresslabel/data/data.templates.php:21
+#, fuzzy
+msgid "WL-75(10X2)"
+msgstr "WL-75 (10X2)"
+
+#: public/modules/addresslabel/data/data.templates.php:25
+#, fuzzy
+msgid "WL-25(20X4)"
+msgstr "WL-25 (20X4)"
+
+#: public/modules/addresslabel/data/data.templates.php:29
+#, fuzzy
+msgid "WL-5195(15X4)"
+msgstr "WL-5195 (15X4)"
+
+#: public/modules/addresslabel/data/data.templates.php:33
+#, fuzzy
+msgid "WL-8275(10X3)"
+msgstr "WL-8275 (10X3)"
+
+#: public/modules/addresslabel/data/data.templates.php:37
+#, fuzzy
+msgid "WL-800(6X3)"
+msgstr "WL-800 (6X3)"
+
+#: public/modules/addresslabel/data/data.templates.php:41
+#, fuzzy
+msgid "WL-175(1X1)"
+msgstr "WL-175 (1X1)"
+
+#: public/modules/creditnote/creditnote.php:334
+#: public/modules/proformainvoice/proformainvoice.php:440
+msgid "Document title"
+msgstr "Titre du Document"
+
+#: public/modules/creditnote/creditnote.php:336
+#: public/modules/deliverynote/deliverynote.php:160
+#: public/modules/dispatchlabel/dispatchlabel.php:160
+#: public/modules/invoice/invoice.php:549
+#: public/modules/packinglist/packinglist.php:317
+#: public/modules/proformainvoice/proformainvoice.php:445
+msgid "Order Date"
+msgstr "Date de commande"
+
+#: public/modules/creditnote/creditnote.php:337
+#: public/modules/dispatchlabel/dispatchlabel.php:161
+#: public/modules/invoice/invoice.php:546
+#: public/modules/invoice/invoice.php:760
+msgid "Invoice Number"
+msgstr "Numéro de facture"
+
+#: public/modules/creditnote/creditnote.php:338
+#: public/modules/deliverynote/deliverynote.php:161
+#: public/modules/dispatchlabel/dispatchlabel.php:163
+#: public/modules/invoice/invoice.php:551
+#: public/modules/packinglist/packinglist.php:318
+#: public/modules/picklist/picklist.php:325
+#: public/modules/proformainvoice/proformainvoice.php:446
+#: public/modules/shippinglabel/shippinglabel.php:366
+msgid "From Address"
+msgstr "De l’adresse"
+
+#: public/modules/creditnote/creditnote.php:339
+#: public/modules/deliverynote/deliverynote.php:162
+#: public/modules/dispatchlabel/dispatchlabel.php:164
+#: public/modules/invoice/invoice.php:552
+#: public/modules/packinglist/packinglist.php:319
+#: public/modules/proformainvoice/proformainvoice.php:447
+msgid "Billing Address"
+msgstr "Adresse de facturation"
+
+#: public/modules/creditnote/creditnote.php:340
+#: public/modules/deliverynote/deliverynote.php:163
+#: public/modules/dispatchlabel/dispatchlabel.php:165
+#: public/modules/invoice/invoice.php:553
+#: public/modules/packinglist/packinglist.php:320
+#: public/modules/proformainvoice/proformainvoice.php:448
+msgid "Shipping Address"
+msgstr "Adresse de livraison"
+
+#: public/modules/creditnote/creditnote.php:341
+#: public/modules/dispatchlabel/dispatchlabel.php:166
+msgid "Return Address"
+msgstr "adresse de retour"
+
+#: public/modules/creditnote/creditnote.php:342
+#: public/modules/deliverynote/deliverynote.php:164
+#: public/modules/dispatchlabel/dispatchlabel.php:167
+#: public/modules/invoice/invoice.php:554
+#: public/modules/packinglist/packinglist.php:321
+#: public/modules/proformainvoice/proformainvoice.php:449
+#: public/modules/shippinglabel/shippinglabel.php:370
+msgid "Email Field"
+msgstr "Courriel"
+
+#: public/modules/creditnote/creditnote.php:343
+#: public/modules/deliverynote/deliverynote.php:165
+#: public/modules/dispatchlabel/dispatchlabel.php:168
+#: public/modules/invoice/invoice.php:555
+#: public/modules/packinglist/packinglist.php:322
+#: public/modules/proformainvoice/proformainvoice.php:450
+#: public/modules/shippinglabel/shippinglabel.php:371
+msgid "Tel Field"
+msgstr "Tel Field"
+
+#: public/modules/creditnote/creditnote.php:344
+#: public/modules/deliverynote/deliverynote.php:168
+#: public/modules/dispatchlabel/dispatchlabel.php:169
+#: public/modules/invoice/invoice.php:558
+#: public/modules/packinglist/packinglist.php:325
+#: public/modules/proformainvoice/proformainvoice.php:451
+msgid "Shipping Method"
+msgstr "Méthode d’envoi"
+
+#: public/modules/creditnote/creditnote.php:345
+#: public/modules/deliverynote/deliverynote.php:169
+#: public/modules/dispatchlabel/dispatchlabel.php:170
+#: public/modules/invoice/invoice.php:559
+#: public/modules/packinglist/packinglist.php:326
+#: public/modules/proformainvoice/proformainvoice.php:452
+#: public/modules/shippinglabel/shippinglabel.php:369
+msgid "Tracking Number"
+msgstr "Numéro de suivi"
+
+#: public/modules/creditnote/creditnote.php:346
+#: public/modules/deliverynote/deliverynote.php:170
+#: public/modules/dispatchlabel/dispatchlabel.php:171
+#: public/modules/invoice/invoice.php:560
+#: public/modules/packinglist/packinglist.php:327
+#: public/modules/picklist/picklist.php:326
+#: public/modules/proformainvoice/proformainvoice.php:453
+msgid "Product Table"
+msgstr "Produit table"
+
+#: public/modules/creditnote/creditnote.php:353
+#: public/modules/dispatchlabel/dispatchlabel.php:178
+#: public/modules/invoice/invoice.php:567
+#: public/modules/proformainvoice/proformainvoice.php:460
+msgid "Coupon info"
+msgstr "Info coupon"
+
+#: public/modules/creditnote/creditnote.php:357
+#: public/modules/deliverynote/deliverynote.php:172
+#: public/modules/dispatchlabel/dispatchlabel.php:182
+#: public/modules/invoice/invoice.php:573
+#: public/modules/packinglist/packinglist.php:329
+#: public/modules/shippinglabel/shippinglabel.php:374
+msgid "Return Policy"
+msgstr "Politique de retour"
+
+#: public/modules/creditnote/creditnote.php:423
+#: public/modules/creditnote/creditnote.php:424
+#: public/modules/creditnote/creditnote.php:446
+#: public/modules/creditnote/creditnote.php:470
+#: public/modules/creditnote/creditnote.php:589
+#: public/modules/creditnote/views/creditnote-admin-settings.php:11
+msgid "Credit Note"
+msgstr "Note de crédit"
+
+#: public/modules/creditnote/creditnote.php:433
+#: public/modules/creditnote/creditnote.php:453
+#: public/modules/creditnote/creditnote.php:471
+#, fuzzy
+msgid "Print Credit Note"
+msgstr "Crédit à l'impression"
+
+#: public/modules/creditnote/creditnote.php:447
+#, fuzzy
+msgid "Print/Download Credit Note"
+msgstr "Imprimer / télécharger la note de crédit"
+
+#: public/modules/creditnote/creditnote.php:460
+#, fuzzy
+msgid "Download Credit Note"
+msgstr "Télécharger l'Avoir (PDF)"
+
+#: public/modules/creditnote/creditnote.php:547
+#, fuzzy
+msgid "Credit Note Number"
+msgstr "Numéro de note de crédit"
+
+#: public/modules/creditnote/creditnote.php:554
+#, fuzzy
+msgid "Credit Note Date"
+msgstr "Date note de crédit :"
+
+#: public/modules/creditnote/data/data.templates.php:5
+#, fuzzy
+msgid "Credit Note 2"
+msgstr "Note Crédit"
+
+#: public/modules/creditnote/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Select an creditnote number format from the drop-down. You can choose to "
+"have a prefix, suffix or both for your creditnote number."
+msgstr ""
+"Sélectionnez un format de numéro de note de crédit dans la liste déroulante. "
+"Vous pouvez choisir d'avoir un préfixe, un suffixe ou les deux pour votre "
+"numéro de note de crédit."
+
+#: public/modules/creditnote/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"You can mirror the order number as the creditnote number by enabling this "
+"option, else, you can create an creditnote number of your own choice by "
+"specifying an creditnote start number."
+msgstr ""
+"Vous pouvez reproduire le numéro de commande en tant que numéro de note de "
+"crédit en activant cette option, sinon, vous pouvez créer un numéro de note "
+"de crédit de votre choix en spécifiant un numéro de début de note de crédit."
+
+#: public/modules/creditnote/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Set a starting number for the creditnote number to have a specific number "
+"other than the order number. Reset provisions are also allowed."
+msgstr ""
+"Définissez un numéro de départ pour que le numéro de note de crédit ait un "
+"numéro spécifique autre que le numéro de commande. Les dispositions de "
+"réinitialisation sont également autorisées."
+
+#: public/modules/creditnote/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Specify a prefix that will appear at the leading edge of the creditnote "
+"number. Provisions are included to select predefined date formats as "
+"prefixes."
+msgstr ""
+"Spécifiez un préfixe qui apparaîtra sur le bord avant du numéro de note de "
+"crédit. Des dispositions sont incluses pour sélectionner des formats de date "
+"prédéfinis comme préfixes."
+
+#: public/modules/creditnote/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Specify a suffix that will appear at the trailing edge of the creditnote "
+"number. Provisions are included to select predefined date formats as "
+"suffixes."
+msgstr ""
+"Spécifiez un suffixe qui apparaîtra sur le bord arrière du numéro de note de "
+"crédit. Des dispositions sont incluses pour sélectionner des formats de date "
+"prédéfinis comme suffixes."
+
+#: public/modules/creditnote/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Indicates the total length of the creditnote number, excluding the length of "
+"prefix and suffix if added. If the length of the generated creditnote number "
+"is less than the provided, it will be padded with ‘0’. E.g if you specify 7 "
+"as creditnote length and your creditnote number is 8009, it will be "
+"represented as 0008009 in the respective documents."
+msgstr ""
+"Indique la longueur totale du numéro de note de crédit, à l'exclusion de la "
+"longueur du préfixe et du suffixe s'ils sont ajoutés. Si la longueur du "
+"numéro de note de crédit généré est inférieure à celle fournie, elle sera "
+"complétée par «0». Par exemple, si vous spécifiez 7 comme longueur de note "
+"de crédit et que votre numéro de note de crédit est 8009, il sera représenté "
+"par 0008009 dans les documents respectifs."
+
+#: public/modules/creditnote/data/data.tooltip.php:9
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the "
+"creditnote. Defaulted to certain common meta values that can be selected "
+"from the drop-down. Click on Add/Edit Order meta field button and enter "
+"appropriate field name/meta key to include respective custom meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"la note de crédit. Par défaut, certaines méta-valeurs communes peuvent être "
+"sélectionnées dans la liste déroulante. Cliquez sur le bouton Ajouter / "
+"Modifier le champ méta de commande et entrez le nom du champ / la clé méta "
+"approprié pour inclure la méta personnalisée respective."
+
+#: public/modules/creditnote/data/data.tooltip.php:10
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"creditnote. Click on Add/Edit product meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la note de crédit. Cliquez sur le bouton Ajouter / Modifier le champ méta du "
+"produit et entrez le nom du champ / la clé méta approprié pour inclure le "
+"méta produit personnalisé respectif."
+
+#: public/modules/creditnote/data/data.tooltip.php:11
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"creditnote. Click on Add/Edit product attribute button and enter appropriate "
+"field name/meta key to include respective custom product attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la note de crédit. Cliquez sur le bouton Ajouter / Modifier un attribut de "
+"produit et entrez le nom de champ / clé méta approprié pour inclure "
+"l'attribut de produit personnalisé respectif."
+
+#: public/modules/creditnote/data/data.tooltip.php:12
+#: public/modules/creditnote/views/general.php:55
+#, fuzzy
+msgid "PDF version of credit note will be attached with the refund email"
+msgstr ""
+"La version PDF de la note de crédit sera jointe à l'e-mail de remboursement"
+
+#: public/modules/creditnote/views/general.php:7
+#, fuzzy
+msgid "Configure the general settings required for credit note."
+msgstr "Configurez les paramètres généraux requis pour la note de crédit."
+
+#: public/modules/creditnote/views/general.php:13
+#: public/modules/deliverynote/views/general.php:34
+#: public/modules/dispatchlabel/views/general.php:22
+#: public/modules/invoice/views/general.php:41
+#: public/modules/packinglist/views/general.php:34
+#: public/modules/picklist/views/general.php:53
+#: public/modules/proformainvoice/views/general.php:32
+#, fuzzy
+msgid "Sort products by"
+msgstr "Trier les produits par"
+
+#: public/modules/creditnote/views/general.php:19
+#: public/modules/dispatchlabel/views/general.php:28
+#: public/modules/invoice/views/advanced.php:15
+#: public/modules/proformainvoice/views/general.php:83
+#: public/modules/shippinglabel/views/general.php:67
+#, fuzzy
+msgid "Order meta fields"
+msgstr "Commander des champs méta"
+
+#: public/modules/creditnote/views/general.php:22
+#, fuzzy
+msgid "Select/add additional order information in the credit note."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans la "
+"note de crédit."
+
+#: public/modules/creditnote/views/general.php:26
+#: public/modules/deliverynote/views/general.php:47
+#: public/modules/dispatchlabel/views/general.php:35
+#: public/modules/invoice/views/advanced.php:22
+#: public/modules/packinglist/views/general.php:47
+#: public/modules/picklist/views/general.php:59
+#: public/modules/proformainvoice/views/general.php:90
+#, fuzzy
+msgid "Product meta fields"
+msgstr "Produit champs particulier"
+
+#: public/modules/creditnote/views/general.php:29
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the credit note."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"la note de crédit."
+
+#: public/modules/creditnote/views/general.php:33
+#: public/modules/deliverynote/views/general.php:54
+#: public/modules/dispatchlabel/views/general.php:42
+#: public/modules/invoice/views/advanced.php:29
+#: public/modules/packinglist/views/general.php:54
+#: public/modules/picklist/views/general.php:66
+#: public/modules/proformainvoice/views/general.php:97
+msgid "Product attributes"
+msgstr "Caractéristiques Produit"
+
+#: public/modules/creditnote/views/general.php:36
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the credit note."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans la note de crédit."
+
+#: public/modules/creditnote/views/general.php:40
+#: public/modules/deliverynote/views/general.php:24
+#: public/modules/dispatchlabel/views/general.php:13
+#: public/modules/invoice/views/general.php:92
+#: public/modules/packinglist/views/general.php:24
+#: public/modules/picklist/views/general.php:35
+#: public/modules/proformainvoice/views/general.php:23
+#, fuzzy
+msgid "Enable variation data"
+msgstr "Activer les données de variation"
+
+#: public/modules/creditnote/views/general.php:49
+#, fuzzy
+msgid "Attach credit note PDF in email"
+msgstr "Joindre un PDF de note de crédit dans un e-mail"
+
+#: public/modules/deliverynote/data/data.templates.php:5
+#: public/modules/invoice/data/data.templates.php:5
+#: public/modules/packinglist/data/data.templates.php:5
+#: public/modules/picklist/data/data.templates.php:5
+#: public/modules/proformainvoice/data/data.templates.php:5
+msgid "Classic"
+msgstr "Classique"
+
+#: public/modules/deliverynote/data/data.templates.php:10
+#: public/modules/invoice/data/data.templates.php:10
+#: public/modules/packinglist/data/data.templates.php:10
+#: public/modules/proformainvoice/data/data.templates.php:10
+msgid "Regal"
+msgstr "Regal"
+
+#: public/modules/deliverynote/data/data.templates.php:15
+#: public/modules/invoice/data/data.templates.php:15
+#: public/modules/packinglist/data/data.templates.php:15
+#: public/modules/proformainvoice/data/data.templates.php:15
+msgid "Imperial"
+msgstr "Impérial"
+
+#: public/modules/deliverynote/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Products falling under the same category will be grouped together and "
+"displayed on the delivery note, if enabled."
+msgstr ""
+"Les produits appartenant à la même catégorie seront regroupés et affichés "
+"sur le bon de livraison, s'il est activé."
+
+#: public/modules/deliverynote/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"To display the variation information of the product beneath the product name "
+"in the packing slip product table, enable this option."
+msgstr ""
+"Pour afficher les informations de variation du produit sous le nom du "
+"produit dans le tableau des produits du bon de livraison, activez cette "
+"option."
+
+#: public/modules/deliverynote/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the packing "
+"slip. Defaulted to certain common meta values that can be selected from the "
+"drop-down. Click on Add/Edit order meta field button and enter appropriate "
+"field name/meta key to include respective custom meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"le bon de livraison. Par défaut, certaines méta-valeurs communes peuvent "
+"être sélectionnées dans la liste déroulante. Cliquez sur le bouton Ajouter / "
+"Modifier le champ méta de commande et entrez le nom du champ / la clé méta "
+"approprié pour inclure la méta personnalisée respective."
+
+#: public/modules/deliverynote/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"delivery note. Click on Add/Edit product meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"le bon de livraison. Cliquez sur le bouton Ajouter / Modifier le champ méta "
+"du produit et entrez le nom du champ / la clé méta approprié pour inclure le "
+"méta produit personnalisé respectif."
+
+#: public/modules/deliverynote/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"delivery note. Click on Add/Edit product attribute button and enter "
+"appropriate field name/meta key to include respective custom product "
+"attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"le bon de livraison. Cliquez sur le bouton Ajouter / Modifier un attribut de "
+"produit et entrez le nom de champ / clé méta approprié pour inclure "
+"l'attribut de produit personnalisé respectif."
+
+#: public/modules/deliverynote/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Enabling this option will allow your customers to print the packing slip "
+"(via print button) from their order mail as well as after checkout."
+msgstr ""
+"L'activation de cette option permettra à vos clients d'imprimer le bon de "
+"livraison (via le bouton d'impression) à partir de leur courrier de commande "
+"ainsi qu'après le paiement."
+
+#: public/modules/deliverynote/data/data.tooltip.php:9
+#: public/modules/packinglist/data/data.tooltip.php:9
+#, fuzzy
+msgid ""
+"Insert additional footer information to override the footer inserted from "
+"the general settings. If left blank, it assumes the footer content from "
+"general settings."
+msgstr ""
+"Insérez des informations de pied de page supplémentaires pour remplacer le "
+"pied de page inséré à partir des paramètres généraux. S'il est laissé vide, "
+"il prend en compte le contenu du pied de page des paramètres généraux."
+
+#: public/modules/deliverynote/deliverynote.php:158
+#: public/modules/invoice/invoice.php:570
+#: public/modules/packinglist/packinglist.php:330
+#: public/modules/shippinglabel/shippinglabel.php:372
+msgid "Bar Code"
+msgstr "Code à barre"
+
+#: public/modules/deliverynote/deliverynote.php:159
+#: public/modules/invoice/invoice.php:547
+#: public/modules/packinglist/packinglist.php:316
+#: public/modules/proformainvoice/proformainvoice.php:444
+msgid "Order Number"
+msgstr "Numéro de commande"
+
+#: public/modules/deliverynote/deliverynote.php:166
+#: public/modules/invoice/invoice.php:556
+#: public/modules/packinglist/packinglist.php:323
+msgid "VAT Field"
+msgstr "Champ VAT"
+
+#: public/modules/deliverynote/deliverynote.php:167
+#: public/modules/invoice/invoice.php:557
+#: public/modules/packinglist/packinglist.php:324
+msgid "SSN Field"
+msgstr "Champ SSN"
+
+#: public/modules/deliverynote/deliverynote.php:234
+#: public/modules/deliverynote/deliverynote.php:235
+#, fuzzy
+msgid "Delivery Note"
+msgstr "Imprimer le bon de livraison"
+
+#: public/modules/deliverynote/deliverynote.php:244
+#: public/modules/deliverynote/deliverynote.php:263
+#: public/modules/deliverynote/deliverynote.php:281
+#: public/modules/deliverynote/deliverynote.php:295
+#, fuzzy
+msgid "Print Delivery note"
+msgstr "Imprimer le bon de livraison"
+
+#: public/modules/deliverynote/deliverynote.php:256
+#: public/modules/deliverynote/deliverynote.php:280
+#: public/modules/deliverynote/views/admin-settings.php:11
+#, fuzzy
+msgid "Delivery note"
+msgstr "Imprimer le bon de livraison"
+
+#: public/modules/deliverynote/deliverynote.php:257
+#, fuzzy
+msgid "Print/Download Delivery note"
+msgstr "Imprimer / télécharger le bon de livraison"
+
+#: public/modules/deliverynote/deliverynote.php:270
+#, fuzzy
+msgid "Download Delivery note"
+msgstr "Télécharger le bon de livraison"
+
+#: public/modules/deliverynote/deliverynote.php:391
+#, fuzzy
+msgid "Unable to print Delivery note. Please check the items in the order."
+msgstr ""
+"Impossible d’imprimer le bon de livraison. Veuillez vérifier les points dans "
+"l’ordre."
+
+#: public/modules/deliverynote/views/general.php:8
+#, fuzzy
+msgid "Configure the general settings required for delivery note."
+msgstr "Configurez les paramètres généraux requis pour le bon de livraison."
+
+#: public/modules/deliverynote/views/general.php:15
+#: public/modules/invoice/views/general.php:22
+#: public/modules/packinglist/views/general.php:15
+#: public/modules/picklist/views/general.php:15
+msgid "Group by category"
+msgstr "Grouper par catégorie"
+
+#: public/modules/deliverynote/views/general.php:40
+#: public/modules/packinglist/views/general.php:40
+#, fuzzy
+msgid "Order meta fields "
+msgstr "Commander des champs méta"
+
+#: public/modules/deliverynote/views/general.php:43
+#, fuzzy
+msgid "Select/add additional order information in the delivery note."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans le "
+"bon de livraison."
+
+#: public/modules/deliverynote/views/general.php:50
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the delivery note."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"le bon de livraison."
+
+#: public/modules/deliverynote/views/general.php:57
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the delivery note."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans le bon de livraison."
+
+#: public/modules/deliverynote/views/general.php:61
+#, fuzzy
+msgid "Enable print delivery note option for order status"
+msgstr ""
+"Activer l'option d'impression du bon de livraison pour l'état de la commande"
+
+#: public/modules/deliverynote/views/general.php:63
+#, fuzzy
+msgid "Adds print delivery note button to the order email for chosen status"
+msgstr ""
+"Ajoute le bouton de bon de livraison d'impression à l'e-mail de commande "
+"pour l'état choisi"
+
+#: public/modules/deliverynote/views/general.php:69
+#: public/modules/packinglist/views/general.php:87
+#, fuzzy
+msgid "Custom footer"
+msgstr "Pied de page personnalisé"
+
+#: public/modules/deliverynote/views/general.php:71
+#: public/modules/invoice/views/advanced.php:38
+#: public/modules/packinglist/views/general.php:89
+#: public/modules/proformainvoice/views/general.php:106
+#, fuzzy
+msgid "If left blank, defaulted to footer from General settings."
+msgstr ""
+"S'il est laissé vide, le pied de page est défini par défaut dans les "
+"paramètres généraux."
+
+#: public/modules/dispatchlabel/data/data.templates.php:5
+#, fuzzy
+msgid "Dispatch Label 1"
+msgstr "Étiquette d'expédition 1"
+
+#: public/modules/dispatchlabel/data/data.templates.php:10
+#, fuzzy
+msgid "Dispatch Label 2"
+msgstr "Étiquette d'expédition 2"
+
+#: public/modules/dispatchlabel/data/data.templates.php:15
+#, fuzzy
+msgid "Dispatch Label 3"
+msgstr "Étiquette d'expédition 3"
+
+#: public/modules/dispatchlabel/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the "
+"dispatch label. Defaulted to certain common meta values that can be selected "
+"from the drop-down. Click on Add/Edit order meta field button and into the "
+"pop up enter appropriate field name and meta key to include other custom "
+"meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"l'étiquette d'expédition. Par défaut, certaines méta-valeurs communes "
+"peuvent être sélectionnées dans la liste déroulante. Cliquez sur le bouton "
+"Ajouter / Modifier le champ méta de commande et dans la fenêtre contextuelle,"
+" entrez le nom du champ approprié et la clé méta pour inclure d'autres méta "
+"personnalisées."
+
+#: public/modules/dispatchlabel/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"Product meta fields: Allows displaying additional details pertaining to your "
+"product in the dispatch label. Click on Add/Edit product meta field button "
+"and enter appropriate field name/meta key to include respective custom "
+"product meta."
+msgstr ""
+"Méta-champs du produit: permet d'afficher des détails supplémentaires "
+"relatifs à votre produit dans l'étiquette d'expédition. Cliquez sur le "
+"bouton Ajouter / Modifier le champ méta du produit et entrez le nom du champ "
+"/ la clé méta approprié pour inclure le méta produit personnalisé respectif."
+
+#: public/modules/dispatchlabel/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"dispatch label. Click on Add/Edit product attribute button and enter "
+"appropriate field name/meta key to include respective custom product "
+"attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"l'étiquette d'expédition. Cliquez sur le bouton Ajouter / Modifier un "
+"attribut de produit et entrez le nom de champ / clé méta approprié pour "
+"inclure l'attribut de produit personnalisé respectif."
+
+#: public/modules/dispatchlabel/dispatchlabel.php:162
+msgid "Dispatch Date"
+msgstr "Date d’envoi"
+
+#: public/modules/dispatchlabel/dispatchlabel.php:239
+#: public/modules/dispatchlabel/dispatchlabel.php:240
+#: public/modules/dispatchlabel/dispatchlabel.php:275
+#: public/modules/dispatchlabel/dispatchlabel.php:299
+#: public/modules/dispatchlabel/views/dispatchlabel-admin-settings.php:11
+msgid "Dispatch Label"
+msgstr "Étiquette d’expédition"
+
+#: public/modules/dispatchlabel/dispatchlabel.php:249
+#: public/modules/dispatchlabel/dispatchlabel.php:282
+#: public/modules/dispatchlabel/dispatchlabel.php:300
+msgid "Print Dispatch Label"
+msgstr "Imprimer l’étiquette d’expédition"
+
+#: public/modules/dispatchlabel/dispatchlabel.php:276
+#, fuzzy
+msgid "Print/Download Dispatch Label"
+msgstr "Imprimer / télécharger l'étiquette d'expédition"
+
+#: public/modules/dispatchlabel/dispatchlabel.php:289
+msgid "Download Dispatch Label"
+msgstr "Télécharger l’étiquette d’expédition"
+
+#: public/modules/dispatchlabel/views/general.php:7
+#, fuzzy
+msgid "Configure the general settings required for dispatch label."
+msgstr ""
+"Configurez les paramètres généraux requis pour l'étiquette d'expédition."
+
+#: public/modules/dispatchlabel/views/general.php:31
+#, fuzzy
+msgid "Select/add additional order information in the dispatch label."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans "
+"l'étiquette d'expédition."
+
+#: public/modules/dispatchlabel/views/general.php:38
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the dispatch label."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"l'étiquette d'expédition."
+
+#: public/modules/dispatchlabel/views/general.php:45
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the dispatch label."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans l'étiquette d'expédition."
+
+#: public/modules/invoice/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"By enabling, you are permitting admin as well as customers to have access to "
+"print, download, attach invoice in the mail, etc from wherever applicable. "
+"Disabling will remove all the provisions, still, admin can customize the "
+"template, set invoice number pattern and so on."
+msgstr ""
+"En activant, vous autorisez l'administrateur ainsi que les clients à avoir "
+"accès pour imprimer, télécharger, joindre une facture dans le courrier, etc. "
+"de partout où cela est possible. La désactivation supprimera toutes les "
+"dispositions, mais l'administrateur peut personnaliser le modèle, définir le "
+"modèle de numéro de facture, etc."
+
+#: public/modules/invoice/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"If you choose 'No' then the invoice date will be the date on which it is "
+"printed, downloaded or attached in the mail."
+msgstr ""
+"Si vous choisissez «Non», la date de la facture sera la date à laquelle elle "
+"est imprimée, téléchargée ou jointe au courrier."
+
+#: public/modules/invoice/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"PDF version of the currently active invoice template will be attached with "
+"the Woocommerce order emails sent to customers and admins for the chosen "
+"order statuses."
+msgstr ""
+"La version PDF du modèle de facture actuellement actif sera jointe aux e-"
+"mails de commande Woocommerce envoyés aux clients et aux administrateurs "
+"pour les statuts de commande choisis."
+
+#: public/modules/invoice/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Choose the order statuses for which an email is to be sent to the customer "
+"with an invoice attached to it."
+msgstr ""
+"Choisissez les statuts de commande pour lesquels un e-mail doit être envoyé "
+"au client avec une facture jointe."
+
+#: public/modules/invoice/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Enabling this option will allow your customers to print the invoice (via "
+"print button) from their order mail as well as after checkout."
+msgstr ""
+"L'activation de cette option permettra à vos clients d'imprimer la facture "
+"(via le bouton d'impression) à partir de leur courrier de commande ainsi "
+"qu'après le paiement."
+
+#: public/modules/invoice/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"To display the variation information of the product beneath the product name "
+"in the invoice product table, enable this option."
+msgstr ""
+"Pour afficher les informations de variation du produit sous le nom du "
+"produit dans la table des produits facturés, activez cette option."
+
+#: public/modules/invoice/data/data.tooltip.php:9
+#, fuzzy
+msgid ""
+"If your store has one or more taxes configured, enabling this option will "
+"categorize different taxes in separate columns in the invoice product table."
+msgstr ""
+"Si votre boutique a une ou plusieurs taxes configurées, l'activation de "
+"cette option classera les différentes taxes dans des colonnes séparées dans "
+"le tableau des produits de facturation."
+
+#: public/modules/invoice/data/data.tooltip.php:10
+#, fuzzy
+msgid ""
+"Upload to include a unique signature which will appear below the product "
+"table in the invoice."
+msgstr ""
+"Téléchargez pour inclure une signature unique qui apparaîtra sous le tableau "
+"des produits dans la facture."
+
+#: public/modules/invoice/data/data.tooltip.php:11
+#, fuzzy
+msgid ""
+"Upload to include a unique logo in the invoice other than the one loaded "
+"from general settings.  If left blank, then defaulted to the logo from "
+"general settings."
+msgstr ""
+"Téléchargez pour inclure un logo unique dans la facture autre que celui "
+"chargé à partir des paramètres généraux. Si ce champ est laissé vide, le "
+"logo est défini par défaut dans les paramètres généraux."
+
+#: public/modules/invoice/data/data.tooltip.php:12
+#, fuzzy
+msgid ""
+"Select an invoice number format from the drop-down. You can choose to have a "
+"prefix, suffix or both for your invoice number."
+msgstr ""
+"Sélectionnez un format de numéro de facture dans la liste déroulante. Vous "
+"pouvez choisir d'avoir un préfixe, un suffixe ou les deux pour votre numéro "
+"de facture."
+
+#: public/modules/invoice/data/data.tooltip.php:13
+#, fuzzy
+msgid ""
+"You can mirror the order number as the invoice number by enabling this "
+"option, else, you can create an invoice number of your own choice by "
+"specifying an invoice start number."
+msgstr ""
+"Vous pouvez refléter le numéro de commande comme numéro de facture en "
+"activant cette option, sinon, vous pouvez créer un numéro de facture de "
+"votre choix en spécifiant un numéro de début de facture."
+
+#: public/modules/invoice/data/data.tooltip.php:14
+#, fuzzy
+msgid ""
+"Set a starting number for the invoice number to have a specific number other "
+"than the order number. Reset provisions are also allowed."
+msgstr ""
+"Définissez un numéro de départ pour que le numéro de facture ait un numéro "
+"spécifique autre que le numéro de commande. Les dispositions de "
+"réinitialisation sont également autorisées."
+
+#: public/modules/invoice/data/data.tooltip.php:15
+#, fuzzy
+msgid ""
+"Specify a prefix that will appear at the leading edge of the invoice number. "
+"Provisions are included to select predefined date formats as prefixes."
+msgstr ""
+"Spécifiez un préfixe qui apparaîtra sur le bord avant du numéro de facture. "
+"Des dispositions sont incluses pour sélectionner des formats de date "
+"prédéfinis comme préfixes."
+
+#: public/modules/invoice/data/data.tooltip.php:16
+#, fuzzy
+msgid ""
+"Specify a suffix that will appear at the trailing edge of the invoice number."
+" Provisions are included to select predefined date formats as suffixes."
+msgstr ""
+"Spécifiez un suffixe qui apparaîtra sur le bord arrière du numéro de facture."
+" Des dispositions sont incluses pour sélectionner des formats de date "
+"prédéfinis comme suffixes."
+
+#: public/modules/invoice/data/data.tooltip.php:17
+#, fuzzy
+msgid ""
+"Indicates the total length of the invoice number, excluding the length of "
+"prefix and suffix if added. If the length of the generated invoice number is "
+"less than the provided, it will be padded with ‘0’. E.g if you specify 7 as "
+"invoice length and your invoice number is 8009, it will be represented as "
+"0008009 in the respective documents."
+msgstr ""
+"Indique la longueur totale du numéro de facture, à l'exclusion de la "
+"longueur du préfixe et du suffixe s'il est ajouté. Si la longueur du numéro "
+"de facture généré est inférieure à celle fournie, elle sera complétée par "
+"«0». Par exemple, si vous spécifiez 7 comme longueur de facture et que votre "
+"numéro de facture est 8009, il sera représenté par 0008009 dans les "
+"documents respectifs."
+
+#: public/modules/invoice/data/data.tooltip.php:18
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the invoice."
+" Defaulted to certain common meta values that can be selected from the drop-"
+"down. Click on Add/Edit Order meta field button and enter appropriate field "
+"name/meta key to include respective custom meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"la facture. Par défaut, certaines méta-valeurs communes peuvent être "
+"sélectionnées dans la liste déroulante. Cliquez sur le bouton Ajouter / "
+"Modifier le champ méta de commande et entrez le nom du champ / la clé méta "
+"approprié pour inclure la méta personnalisée respective."
+
+#: public/modules/invoice/data/data.tooltip.php:19
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"invoice. Click on Add/Edit product meta field button and enter appropriate "
+"field name/meta key to include respective custom product meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la facture. Cliquez sur le bouton Ajouter / Modifier le champ méta du "
+"produit et entrez le nom du champ / la clé méta approprié pour inclure le "
+"méta produit personnalisé respectif."
+
+#: public/modules/invoice/data/data.tooltip.php:20
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"invoice. Click on Add/Edit product attribute button and enter appropriate "
+"field name/meta key to include respective custom product attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la facture. Cliquez sur le bouton Ajouter / Modifier un attribut de produit "
+"et entrez le nom de champ / clé méta approprié pour inclure l'attribut de "
+"produit personnalisé respectif."
+
+#: public/modules/invoice/data/data.tooltip.php:21
+#: public/modules/proformainvoice/data/data.tooltip.php:14
+#, fuzzy
+msgid ""
+"Allow to insert additional footer information other than the one inserted "
+"from the general settings. If left blank, then defaulted to the footer from "
+"general settings."
+msgstr ""
+"Permet d'insérer des informations de pied de page supplémentaires autres que "
+"celle insérée à partir des paramètres généraux. S'il est laissé vide, le "
+"pied de page est défini par défaut dans les paramètres généraux."
+
+#: public/modules/invoice/data/data.tooltip.php:22
+#, fuzzy
+msgid ""
+"Products falling under the same category will be grouped together and "
+"displayed on the invoice, if enabled."
+msgstr ""
+"Les produits appartenant à la même catégorie seront regroupés et affichés "
+"sur la facture, si elle est activée."
+
+#: public/modules/invoice/invoice.php:122
+#: public/modules/invoice/invoice.php:132
+#: public/modules/invoice/invoice.php:497
+#: public/modules/invoice/invoice.php:656
+#: public/modules/invoice/invoice.php:657
+#: public/modules/invoice/invoice.php:723
+#: public/modules/invoice/invoice.php:911
+#: public/modules/invoice/views/invoice-admin-settings.php:12
+msgid "Invoice"
+msgstr "facture d’achat"
+
+#: public/modules/invoice/invoice.php:270
+#, fuzzy, php-format
+msgid ""
+"You can control the visibility of the seal according to order status via "
+"filters. See filter documentation %s here. %s"
+msgstr ""
+"Vous pouvez contrôler la visibilité du sceau en fonction de l'état de la "
+"commande via des filtres. Consultez la documentation des filtres %s ici. %s"
+
+#: public/modules/invoice/invoice.php:320
+msgid "Border width"
+msgstr "Largeur de bordure"
+
+#: public/modules/invoice/invoice.php:328
+msgid "Line height"
+msgstr "Hauteur de ligne"
+
+#: public/modules/invoice/invoice.php:336
+msgid "Opacity"
+msgstr "Opacité"
+
+#: public/modules/invoice/invoice.php:357
+msgid "Border radius"
+msgstr "Rayon de la bordure"
+
+#: public/modules/invoice/invoice.php:365
+#, fuzzy
+msgid "From left"
+msgstr "Marge gauche"
+
+#: public/modules/invoice/invoice.php:373
+msgid "From top"
+msgstr "Du haut"
+
+#: public/modules/invoice/invoice.php:381
+msgid "Angle"
+msgstr "Angle"
+
+#: public/modules/invoice/invoice.php:388
+#, fuzzy
+msgid "Color"
+msgstr "Couleur du texte de la tête de table"
+
+#: public/modules/invoice/invoice.php:548
+#: public/modules/invoice/invoice.php:766
+msgid "Invoice Date"
+msgstr "date de facture"
+
+#: public/modules/invoice/invoice.php:550
+#, fuzzy
+msgid "Payment received stamp"
+msgstr "Timbre de paiement reçu"
+
+#: public/modules/invoice/invoice.php:571
+msgid "Signature"
+msgstr "Signature"
+
+#: public/modules/invoice/invoice.php:667
+msgid "Print Invoices"
+msgstr "Imprimer les factures"
+
+#: public/modules/invoice/invoice.php:668
+msgid "Download Invoices"
+msgstr "Télécharger les factures"
+
+#: public/modules/invoice/invoice.php:700
+#: public/modules/invoice/invoice.php:733
+#: public/modules/invoice/invoice.php:816
+#: public/modules/invoice/invoice.php:842
+msgid "Print Invoice"
+msgstr "Imprimer la facture"
+
+#: public/modules/invoice/invoice.php:708
+#: public/modules/invoice/invoice.php:734
+#: public/modules/invoice/invoice.php:847
+msgid "Download Invoice"
+msgstr "Télécharger la facture"
+
+#: public/modules/invoice/invoice.php:724
+#, fuzzy
+msgid "Print/Download Invoice"
+msgstr "Imprimer / télécharger la facture"
+
+#: public/modules/invoice/views/advanced.php:8
+#, fuzzy
+msgid ""
+"The below settings can be used to configure additional information with "
+"respect to order/product meta, product attribute."
+msgstr ""
+"Les paramètres ci-dessous peuvent être utilisés pour configurer des "
+"informations supplémentaires concernant la méta commande / produit, "
+"l'attribut produit."
+
+#: public/modules/invoice/views/advanced.php:18
+#, fuzzy
+msgid "Select/add the additional order information in the invoice."
+msgstr ""
+"Sélectionnez / ajoutez les informations de commande supplémentaires dans la "
+"facture."
+
+#: public/modules/invoice/views/advanced.php:25
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the invoice."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"la facture."
+
+#: public/modules/invoice/views/advanced.php:32
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the invoice."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans la facture."
+
+#: public/modules/invoice/views/advanced.php:36
+#, fuzzy
+msgid "Custom footer for invoice"
+msgstr "Pied de page personnalisé pour la facture"
+
+#: public/modules/invoice/views/general.php:7
+#, fuzzy
+msgid "Configure the general settings required for the invoice."
+msgstr "Configurez les paramètres généraux requis pour la facture."
+
+#: public/modules/invoice/views/general.php:13
+msgid "Enable invoice"
+msgstr "Activer Facture"
+
+#: public/modules/invoice/views/general.php:31
+#, fuzzy
+msgid "Use order date as invoice date"
+msgstr "Utiliser la date de commande comme date de facturation"
+
+#: public/modules/invoice/views/general.php:33
+#, fuzzy
+msgid ""
+"If you choose 'No' then the invoice date will be the date on which it is "
+"generated."
+msgstr ""
+"Si vous choisissez «Non», la date de la facture sera la date à laquelle elle "
+"est générée."
+
+#: public/modules/invoice/views/general.php:47
+#, fuzzy
+msgid "Generate invoice for order statuses"
+msgstr "Générer une facture pour les statuts de commande"
+
+#: public/modules/invoice/views/general.php:49
+msgid "Order statuses for which an invoice should be generated."
+msgstr "Les statuts de commande pour lesquels une facture doit être générée."
+
+#: public/modules/invoice/views/general.php:56
+#, fuzzy
+msgid "Attach invoice PDF in order email"
+msgstr "Joindre la facture PDF dans l'e-mail de commande"
+
+#: public/modules/invoice/views/general.php:62
+#, fuzzy
+msgid ""
+"PDF version of invoice will be attached with the order email based on the "
+"above statuses"
+msgstr ""
+"La version PDF de la facture sera jointe à l'e-mail de commande en fonction "
+"des statuts ci-dessus"
+
+#: public/modules/invoice/views/general.php:66
+#: public/modules/proformainvoice/views/general.php:57
+#, fuzzy
+msgid "Enable print option for customers"
+msgstr "Activer l'option d'impression pour les clients"
+
+#: public/modules/invoice/views/general.php:72
+#: public/modules/proformainvoice/views/general.php:63
+#, fuzzy
+msgid ""
+"Displays print button in the order email, order listing page and in the "
+"order summary."
+msgstr ""
+"Affiche le bouton d'impression dans l'e-mail de commande, la page de liste "
+"des commandes et dans le récapitulatif de la commande."
+
+#: public/modules/invoice/views/general.php:80
+#, fuzzy
+msgid "Show print button only for statuses"
+msgstr "Afficher le bouton d'impression uniquement pour les états"
+
+#: public/modules/invoice/views/general.php:101
+#: public/modules/proformainvoice/views/general.php:115
+#, fuzzy
+msgid "Show individual tax column in product table"
+msgstr "Afficher la colonne de taxe individuelle dans la table des produits"
+
+#: public/modules/invoice/views/general.php:107
+#: public/modules/proformainvoice/views/general.php:121
+#, fuzzy
+msgid "Your template must support tax columns"
+msgstr "Votre modèle doit prendre en charge les colonnes fiscales"
+
+#: public/modules/invoice/views/general.php:111
+#, fuzzy
+msgid "Upload signature"
+msgstr "Télécharger la signature:"
+
+#: public/modules/invoice/views/general.php:116
+#, fuzzy
+msgid "Custom logo for invoice"
+msgstr "Logo personnalisé pour facture"
+
+#: public/modules/invoice/views/general.php:118
+#, fuzzy
+msgid "If left blank, defaulted to logo from General settings."
+msgstr ""
+"S'il est laissé vide, le logo est défini par défaut dans les paramètres "
+"généraux."
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:9
+#: public/modules/packinglist/packinglist.php:396
+#: public/modules/packinglist/packinglist.php:397
+msgid "Packing Slip"
+msgstr "Bon de livraison"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:10
+#, fuzzy
+msgid ""
+"Send Packing Slip as PDF attachment to warehouse when an order was placed."
+msgstr ""
+"Envoyez le bon de livraison sous forme de pièce jointe PDF à l'entrepôt "
+"lorsqu'une commande a été passée."
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:83
+#, fuzzy
+msgid "Packing Slip for order #{order_number} on {site_title}"
+msgstr "Bon de livraison pour la commande n ° {order_number} le {site_title}"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:91
+#, fuzzy
+msgid "Packing Slip for order #{order_number}"
+msgstr ""
+"Bon de livraison pour la commande N° <ph id=\"mtc_1\" equiv-text=\"base64:"
+"JXM=\"/>"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:164
+#: public/modules/picklist/classes/class-picklist-email.php:164
+msgid "Recipient(s)"
+msgstr "Destinataire(s)"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:167
+#: public/modules/picklist/classes/class-picklist-email.php:167
+#, php-format
+msgid "Enter recipients (comma separated) for this email. Defaults to %s."
+msgstr ""
+"Saisissez les destinataires (séparés par une virgule) pour cet e-mail. Par "
+"défaut à %s."
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:173
+#: public/modules/picklist/classes/class-picklist-email.php:173
+msgid "Subject"
+msgstr "Sujet"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:177
+#: public/modules/packinglist/classes/class-packinglist-email.php:186
+#: public/modules/picklist/classes/class-picklist-email.php:177
+#: public/modules/picklist/classes/class-picklist-email.php:186
+#, php-format
+msgid "Available placeholders: %s"
+msgstr "Espaces réservés disponibles : %s"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:182
+#: public/modules/picklist/classes/class-picklist-email.php:182
+msgid "Email heading"
+msgstr "Entête email"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:191
+#: public/modules/picklist/classes/class-picklist-email.php:191
+msgid "Email type"
+msgstr "Type d'email"
+
+#: public/modules/packinglist/classes/class-packinglist-email.php:193
+#: public/modules/picklist/classes/class-picklist-email.php:193
+msgid "Choose which format of email to send."
+msgstr "Choisissez quel format de courriel envoyer."
+
+#: public/modules/packinglist/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"If enabled, products falling under the same category will be grouped "
+"together and displayed on the packing slip. Hence, making it easier while "
+"packing products."
+msgstr ""
+"Si cette option est activée, les produits appartenant à la même catégorie "
+"seront regroupés et affichés sur le bon de livraison. Par conséquent, ce qui "
+"facilite l'emballage des produits."
+
+#: public/modules/packinglist/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"Enable this option to display the variation information of the product "
+"beneath the product name in the packing slip product table."
+msgstr ""
+"Activez cette option pour afficher les informations de variation du produit "
+"sous le nom du produit dans le tableau des produits du bon de livraison."
+
+#: public/modules/packinglist/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the packing "
+"slip. Defaulted to certain common meta values that can be selected from the "
+"drop-down. Click on Add/Edit order meta field button and enter appropriate "
+"field name/meta key to include respective custom order meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"le bon de livraison. Par défaut, certaines méta-valeurs communes peuvent "
+"être sélectionnées dans la liste déroulante. Cliquez sur le bouton Ajouter / "
+"Modifier le champ méta de commande et entrez le nom du champ / la clé méta "
+"approprié pour inclure la méta de commande personnalisée respective."
+
+#: public/modules/packinglist/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"packing slip. Click on Add/Edit product meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"le bon de livraison. Cliquez sur le bouton Ajouter / Modifier le champ méta "
+"du produit et entrez le nom du champ / la clé méta approprié pour inclure le "
+"méta produit personnalisé respectif."
+
+#: public/modules/packinglist/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"packing slip. Click on Add/Edit product attribute button and enter "
+"appropriate field name/meta key to include respective custom product "
+"attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"le bon de livraison. Cliquez sur le bouton Ajouter / Modifier un attribut de "
+"produit et entrez le nom de champ / clé méta approprié pour inclure "
+"l'attribut de produit personnalisé respectif."
+
+#: public/modules/packinglist/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Enabling this option will allow your customers to print the packing slip "
+"(via print button) from their order mail as well as upon checkout."
+msgstr ""
+"L'activation de cette option permettra à vos clients d'imprimer le bon de "
+"livraison (via le bouton d'impression) à partir de leur courrier de commande "
+"ainsi qu'au moment du paiement."
+
+#: public/modules/packinglist/packinglist.php:98
+#: public/modules/packinglist/packinglist.php:423
+#: public/modules/packinglist/packinglist.php:447
+#: public/modules/packinglist/views/admin-settings.php:11
+msgid "Packing slip"
+msgstr "Bordereau d'expédition"
+
+#: public/modules/packinglist/packinglist.php:180
+#, fuzzy, php-format
+msgid "Packing Slip email send by %s."
+msgstr "E-mail du bordereau d'expédition envoyé avant le %s."
+
+#: public/modules/packinglist/packinglist.php:197
+#, fuzzy
+msgid "Send Packing Slip email"
+msgstr "Envoyer un e-mail de bon de livraison"
+
+#: public/modules/packinglist/packinglist.php:406
+#: public/modules/packinglist/packinglist.php:430
+#: public/modules/packinglist/packinglist.php:448
+#, fuzzy
+msgid "Print Packing slip"
+msgstr "Imprimer le bordereau de livraison"
+
+#: public/modules/packinglist/packinglist.php:424
+#, fuzzy
+msgid "Print/Download Packing slip"
+msgstr "Imprimer / télécharger le bon de livraison"
+
+#: public/modules/packinglist/packinglist.php:437
+#, fuzzy
+msgid "Download Packing slip"
+msgstr "Télécharger le bordereau d'emballage"
+
+#: public/modules/packinglist/packinglist.php:470
+msgid "Print Packing Slip"
+msgstr "Imprimer le bordereau de livraison"
+
+#: public/modules/packinglist/packinglist.php:568
+#: public/modules/shippinglabel/shippinglabel.php:673
+#, fuzzy
+msgid "Unable to print Packing slip. Please check the items in the order."
+msgstr ""
+"Impossible d'imprimer le bon de livraison. Veuillez vérifier les articles de "
+"la commande."
+
+#: public/modules/packinglist/templates/emails/packinglist.php:20
+#: public/modules/packinglist/templates/emails/plain/packinglist.php:16
+#: public/modules/picklist/templates/emails/picklist.php:20
+#: public/modules/picklist/templates/emails/plain/picklist.php:16
+#, php-format
+msgid "You’ve received the following order from %s:"
+msgstr "Vous avez reçu la commande suivante de %s :"
+
+#: public/modules/packinglist/views/general.php:8
+#, fuzzy
+msgid "Configure the general settings required for packing slip."
+msgstr "Configurez les paramètres généraux requis pour le bon de livraison."
+
+#: public/modules/packinglist/views/general.php:43
+#, fuzzy
+msgid "Select/add additional order information in the packing slip."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans le "
+"bon de livraison."
+
+#: public/modules/packinglist/views/general.php:50
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the packing slip."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"le bon de livraison."
+
+#: public/modules/packinglist/views/general.php:57
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the packing slip."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans le bon de livraison."
+
+#: public/modules/packinglist/views/general.php:61
+#, fuzzy
+msgid "Enable print packing slip option for order status"
+msgstr ""
+"Activer l'option d'impression du bon de livraison pour l'état de la commande"
+
+#: public/modules/packinglist/views/general.php:63
+#, fuzzy
+msgid "Adds print packing slip button to the order email for chosen status"
+msgstr ""
+"Ajoute le bouton d'impression du bon de livraison à l'e-mail de commande "
+"pour le statut choisi"
+
+#: public/modules/packinglist/views/general.php:69
+#, fuzzy
+msgid "Attach Packing slip PDF in order email for statuses"
+msgstr ""
+"Joindre le bon de livraison PDF dans l'e-mail de commande pour les statuts"
+
+#: public/modules/packinglist/views/general.php:73
+#, fuzzy
+msgid "PDF version of Packing slip will be attached with the order email"
+msgstr "La version PDF du bon de livraison sera jointe à l'e-mail de commande"
+
+#: public/modules/packinglist/views/general.php:77
+#, fuzzy
+msgid "Share Packing slip PDF as a separate email"
+msgstr "Partager le bon de livraison PDF dans un e-mail distinct"
+
+#: public/modules/packinglist/views/general.php:83
+#, fuzzy, php-format
+msgid ""
+"Select `Yes` and save settings, if you need to send a copy of the Packing "
+"slip to another email id e.g admin email. You may then configure the email "
+"%shere%s accordingly."
+msgstr ""
+"Sélectionnez «Oui» et enregistrez les paramètres, si vous devez envoyer une "
+"copie du bon de livraison à un autre identifiant de courrier électronique, "
+"par exemple un courrier électronique d'administration. Vous pouvez ensuite "
+"configurer les %shere% e-mails en conséquence."
+
+#: public/modules/picklist/classes/class-picklist-email.php:9
+#: public/modules/picklist/picklist.php:388
+#: public/modules/picklist/picklist.php:389
+#: public/modules/picklist/picklist.php:411
+#: public/modules/picklist/picklist.php:435
+#: public/modules/picklist/views/admin-settings.php:11
+#, fuzzy
+msgid "Picklist"
+msgstr "Liste de sélection"
+
+#: public/modules/picklist/classes/class-picklist-email.php:10
+#, fuzzy
+msgid "Send Picklist as PDF attachment to warehouse when an order is placed."
+msgstr ""
+"Envoyer la liste de sélection en tant que pièce jointe PDF à l'entrepôt "
+"lorsqu'une commande est passée."
+
+#: public/modules/picklist/classes/class-picklist-email.php:83
+#, fuzzy
+msgid "Picklist for order #{order_number} on {site_title}"
+msgstr "Liste de sélection pour la commande n ° {order_number} le {site_title}"
+
+#: public/modules/picklist/classes/class-picklist-email.php:91
+#, fuzzy
+msgid "Picklist for order #{order_number}"
+msgstr "Liste de sélection pour la commande n ° {order_number}"
+
+#: public/modules/picklist/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"If enabled, products falling under the same category will be grouped "
+"together and displayed in the picklist. Hence, making it easier while "
+"packing products."
+msgstr ""
+"S'il est activé, les produits appartenant à la même catégorie seront "
+"regroupés et affichés dans la liste de sélection. Par conséquent, ce qui "
+"facilite l'emballage des produits."
+
+#: public/modules/picklist/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"Products from an order will be grouped together and displayed in the pick "
+"list, as per the order."
+msgstr ""
+"Les produits d'une commande seront regroupés et affichés dans la liste de "
+"sélection, conformément à la commande."
+
+#: public/modules/picklist/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Enable this option to display the variation information of the product "
+"beneath the product name in the picklist product table."
+msgstr ""
+"Activez cette option pour afficher les informations de variation du produit "
+"sous le nom du produit dans la table des produits de la liste de sélection."
+
+#: public/modules/picklist/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Enable this option to exclude the virtual deliverables like downloadable "
+"books from the picklist."
+msgstr ""
+"Activez cette option pour exclure les livrables virtuels tels que les livres "
+"téléchargeables de la liste de sélection."
+
+#: public/modules/picklist/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Provisions displaying additional details pertaining to your product in the "
+"picklist. Click on Add/Edit existing order meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta."
+msgstr ""
+"Dispositions affichant des détails supplémentaires relatifs à votre produit "
+"dans la liste de sélection. Cliquez sur le bouton Ajouter / Modifier le "
+"champ méta de commande existante et entrez le nom du champ / la clé méta "
+"approprié pour inclure la méta du produit personnalisé respectif."
+
+#: public/modules/picklist/data/data.tooltip.php:8
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"picklist. Click on Add/Edit product attribute button and enter appropriate "
+"field name/meta key to include respective custom product attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la liste de sélection. Cliquez sur le bouton Ajouter / Modifier un attribut "
+"de produit et entrez le nom de champ / clé méta approprié pour inclure "
+"l'attribut de produit personnalisé respectif."
+
+#: public/modules/picklist/picklist.php:192
+#, fuzzy, php-format
+msgid "Picklist email send by %s."
+msgstr "E-mail de liste de sélection envoyé par %s."
+
+#: public/modules/picklist/picklist.php:209
+#, fuzzy
+msgid "Send Picklist email"
+msgstr "Envoyer un e-mail de liste de sélection"
+
+#: public/modules/picklist/picklist.php:398
+#: public/modules/picklist/picklist.php:418
+#: public/modules/picklist/picklist.php:436
+#, fuzzy
+msgid "Print Picklist"
+msgstr "Imprimer la liste de sélection"
+
+#: public/modules/picklist/picklist.php:412
+#, fuzzy
+msgid "Print/Download Picklist"
+msgstr "Imprimer / télécharger la liste de sélection"
+
+#: public/modules/picklist/picklist.php:425
+#, fuzzy
+msgid "Download Picklist"
+msgstr "Télécharger la liste de sélection"
+
+#: public/modules/picklist/picklist.php:551
+#, fuzzy
+msgid "Unable to print Picklist. Please check the items in the order."
+msgstr ""
+"Impossible d'imprimer la liste de sélection. Veuillez vérifier les articles "
+"de la commande."
+
+#: public/modules/picklist/views/general.php:8
+#, fuzzy
+msgid "Configure the general settings required for picklist."
+msgstr "Configurez les paramètres généraux requis pour la liste de sélection."
+
+#: public/modules/picklist/views/general.php:21
+#, fuzzy
+msgid ""
+"Select 'Yes' if you need to group the picklist by category. (This is however "
+"applicable only for Packaging Type \"Single package per order\", "
+"configurable in General settings->Advanced)."
+msgstr ""
+"Sélectionnez «Oui» si vous devez regrouper la liste de sélection par "
+"catégorie. (Ceci n'est toutefois applicable que pour le type d'emballage "
+"\"Un seul colis par commande\", configurable dans Paramètres généraux-> "
+"Avancé)."
+
+#: public/modules/picklist/views/general.php:25
+#, fuzzy
+msgid "Group by order"
+msgstr "Grouper par ordre"
+
+#: public/modules/picklist/views/general.php:31
+#, fuzzy
+msgid ""
+"Select 'Yes' if you need to group the picklist by order. (This is however "
+"applicable only for Packaging Type \"Single package per order\", "
+"configurable in General settings->Advanced)."
+msgstr ""
+"Sélectionnez «Oui» si vous devez regrouper la liste de sélection par "
+"commande. (Ceci n'est toutefois applicable que pour le type d'emballage \"Un "
+"seul colis par commande\", configurable dans Paramètres généraux-> Avancé)."
+
+#: public/modules/picklist/views/general.php:44
+#, fuzzy
+msgid "Exclude virtual items"
+msgstr "Exclure les items virtuels"
+
+#: public/modules/picklist/views/general.php:62
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the picklist."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"la liste de sélection."
+
+#: public/modules/picklist/views/general.php:69
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the picklist."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans la liste de sélection."
+
+#: public/modules/picklist/views/general.php:73
+#, fuzzy
+msgid "Attach Picklist PDF in order email for statuses"
+msgstr ""
+"Joindre le PDF de la liste de sélection dans l'e-mail de commande pour les "
+"statuts"
+
+#: public/modules/picklist/views/general.php:77
+#, fuzzy
+msgid "PDF version of picklist will be attached with the order email"
+msgstr ""
+"La version PDF de la liste de sélection sera jointe à l'e-mail de commande"
+
+#: public/modules/picklist/views/general.php:81
+#, fuzzy
+msgid "Share Picklist PDF as a separate email"
+msgstr "Partager le PDF de la liste de sélection dans un e-mail distinct"
+
+#: public/modules/picklist/views/general.php:87
+#, fuzzy, php-format
+msgid ""
+"Enable the option and configure the email %shere%s, if you need to send a "
+"copy of the picklist to another email id e.g admin email."
+msgstr ""
+"Activez l'option et configurez les %shere% e-mails, si vous devez envoyer "
+"une copie de la liste de sélection à un autre identifiant de messagerie, par "
+"exemple l'adresse e-mail de l'administrateur."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Select a proforma invoice number format from the drop-down. You can choose "
+"to have a prefix, suffix or both for your proforma invoice number."
+msgstr ""
+"Sélectionnez un format de numéro de facture pro forma dans la liste "
+"déroulante. Vous pouvez choisir d'avoir un préfixe, un suffixe ou les deux "
+"pour votre numéro de facture proforma."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"You can mirror the order number as the proforma invoice number by enabling "
+"this option, else, you can create a proforma invoice number of your own "
+"choice by specifying a proforma invoice start number."
+msgstr ""
+"Vous pouvez reproduire le numéro de commande en tant que numéro de facture "
+"pro forma en activant cette option, sinon, vous pouvez créer un numéro de "
+"facture pro forma de votre choix en spécifiant un numéro de début de facture "
+"pro forma."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Set a starting number for the proforma invoice number to have a specific "
+"number other than the order number. Reset provisions are also allowed."
+msgstr ""
+"Définissez un numéro de départ pour que le numéro de facture proforma ait un "
+"numéro spécifique autre que le numéro de commande. Les dispositions de "
+"réinitialisation sont également autorisées."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Specify a prefix that will appear at the leading edge of the proforma "
+"invoice number. Provisions are included to select predefined date formats as "
+"prefixes."
+msgstr ""
+"Spécifiez un préfixe qui apparaîtra sur le bord avant du numéro de facture "
+"pro forma. Des dispositions sont incluses pour sélectionner des formats de "
+"date prédéfinis comme préfixes."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:7
+#, fuzzy
+msgid ""
+"Specify a suffix that will appear at the trailing edge of the proforma "
+"invoice number. Provisions are included to select predefined date formats as "
+"suffixes."
+msgstr ""
+"Spécifiez un suffixe qui apparaîtra sur le bord arrière du numéro de facture "
+"pro forma. Des dispositions sont incluses pour sélectionner des formats de "
+"date prédéfinis comme suffixes."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:8
+msgid ""
+"Indicates the total length of the proforma invoice number, excluding the "
+"length of prefix and suffix if added. If the length of the generated "
+"proforma invoice number is less than the provided, it will be padded with "
+"‘0’. E.g if you specify 7 as proforma invoice length and your proforma "
+"invoice number is 8009, it will be represented as 0008009 in the respective "
+"documents."
+msgstr ""
+"Indique la longueur totale du numéro de facture proforma, à l'exclusion de "
+"la longueur du préfixe et du suffixe s'ils sont ajoutés. Si la longueur du "
+"numéro de facture proforma généré est inférieure à celle indiquée, elle sera "
+"complétée par un '0'. Par exemple, si vous spécifiez 7 comme longueur de "
+"facture proforma et que votre numéro de facture proforma est 8009, il sera "
+"représenté par 0008009 dans les documents respectifs."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:9
+#, fuzzy
+msgid ""
+"If you choose 'No' then the proforma invoice date will be the date on which "
+"it is printed or downloaded."
+msgstr ""
+"Si vous choisissez «Non», la date de la facture pro forma sera la date à "
+"laquelle elle est imprimée ou téléchargée."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:10
+#, fuzzy
+msgid ""
+"Enabling this option will allow your customers to print the proforma invoice "
+"(via print button) from their order mail as well as after checkout."
+msgstr ""
+"L'activation de cette option permettra à vos clients d'imprimer la facture "
+"pro forma (via le bouton d'impression) à partir de leur courrier de commande "
+"ainsi qu'après le paiement."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:11
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the "
+"proforma invoice. Defaulted to certain common meta values that can be "
+"selected from the drop-down. Click on Add/Edit order meta field button and "
+"enter appropriate field name/meta key to include respective custom meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande dans "
+"la facture proforma. Par défaut, certaines méta-valeurs communes peuvent "
+"être sélectionnées dans la liste déroulante. Cliquez sur le bouton Ajouter / "
+"Modifier le champ méta de commande et entrez le nom du champ / clé méta "
+"approprié pour inclure la méta personnalisée respective."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:12
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"proforma invoice. Click on Add/Edit product meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la facture proforma. Cliquez sur le bouton Ajouter / Modifier le champ méta "
+"du produit et entrez le nom du champ / la clé méta approprié pour inclure le "
+"méta produit personnalisé respectif."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:13
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your product in the "
+"proforma invoice. Click on Add/Edit product attribute button and enter "
+"appropriate field name/meta key to include respective custom product "
+"attribute."
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre produit dans "
+"la facture proforma. Cliquez sur le bouton Ajouter / Modifier un attribut de "
+"produit et entrez le nom de champ / clé méta approprié pour inclure "
+"l'attribut de produit personnalisé respectif."
+
+#: public/modules/proformainvoice/data/data.tooltip.php:15
+#, fuzzy
+msgid ""
+"If your store has one or more taxes configured, enabling this option will "
+"categorize different taxes in separate columns in the proforma invoice "
+"product table."
+msgstr ""
+"Si votre boutique a une ou plusieurs taxes configurées, l'activation de "
+"cette option classera les différentes taxes dans des colonnes distinctes "
+"dans le tableau des produits de facturation pro forma."
+
+#: public/modules/proformainvoice/proformainvoice.php:107
+#: public/modules/proformainvoice/proformainvoice.php:117
+msgid "Proforma invoice"
+msgstr "facture Proforma"
+
+#: public/modules/proformainvoice/proformainvoice.php:216
+#: public/modules/proformainvoice/proformainvoice.php:238
+#: public/modules/proformainvoice/proformainvoice.php:549
+#: public/modules/proformainvoice/proformainvoice.php:584
+#: public/modules/proformainvoice/proformainvoice.php:616
+#, fuzzy
+msgid "Print Proforma Invoice"
+msgstr "Imprimer une facture pro forma"
+
+#: public/modules/proformainvoice/proformainvoice.php:243
+#: public/modules/proformainvoice/proformainvoice.php:592
+#: public/modules/proformainvoice/proformainvoice.php:617
+msgid "Download Proforma Invoice"
+msgstr "Télécharger Facture Proforma"
+
+#: public/modules/proformainvoice/proformainvoice.php:442
+#: public/modules/proformainvoice/proformainvoice.php:651
+#, fuzzy
+msgid "Proforma Invoice Number"
+msgstr "Numéro de carte de membre  :"
+
+#: public/modules/proformainvoice/proformainvoice.php:443
+#: public/modules/proformainvoice/proformainvoice.php:657
+#, fuzzy
+msgid "Proforma Invoice Date"
+msgstr "Date de la carte de membre :"
+
+#: public/modules/proformainvoice/proformainvoice.php:465
+#: public/modules/proformainvoice/views/general.php:110
+msgid "Special notes"
+msgstr "Notes spéciales"
+
+#: public/modules/proformainvoice/proformainvoice.php:539
+#: public/modules/proformainvoice/proformainvoice.php:540
+#: public/modules/proformainvoice/proformainvoice.php:579
+#: public/modules/proformainvoice/proformainvoice.php:606
+#: public/modules/proformainvoice/proformainvoice.php:690
+#: public/modules/proformainvoice/views/proformainvoice-admin-settings.php:11
+msgid "Proforma Invoice"
+msgstr "Facture Proforma"
+
+#: public/modules/proformainvoice/proformainvoice.php:607
+#, fuzzy
+msgid "Print/Download Proforma Invoice"
+msgstr "Imprimer / télécharger la facture pro forma"
+
+#: public/modules/proformainvoice/templates/emails/plain/proforma-invoice.php:25
+#: public/modules/proformainvoice/templates/emails/proforma-invoice.php:28
+#, php-format
+msgid "Hi %s,"
+msgstr "Bonjour %s,"
+
+#: public/modules/proformainvoice/templates/emails/plain/proforma-invoice.php:27
+#, php-format
+msgid ""
+"Just to let you know &mdash; we've received your order #%s, and it is now "
+"being processed:"
+msgstr ""
+"Pour information &mdash; nous avons reçu votre réservation n°%s, un "
+"Conseiller vous contactera pour le paiement :"
+
+#: public/modules/proformainvoice/templates/emails/plain/proforma-invoice.php:52
+#: public/modules/proformainvoice/templates/emails/proforma-invoice.php:55
+msgid "Thanks!"
+msgstr "Merci !"
+
+#: public/modules/proformainvoice/templates/emails/proforma-invoice.php:30
+#, php-format
+msgid ""
+"Just to let you know &mdash; we've received your order #%s, and it is now "
+"being processed.:"
+msgstr ""
+"Juste pour vous informer - nous avons reçu votre commande #%s, et elle est "
+"maintenant en cours de traitement. :"
+
+#: public/modules/proformainvoice/views/general.php:7
+#, fuzzy
+msgid "Configure the general settings required for proforma invoice."
+msgstr "Configurez les paramètres généraux requis pour la facture pro forma."
+
+#: public/modules/proformainvoice/views/general.php:13
+#, fuzzy
+msgid "Use order date as proforma invoice date"
+msgstr "Utiliser la date de commande comme date de facturation pro forma"
+
+#: public/modules/proformainvoice/views/general.php:15
+#, fuzzy
+msgid ""
+"If you choose 'No' then the proforma invoice date will be the date on which "
+"it is generated."
+msgstr ""
+"Si vous choisissez «Non», la date de facturation pro forma sera la date à "
+"laquelle elle est générée."
+
+#: public/modules/proformainvoice/views/general.php:38
+#, fuzzy
+msgid "Generate proforma invoice for order statuses"
+msgstr "Générer une facture pro forma pour les statuts de commande"
+
+#: public/modules/proformainvoice/views/general.php:40
+#, fuzzy
+msgid "Order statuses for which an proforma invoice should be generated."
+msgstr ""
+"Statuts de commande pour lesquels une facture pro forma doit être générée."
+
+#: public/modules/proformainvoice/views/general.php:47
+#, fuzzy
+msgid "Attach proforma invoice PDF in email"
+msgstr "Joindre une facture pro forma PDF dans l'e-mail"
+
+#: public/modules/proformainvoice/views/general.php:53
+#, fuzzy
+msgid ""
+"PDF version of proforma invoice will be attached with the order email based "
+"on the above statuses"
+msgstr ""
+"La version PDF de la facture pro forma sera jointe à l'e-mail de commande en "
+"fonction des statuts ci-dessus"
+
+#: public/modules/proformainvoice/views/general.php:71
+#, fuzzy
+msgid "Order statuses to show print button"
+msgstr "Statut de la commande pour afficher le bouton d'impression"
+
+#: public/modules/proformainvoice/views/general.php:86
+#, fuzzy
+msgid "Select/add additional order information in the proforma invoice."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans la "
+"facture proforma."
+
+#: public/modules/proformainvoice/views/general.php:93
+#, fuzzy
+msgid ""
+"Selected product meta will be displayed beneath the respective product in "
+"the proforma invoice."
+msgstr ""
+"La méta du produit sélectionné sera affichée sous le produit respectif dans "
+"la facture pro forma."
+
+#: public/modules/proformainvoice/views/general.php:100
+#, fuzzy
+msgid ""
+"Selected product attribute will be displayed beneath the respective product "
+"in the proforma invoice."
+msgstr ""
+"L'attribut de produit sélectionné sera affiché sous le produit respectif "
+"dans la facture pro forma."
+
+#: public/modules/proformainvoice/views/general.php:104
+#, fuzzy
+msgid "Custom footer for proforma invoice"
+msgstr "Pied de page personnalisé pour la facture pro forma"
+
+#: public/modules/shippinglabel/data/data.templates.php:5
+#, fuzzy
+msgid "Shipping Label 1"
+msgstr "Étiquette d'expédition"
+
+#: public/modules/shippinglabel/data/data.templates.php:10
+#, fuzzy
+msgid "Shipping Label 2"
+msgstr "Étiquette d'expédition"
+
+#: public/modules/shippinglabel/data/data.templates.php:15
+#, fuzzy
+msgid "Shipping Label 3"
+msgstr "Étiquette d'expédition"
+
+#: public/modules/shippinglabel/data/data.tooltip.php:3
+#, fuzzy
+msgid ""
+"Choose Yes to generate multiple labels on one page Enabling will prompt to "
+"input the number of labels in a row."
+msgstr ""
+"Choisissez Oui pour générer plusieurs étiquettes sur une seule page. "
+"L'activation vous invite à saisir le nombre d'étiquettes dans une ligne."
+
+#: public/modules/shippinglabel/data/data.tooltip.php:4
+#, fuzzy
+msgid ""
+"Choose the required size to be either full page or input a custom size by "
+"specifying the desired width and height in inches."
+msgstr ""
+"Choisissez la taille requise pour une pleine page ou entrez une taille "
+"personnalisée en spécifiant la largeur et la hauteur souhaitées en pouces."
+
+#: public/modules/shippinglabel/data/data.tooltip.php:5
+#, fuzzy
+msgid ""
+"Allows displaying additional details pertaining to your order in the "
+"shipping label. Defaulted to certain common meta values that can be selected "
+"from the drop-down. Click on Add/Edit order meta field button and enter "
+"appropriate field name/meta key to include respective custom product meta"
+msgstr ""
+"Permet d'afficher des détails supplémentaires relatifs à votre commande sur "
+"l'étiquette d'expédition. Par défaut, certaines méta-valeurs communes "
+"peuvent être sélectionnées dans la liste déroulante. Cliquez sur le bouton "
+"Ajouter / Modifier le champ méta de commande et entrez le nom du champ / la "
+"clé méta approprié pour inclure la méta du produit personnalisé respectif"
+
+#: public/modules/shippinglabel/data/data.tooltip.php:6
+#, fuzzy
+msgid ""
+"Enabling this option will allow your customers to print the shipping label "
+"(via print button) from their order mail as well as after checkout."
+msgstr ""
+"L'activation de cette option permettra à vos clients d'imprimer l'étiquette "
+"d'expédition (via le bouton d'impression) à partir de leur courrier de "
+"commande ainsi qu'après le paiement."
+
+#: public/modules/shippinglabel/shippinglabel.php:80
+#, fuzzy
+msgid "Shipping label"
+msgstr "Étiquette d’expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:170
+msgid "Order number label"
+msgstr "Numéro de commande"
+
+#: public/modules/shippinglabel/shippinglabel.php:177
+msgid "Weight label"
+msgstr "Étiquette de poids"
+
+#: public/modules/shippinglabel/shippinglabel.php:183
+msgid "Ship date label"
+msgstr "Étiquette de date d'expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:235
+msgid "Title font size"
+msgstr "Imprimer la liste de colisage…"
+
+#: public/modules/shippinglabel/shippinglabel.php:242
+msgid "Address font size"
+msgstr "Adresse taille de la police"
+
+#: public/modules/shippinglabel/shippinglabel.php:364
+msgid "Layout"
+msgstr "Mise en page"
+
+#: public/modules/shippinglabel/shippinglabel.php:367
+msgid "To Address"
+msgstr "Adresser"
+
+#: public/modules/shippinglabel/shippinglabel.php:368
+msgid "Shipping Details"
+msgstr "les détails d’expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:437
+#: public/modules/shippinglabel/shippinglabel.php:438
+#: public/modules/shippinglabel/shippinglabel.php:464
+#: public/modules/shippinglabel/shippinglabel.php:494
+#: public/modules/shippinglabel/views/admin-settings.php:11
+msgid "Shipping Label"
+msgstr "Étiquette d’expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:447
+#: public/modules/shippinglabel/shippinglabel.php:465
+#: public/modules/shippinglabel/shippinglabel.php:472
+#: public/modules/shippinglabel/shippinglabel.php:495
+#: public/modules/shippinglabel/shippinglabel.php:517
+msgid "Print Shipping Label"
+msgstr "Imprimer l’étiquette d’expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:478
+#, fuzzy
+msgid "Print/Download Shipping Label"
+msgstr "Imprimer / télécharger l'étiquette d'expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:482
+msgid "Download Shipping Label"
+msgstr "Télécharger étiquette d'expédition"
+
+#: public/modules/shippinglabel/shippinglabel.php:606
+msgid "Please add shipping from address in the plugin's general settings."
+msgstr ""
+"Veuillez ajouter l'adresse de livraison à partir des paramètres généraux du "
+"plugin."
+
+#: public/modules/shippinglabel/views/general.php:7
+#, fuzzy
+msgid "Configure the general settings required for shipping label."
+msgstr ""
+"Configurez les paramètres généraux requis pour l'étiquette d'expédition."
+
+#: public/modules/shippinglabel/views/general.php:13
+msgid "Enable multiple labels in one page"
+msgstr "Activer plusieurs étiquettes sur une page"
+
+#: public/modules/shippinglabel/views/general.php:26
+msgid "No of labels in one row"
+msgstr "Nombre d'étiquettes dans une rangée"
+
+#: public/modules/shippinglabel/views/general.php:36
+#, fuzzy
+msgid "Shipping label size"
+msgstr "Étiquette d'expédition Taille"
+
+#: public/modules/shippinglabel/views/general.php:39
+msgid "Full Page"
+msgstr "Page entière"
+
+#: public/modules/shippinglabel/views/general.php:40
+msgid "Custom"
+msgstr "Personnalisé"
+
+#: public/modules/shippinglabel/views/general.php:51
+msgid "Custom size"
+msgstr "Taille personnalisée"
+
+#: public/modules/shippinglabel/views/general.php:60
+#, fuzzy
+msgid "Enter the custom width and height values(in order), in inches."
+msgstr ""
+"Entrez les valeurs de largeur et de hauteur personnalisées (dans l'ordre), "
+"en pouces."
+
+#: public/modules/shippinglabel/views/general.php:70
+#, fuzzy
+msgid "Select/add additional order information in the shipping label."
+msgstr ""
+"Sélectionnez / ajoutez des informations de commande supplémentaires dans "
+"l'étiquette d'expédition."
+
+#: public/modules/shippinglabel/views/general.php:74
+#, fuzzy
+msgid "Enable print shipping label option for order status"
+msgstr ""
+"Activer l'option d'impression d'étiquette d'expédition pour l'état de la "
+"commande"
+
+#: public/modules/shippinglabel/views/general.php:76
+#, fuzzy
+msgid "Adds print shipping label button to the order email for chosen status"
+msgstr ""
+"Ajoute le bouton d'impression d'étiquette d'expédition à l'e-mail de "
+"commande pour l'état choisi"
+
+#: wf-woocommerce-packing-list.php:67
+#, fuzzy, php-format
+msgid ""
+"The plugins %s and %s cannot be active in your store at the same time. "
+"Kindly deactivate one of these prior to activating the other."
+msgstr ""
+"Les plugins %s et %s ne peuvent pas être actifs dans votre boutique en même "
+"temps. Veuillez désactiver l'un d'entre eux avant d'activer l'autre."
+
+#: wf-woocommerce-packing-list.php:67
+msgid "Go to plugins page"
+msgstr "Aller à la page des plugins"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid ""
+"WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels "
+"(Pro)"
+msgstr ""
+"Factures PDF WooCommerce, bordereaux d'expédition, bons de livraison et "
+"étiquettes d'expédition (Pro)"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://www.webtoffee.com/product/woocommerce-pdf-invoices-packing-slips/"
+msgstr ""
+"https://www.webtoffee.com/product/woocommerce-pdf-invoices-packing-slips/"
+
+#. Description of the plugin/theme
+msgid "Prints Packing List,Invoice,Delivery Note & Shipping Label."
+msgstr "Prints Packing List,Invoice,Delivery Note & Shipping Label."
+
+#. Author of the plugin/theme
+msgid "WebToffee"
+msgstr "WebToffee"
+
+#. Author URI of the plugin/theme
+msgid "https://www.webtoffee.com/"
+msgstr "https://www.webtoffee.com/"

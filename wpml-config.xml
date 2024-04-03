@@ -1,0 +1,38 @@
+<wpml-config>
+  <admin-texts>
+    <key name="Wf_Woocommerce_Packing_List">
+      <key name="woocommerce_wf_packinglist_companyname"/>
+      <key name="wf_additional_data_fields"/>
+      <key name="wf_product_meta_fields" />
+      <key name="wf_additional_checkout_data_fields" />
+      <key name="wf_invoice_additional_checkout_data_fields" />
+      <key name="woocommerce_wf_packinglist_footer"/>
+      <key name="woocommerce_wf_packinglist_special_notes"/>
+      <key name="woocommerce_wf_packinglist_return_policy"/>
+      <key name="woocommerce_wf_packinglist_transport_terms"/>
+      <key name="woocommerce_wf_packinglist_sale_terms"/>
+      <key name="woocommerce_wf_packinglist_sender_name"/>
+      <key name="woocommerce_wf_packinglist_sender_address_line1"/>
+      <key name="woocommerce_wf_packinglist_sender_address_line2"/>
+      <key name="woocommerce_wf_packinglist_sender_city"/>
+      <key name="wf_country"/>
+      <key name="woocommerce_wf_packinglist_sender_postalcode"/>
+      <key name="woocommerce_wf_packinglist_sender_contact_number"/>
+      <key name="woocommerce_wf_packinglist_sender_vat"/>
+      <key name="wt_product_attribute_fields"/>
+    </key>
+    <key name="wf_woocommerce_packing_list_deliverynote">
+      <key name="woocommerce_wf_packinglist_footer"/>
+    </key>
+    <key name="wf_woocommerce_packing_list_invoice">
+      <key name="woocommerce_wf_packinglist_footer"/>
+    </key>
+    <key name="wf_woocommerce_packing_list_packinglist">
+      <key name="woocommerce_wf_packinglist_footer"/>
+    </key>
+    <key name="wf_woocommerce_packing_list_proformainvoice">
+      <key name="woocommerce_wf_packinglist_footer"/>
+      <key name="woocommerce_wf_packinglist_special_notes"/>
+    </key>
+  </admin-texts>
+</wpml-config>
