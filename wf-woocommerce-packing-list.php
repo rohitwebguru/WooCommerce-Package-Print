@@ -11,9 +11,8 @@
  * Plugin Name:       WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels (Pro)
  * Plugin URI:        https://www.webtoffee.com/product/woocommerce-pdf-invoices-packing-slips/
  * Description:       Prints Packing List,Invoice,Delivery Note & Shipping Label.
- * Version:           4.2.1
- * Author:            WebToffee
- * Author URI:        https://www.webtoffee.com/
+ * Version:           4.3
+ * Author:            Rohi tSharma
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wf-woocommerce-packing-list
@@ -186,16 +185,11 @@ if(!function_exists('wf_woocommerce_packing_list_update_message'))
 
 
 // modify shipping address : put ZIP Code before city
-
 add_filter('wf_pklist_alter_shipping_address','wf_pklist_alter_address_fn',10,3);
 add_filter('wf_pklist_alter_billing_address','wf_pklist_alter_address_fn',10,3);
 add_filter('wf_pklist_alter_shipping_from_address','wf_pklist_alter_address_fn',10,3);
 function wf_pklist_alter_address_fn($address, $template_type, $order)
 {
- $arr=array($address['postcode'], $address['city']);
-//  print_r($address);
-//  exit();
-//  $address['city']=implode($arr, ", ");
-//  unset($address['postcode']);
- return $address;
+    $arr=array($address['postcode'], $address['city']);
+    return $address;
 }
