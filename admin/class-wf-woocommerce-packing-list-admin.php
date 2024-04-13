@@ -1677,16 +1677,17 @@ if ($need_submit_btn == 1) {
 				'file_instruction' => isset($movefile['url']) && $movefile['url'] != "" ? $movefile['url'] : '',
 				'instruction_type' => $instruction_type,
 				'created_at' => $create_at,
-				'update_at' => $update_at
+				'updated_at' => $update_at
 			);
-
 	        $insert_result = $wpdb->insert($table_name, $data_to_insert);
+            // echo "<pre>"; print_r($insert_result); die;
 
     	    // Check if insertion was successful
 			if ($insert_result === false) {
 				wp_send_json_error('Failed to insert data into the database: ' . $wpdb->last_error);
 
 			} else {
+
 				$instruction_id = $wpdb->insert_id;
 				$conditions_table_name = $wpdb->prefix . 'packing_conditions';
 				$condition_data_to_insert = array(
@@ -1694,11 +1695,11 @@ if ($need_submit_btn == 1) {
 					'p_parameter2' => $_POST['p_parameter2'] ? $_POST['p_parameter2'] : '',
 					'p_parameter3' => $_POST['p_parameter3'] ? $_POST['p_parameter3'] : '',
 					'p_parameter4' => $_POST['p_parameter4'] ? $_POST['p_parameter4'] : '',
-					'p_parameter5' => $_POST['p_parameter5'] ? $_POST['p_parameter5'] : '',
-					'create_at' => $create_at,
+					'p_parameter5' => $_POST['p_parameter5'] || $_POST['p_parameter5']==0 ? $_POST['p_parameter5'] : '',
+					'created_at' => $create_at,
 					'instruction_id' => $instruction_id
 				);
-
+                // echo "<pre>"; print_r($_POST); die;
 				$insert_conditions_result = $wpdb->insert($conditions_table_name, $condition_data_to_insert);
 
 				if ($insert_conditions_result === false) {
@@ -1765,11 +1766,11 @@ if ($need_submit_btn == 1) {
 					'p_parameter2' => $_POST['p_parameter2'] ? $_POST['p_parameter2'] : '',
 					'p_parameter3' => $_POST['p_parameter3'] ? $_POST['p_parameter3'] : '',
 					'p_parameter4' => $_POST['p_parameter4'] ? $_POST['p_parameter4'] : '',
-					'p_parameter5' => $_POST['p_parameter5'] ? $_POST['p_parameter5'] : '',
+					'p_parameter5' => $_POST['p_parameter5'] || $_POST['p_parameter5']==0 ? $_POST['p_parameter5'] : '',
 
 					'instruction_id' => $instruction_id
 				);
-
+                
 				$insert_conditions_result = $wpdb->insert($conditions_table_name, $condition_data_to_insert);
 
 				if ($insert_conditions_result === false) {

@@ -145,6 +145,41 @@ class Wf_Woocommerce_Packing_List_Activator {
 	        }
         }
         //creating table for saving template data================
+
+		$packing_instructions_table_name = $wpdb->prefix . "packing_instructions";
+		$packing_instructions_table_query = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $packing_instructions_table_name ) );
+
+		if (!$wpdb->get_var( $packing_instructions_table_query ) == $packing_instructions_table_name ) {
+			$sql = "CREATE TABLE {$packing_instructions_table_name} (
+				`id` int(11) NOT NULL AUTO_INCREMENT,
+				`text_instruction` longtext NOT NULL,
+				`file_instruction` longtext NOT NULL,
+				`created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        		`updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+				`instruction_type` ENUM('preparation_instruction', 'packing_instruction') NOT NULL,
+				UNIQUE KEY id (id));";
+
+			dbDelta($sql);
+		}
+
+		$packing_conditions_table_name = $wpdb->prefix . "packing_conditions";
+		$packing_conditions_table_query = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $packing_conditions_table_name ) );
+
+		if (!$wpdb->get_var( $packing_conditions_table_query ) == $packing_conditions_table_name ) {
+			$sql = "CREATE TABLE {$packing_conditions_table_name} (
+				`id` int(11) NOT NULL AUTO_INCREMENT,
+				`p_parameter1` varchar(255) NOT NULL,
+				`p_parameter2` varchar(255) NOT NULL,
+				`p_parameter3` varchar(255) NOT NULL,
+				`p_parameter4` varchar(255) NOT NULL,
+				`p_parameter5` varchar(255) NOT NULL,
+				`created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        		`updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+				`instruction_id` int(11) NOT NULL,
+				UNIQUE KEY id (id));";
+
+			dbDelta($sql);
+		}
         
 	}
 

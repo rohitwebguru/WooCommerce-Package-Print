@@ -215,7 +215,7 @@ if (!defined('ABSPATH')) {
     <div class="preparation_instruction">
         <div class="wp-instructor-header">
             <div><h1 class="heading">Preparation Instruction</h1></div>
-            <div><button id="open-modal-preparation-instruction" class="button-primary"><?php _e('Add Preparation Instruction', 'wf-woocommerce-packing-list');?></button></div>
+            <div><button type="button" id="open-modal-preparation-instruction" class="button-primary"><?php _e('Add Preparation Instruction', 'wf-woocommerce-packing-list');?></button></div>
         </div>
         <!-- main table preparation -->
         <div style="overflow-x:auto;" class="table_container">
@@ -249,9 +249,9 @@ if (!defined('ABSPATH')) {
                                     echo "<td>" . $instruction['file_instruction'] . "</td>";
                                 }
                                 echo '<td class="show_tables_buttons">';
-                                echo '<button class="buttonPrimary add-condition-btn" data-instruction-id="' . $instruction['id'] . '">Add Condition</button>';
-                                echo '<button class="buttonDanger delete-instruction-btn" data-instruction-id="' . $instruction['id'] . '">Delete Instruction</button>';
-                                echo '<button class="buttonPrimary show-condition" data-instruction-id="' . $instruction['id'] . '">Show Conditions</button>';
+                                echo '<button type="button" class="buttonPrimary add-condition-btn" data-instruction-id="' . $instruction['id'] . '">Add Condition</button>';
+                                echo '<button type="button" class="buttonDanger delete-instruction-btn" data-instruction-id="' . $instruction['id'] . '">Delete Instruction</button>';
+                                echo '<button type="button" class="buttonPrimary show-condition" data-instruction-id="' . $instruction['id'] . '">Show Conditions</button>';
                                 echo '</td>';
                                 echo "</tr>";
                                 echo '<tr id="show_instruction_table_' . $instruction['id'] . '" class="condition-row" style="display:none;"><td colspan="5">';
@@ -259,7 +259,7 @@ if (!defined('ABSPATH')) {
                                 // Fetch data from wp_packing_condition table based on the instruction ID
                                 $condition_table_name = $wpdb->prefix . 'packing_conditions';
                                 $conditions = $wpdb->get_results($wpdb->prepare("SELECT * FROM $condition_table_name WHERE instruction_id = %d", $instruction['id']), ARRAY_A);
-
+                                // echo "<pre>"; print_r($condition['p_parameter3']); 
                                 if (!empty($conditions)) {
                                     // Output condition data
                                     echo '<table>';
@@ -273,15 +273,23 @@ if (!defined('ABSPATH')) {
                                     echo '<th>Action</th>';
                                     echo '</tr>';
                                     foreach ($conditions as $condition) {
+                                        $parameter3 = $condition['p_parameter3'];
+                                        if($condition['p_parameter3'] && $condition['p_parameter2'] == 'quantity_in_the_product'){
+                                            $product = wc_get_product_id_by_sku( $condition['p_parameter3'] );
+                                            if ( $product ) {
+                                                $parameter3 = get_the_title( $product );
+                                            }
+                                        }
                                         echo '<tr>';
                                         echo '<td>' . $condition['id'] . '</td>';
                                         echo '<td>' . $condition['p_parameter1'] . '</td>';
                                         echo '<td>' . $condition['p_parameter2'] . '</td>';
                                         echo '<td>' . $condition['p_parameter3'] . '</td>';
+                                        // echo '<td>' . $parameter3 . '</td>';
                                         echo '<td>' . $condition['p_parameter4'] . '</td>';
                                         echo '<td>' . $condition['p_parameter5'] . '</td>';
                                         // Add delete button
-                                        echo '<td><button class=" delete-condition" data-condition-id="' . $condition['id'] . '">Delete</button></td>';
+                                        echo '<td><button type="button" class=" delete-condition" data-condition-id="' . $condition['id'] . '">Delete</button></td>';
                                         echo '</tr>';
                                     }
                                     echo '</table>';
@@ -305,7 +313,7 @@ if (!defined('ABSPATH')) {
     <div class="packing_instruction">
         <div class="wp-instructor-header">
             <div><h1 class="heading">Packing Instruction</h1></div>
-            <div><button id="open-modal-packing-instruction" class="button-primary"><?php _e('Add Packing Instruction', 'wf-woocommerce-packing-list');?></button></div>
+            <div><button type="button" id="open-modal-packing-instruction" class="button-primary"><?php _e('Add Packing Instruction', 'wf-woocommerce-packing-list');?></button></div>
         </div>
 
         <div style="overflow-x:auto;" class="table_container">
@@ -339,9 +347,9 @@ if (!defined('ABSPATH')) {
                                     echo "<td>" . $instruction['file_instruction'] . "</td>";
                                 }
                                 echo '<td class="show_tables_buttons">';
-                                echo '<button class="buttonPrimary add-condition-btn" data-instruction-id="' . $instruction['id'] . '">Add Condition</button>';
-                                echo '<button class="buttonDanger delete-instruction-btn" data-instruction-id="' . $instruction['id'] . '">Delete Instruction</button>';
-                                echo '<button class="buttonPrimary show-condition" data-instruction-id="' . $instruction['id'] . '">Show Conditions</button>';
+                                echo '<button type="button" class="buttonPrimary add-condition-btn" data-instruction-id="' . $instruction['id'] . '">Add Condition</button>';
+                                echo '<button type="button" class="buttonDanger delete-instruction-btn" data-instruction-id="' . $instruction['id'] . '">Delete Instruction</button>';
+                                echo '<button type="button" class="buttonPrimary show-condition" data-instruction-id="' . $instruction['id'] . '">Show Conditions</button>';
                                 echo '</td>';
                                 echo "</tr>";
                                 echo '<tr id="show_instruction_table_' . $instruction['id'] . '" class="condition-row" style="display:none;"><td colspan="5">';
@@ -363,17 +371,25 @@ if (!defined('ABSPATH')) {
                                     echo '<th>Action</th>';
                                     echo '</tr>';
                                     foreach ($conditions as $condition) {
+                                        $parameter3 = $condition['p_parameter3'];
+                                        if($condition['p_parameter3'] && $condition['p_parameter2'] == 'quantity_in_the_product'){
+                                            $product = wc_get_product_id_by_sku( $condition['p_parameter3'] );
+                                            if ( $product ) {
+                                                $parameter3 = get_the_title( $product );
+                                            }
+                                        }
                                         echo '<tr>';
                                         echo '<td>' . $condition['id'] . '</td>';
                                         echo '<td>' . $condition['p_parameter1'] . '</td>';
                                         echo '<td>' . $condition['p_parameter2'] . '</td>';
                                         echo '<td>' . $condition['p_parameter3'] . '</td>';
+                                        // echo '<td>' . $parameter3 . '</td>';
                                         echo '<td>' . $condition['p_parameter4'] . '</td>';
                                         echo '<td>' . $condition['p_parameter5'] . '</td>';
                                         // Add delete button
-                                        echo '<td><button class=" delete-condition" data-condition-id="' . $condition['id'] . '">Delete</button></td>';
+                                        echo '<td><button type="button" class=" delete-condition" data-condition-id="' . $condition['id'] . '">Delete</button></td>';
                                         echo '</tr>';
-                                    }
+                                    } 
                                     echo '</table>';
                                 } else {
                                     echo 'No conditions found for this instruction.';
@@ -475,12 +491,11 @@ if (!defined('ABSPATH')) {
          // data save packing-instruction
 
          $('#p_save_button').click(function(e) {
-
             e.preventDefault();
             $('#p_save_button').hide();
             $('.spinner').css('visibility', 'visible');
 
-            if ($('#p_parameter1').val()==="" || $('#p_parameter2').val()==="" || $('#p_parameter4').val()==="" || $('#p_parameter5').val()==="") {
+            if ($('#p_parameter1').val()==="" || $('#p_parameter2').val()==="" || $('#p_parameter4').val()==="" || ($('#p_parameter5').val()==="" && $('#p_parameter2').val()!="order_shipping_method") || ($('#p_parameter5_dropdown').val()==="" && $('#p_parameter2').val()==="order_shipping_method")) {
                 alert("All Fields are required");
                 $('#p_save_button').show();
                 $('.spinner').css('visibility', 'hidden');
@@ -503,7 +518,6 @@ if (!defined('ABSPATH')) {
             } else if (instructionOption === 'file') {
             // var fileInput = $('#file_instruction_input').prop('files')[0];
             var fileInput = $('#p_file_instruction_input')[0].files[0];
-                // console.log(fileInput);
 
                 if (fileInput) {
                     if (!fileInput.type.match('image.*')) {
@@ -527,18 +541,28 @@ if (!defined('ABSPATH')) {
             form_data.append('p_parameter2', $('#p_parameter2').val());
             // form_data.append('p_parameter3', $('#p_parameter3').val());
             form_data.append('p_parameter4', $('#p_parameter4').val());
-            form_data.append('p_parameter5', $('#p_parameter5').val());
+            // form_data.append('p_parameter5', $('#p_parameter5').val());
             form_data.append('action', 'wt_pklist_save_intructions');
 
             var p_parameter2_value = $('#p_parameter2').val();
-            if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            let p_parameter5_value = $('#p_parameter5').val();
+            // if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            //     form_data.append('p_parameter3', $('#p_parameter3').val());
+            // }
+            if (p_parameter2_value === 'quantity_in_the_product') {
                 form_data.append('p_parameter3', $('#p_parameter3').val());
+            }else if (p_parameter2_value === 'quantity_in_each_product_of_category') {
+                form_data.append('p_parameter3', $('#p_parameter3_category').val());
             }
+
+            if (p_parameter2_value === 'order_shipping_method') {
+                // form_data.append('p_parameter5', $('#p_parameter5_dropdown').val());
+                p_parameter5_value = $('#p_parameter5_dropdown').val();
+            }
+            form_data.append('p_parameter5', p_parameter5_value);
             // Add other form fields to formData
 
-
-            console.log(form_data);
-
+            
             jQuery.ajax({
                 url: '<?php echo admin_url('admin-ajax.php') ?>',
                 type: 'POST',
@@ -546,7 +570,7 @@ if (!defined('ABSPATH')) {
                 contentType: false,
                 processData: false,
                 success: function(data) {
-                    console.log(data);
+                    
                     $('#p_save_button').show();
                     $('.spinner').css('visibility', 'hidden');
                     // clear all input fields
@@ -564,7 +588,7 @@ if (!defined('ABSPATH')) {
             e.preventDefault();
             $('#preparation_save_button').hide();
             $('.spinner').css('visibility', 'visible');
-            if ($('#parameter1').val()==="" || $('#parameter2').val()==="" || $('#parameter4').val()==="" || $('#parameter5').val()==="") {
+            if ($('#parameter1').val()==="" || $('#parameter2').val()==="" || $('#parameter4').val()==="" || ($('#parameter5').val()==="" && $('#parameter2').val()!="order_shipping_method") || ($('#parameter5_dropdown').val()==="" && $('#parameter2').val()==="order_shipping_method")) {
                 alert("All Fields are required");
                 $('#preparation_save_button').show();
                     $('.spinner').css('visibility', 'hidden');
@@ -572,8 +596,7 @@ if (!defined('ABSPATH')) {
             }
 
             var instructionOption = $('input[name="instruction_option"]:checked').val();
-            console.log(instructionOption);
-
+            
             // var formData = '';
             var form_data = new FormData();
 
@@ -590,8 +613,7 @@ if (!defined('ABSPATH')) {
             } else if (instructionOption === 'file') {
                 // var fileInput = $('#file_instruction_input').prop('files')[0];
                 var fileInput = $('#file_instruction_input')[0].files[0];
-                // console.log(fileInput);
-
+                
                 if (fileInput) {
                     if (!fileInput.type.match('image.*')) {
                         alert('Please select an image file.');
@@ -608,21 +630,35 @@ if (!defined('ABSPATH')) {
                     return;
                 }
             }
-            console.log($('#parameter3').val())
 
             form_data.append('instruction_type', 'preparation_instruction');
             form_data.append('p_parameter1', $('#parameter1').val());
             form_data.append('p_parameter2', $('#parameter2').val());
             // form_data.append('p_parameter3', $('#parameter3').val());
             form_data.append('p_parameter4', $('#parameter4').val());
-            form_data.append('p_parameter5', $('#parameter5').val());
+            // form_data.append('p_parameter5', $('#parameter5').val());
             form_data.append('action', 'wt_pklist_save_intructions');
 
-            var p_parameter2_value = $('#parameter2').val();
-            if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            let p_parameter2_value = $('#parameter2').val();
+            let p_parameter5_value = $('#parameter5').val();
+            // if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            //     form_data.append('p_parameter3', $('#parameter3').val());
+            // }
+            if (p_parameter2_value === 'quantity_in_the_product') {
                 form_data.append('p_parameter3', $('#parameter3').val());
+            }else if (p_parameter2_value === 'quantity_in_each_product_of_category') {
+                form_data.append('p_parameter3', $('#parameter3_category').val());
             }
 
+            // if (p_parameter2_value === 'order_shipping_method') {
+            //     form_data.append('p_parameter5', $('#parameter5_dropdown').val());
+            // }
+            if (p_parameter2_value === 'order_shipping_method') {
+                // form_data.append('p_parameter5', $('#p_parameter5_dropdown').val());
+                p_parameter5_value = $('#parameter5_dropdown').val();
+            }
+            form_data.append('p_parameter5', p_parameter5_value);
+            
             jQuery.ajax({
                 url: '<?php echo admin_url('admin-ajax.php') ?>',
                 type: 'POST',
@@ -630,7 +666,7 @@ if (!defined('ABSPATH')) {
                 contentType: false,
                 processData: false,
                 success: function(data) {
-                    console.log(data);
+                    
                     $('#preparation_save_button').show();
                     $('.spinner').css('visibility', 'hidden');
                     // Clear all input fields
@@ -651,7 +687,7 @@ if (!defined('ABSPATH')) {
             var form_data = new FormData();
             form_data.append('action', 'wt_pklist_delete_instruction');
             form_data.append('instruction_id', instructionId);
-            console.log(confirmation);
+            
             if (confirmation) {
                 jQuery.ajax({
                     url: "<?php echo admin_url('admin-ajax.php') ?>",
@@ -677,7 +713,7 @@ if (!defined('ABSPATH')) {
             var form_data = new FormData();
             form_data.append('action', 'wt_pklist_delete_condition');
             form_data.append('condition_id', conditionId);
-            console.log(confirmation);
+            
             if (confirmation) {
                 jQuery.ajax({
                     url: "<?php echo admin_url('admin-ajax.php') ?>",
@@ -711,14 +747,13 @@ if (!defined('ABSPATH')) {
         // data save condition-instruction
 
         $('#add_preparation_condition').click(function(e) {
-
             e.preventDefault();
             $('#add_preparation_condition').hide();
             $('.spinner').css('visibility', 'visible');
 
             var form_data = new FormData();
 
-            if ($('#condition1').val()==="" || $('#condition2').val()==="" || $('#condition3').val()==="" || $('#condition4').val()==="" || $('#condition5').val()==="") {
+            if ($('#condition1').val()==="" || $('#condition2').val()==="" || $('#condition3').val()==="" || $('#condition4').val()==="" || ($('#condition5').val()==="" && $('#condition2').val()!="order_shipping_method") || ($('#condition5_dropdown').val()==="" && $('#condition2').val()==="order_shipping_method")) {
                 alert("All Fields are required");
                 $('#add_preparation_condition').show();
                 $('.spinner').css('visibility', 'hidden');
@@ -730,19 +765,33 @@ if (!defined('ABSPATH')) {
             form_data.append('p_parameter2', $('#condition2').val());
             // form_data.append('p_parameter3', $('#condition3').val());
             form_data.append('p_parameter4', $('#condition4').val());
-            form_data.append('p_parameter5', $('#condition5').val());
+            // form_data.append('p_parameter5', $('#condition5').val());
             form_data.append('action', 'wt_pklist_save_condition');
 
-            var p_parameter2_value = $('#condition2').val();
-            if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            let p_parameter2_value = $('#condition2').val();
+            let p_parameter5_value = $('#condition5').val();
+            // if (p_parameter2_value === 'quantity_in_the_product' || p_parameter2_value === 'quantity_in_each_product_of_category') {
+            //     form_data.append('p_parameter3', $('#condition3').val());
+            // }
+            
+            if (p_parameter2_value === 'quantity_in_the_product') {
                 form_data.append('p_parameter3', $('#condition3').val());
+            }else if (p_parameter2_value === 'quantity_in_each_product_of_category') {
+                form_data.append('p_parameter3', $('#condition3_category').val());
             }
+
+            // if (p_parameter2_value === 'order_shipping_method') {
+            //     form_data.append('p_parameter5', $('#condition5_dropdown').val());
+            // }
+            if (p_parameter2_value === 'order_shipping_method') {
+                // form_data.append('p_parameter5', $('#p_parameter5_dropdown').val());
+                p_parameter5_value = $('#condition5_dropdown').val();
+            }
+            form_data.append('p_parameter5', p_parameter5_value);
 
             // Add other form fields to formData
 
-
-            console.log(form_data);
-
+            
             jQuery.ajax({
                 url: '<?php echo admin_url('admin-ajax.php') ?>',
                 type: 'POST',
@@ -750,7 +799,7 @@ if (!defined('ABSPATH')) {
                 contentType: false,
                 processData: false,
                 success: function(data) {
-                    console.log(data);
+                    
                     $('#add_preparation_condition').show();
                     $('.spinner').css('visibility', 'hidden');
                     // clear all input fields
@@ -764,45 +813,115 @@ if (!defined('ABSPATH')) {
         //parameter3 hide show  packing instruction
         $('#p_parameter2').change(function(){
             var selectedOption = $(this).val();
-            if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            // if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            //     $('#form_parameter3').hide();
+            // }else{
+            //     $('#form_parameter3').show();
+            // }
+            if(selectedOption=="quantity_in_the_product"){
+                $('#form_parameter3').show();
+                $('#form_parameter3_category').hide();
+            }else if(selectedOption=="quantity_in_each_product_of_category"){
+                $('#form_parameter3_category').show();
                 $('#form_parameter3').hide();
             }else{
-                $('#form_parameter3').show();
+                $('#form_parameter3').hide();
+                $('#form_parameter3_category').hide();
             }
-        });
 
+            if(selectedOption=="order_shipping_method"){
+                $('#form_parameter5').hide();
+                $('#form_parameter5_dropdown').show();
+            }else{
+                $('#form_parameter5').show();
+                $('#form_parameter5_dropdown').hide();
+            }  
+        });
+        $('#form_parameter3_category').hide();
+        $('#form_parameter5_dropdown').hide();
          //parameter3 hide show  preparation instruction
         $('#parameter2').change(function(){
             var selectedOption = $(this).val();
-            if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            // if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            //     $('#p_parameter3_hide_show').hide();
+            // }else{
+            //     $('#p_parameter3_hide_show').show();
+            // }
+            if(selectedOption=="quantity_in_the_product"){
+                $('#p_parameter3_hide_show').show();
+                $('#p_parameter3_category_show_hide').hide();
+            }else if(selectedOption=="quantity_in_each_product_of_category"){
+                $('#p_parameter3_category_show_hide').show();
                 $('#p_parameter3_hide_show').hide();
             }else{
-                $('#p_parameter3_hide_show').show();
+                $('#p_parameter3_hide_show').hide();
+                $('#p_parameter3_category_show_hide').hide();
             }
+
+            if(selectedOption=="order_shipping_method"){
+                $('#p_parameter5_hide_show').hide();
+                $('#p_parameter5_dropdown_hide_show').show();
+            }else{
+                $('#p_parameter5_hide_show').show();
+                $('#p_parameter5_dropdown_hide_show').hide();
+            }                
         });
+        $('#p_parameter3_category_show_hide').hide();
+        $('#p_parameter5_dropdown_hide_show').hide();
          //parameter3 hide show  condition instruction
         $('#condition2').change(function(){
             var selectedOption = $(this).val();
-            if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            // if(selectedOption!=="quantity_in_the_product" && selectedOption!=="quantity_in_each_product_of_category"){
+            //     $('#condition3_show_hide').hide();
+            // }else{
+            //     $('#condition3_show_hide').show();
+            // }
+            if(selectedOption=="quantity_in_the_product"){
+                $('#condition3_show_hide').show();
+                $('#condition3_category_show_hide').hide();
+            }else if(selectedOption=="quantity_in_each_product_of_category"){
+                $('#condition3_category_show_hide').show();
                 $('#condition3_show_hide').hide();
             }else{
-                $('#condition3_show_hide').show();
+                $('#condition3_show_hide').hide();
+                $('#condition3_category_show_hide').hide();
             }
+
+            if(selectedOption=="order_shipping_method"){
+                $('#condition5_show_hide').hide();
+                $('#condition5_dropdown_show_hide').show();
+            }else{
+                $('#condition5_show_hide').show();
+                $('#condition5_dropdown_show_hide').hide();
+            }  
         });
+        $('#condition3_category_show_hide').hide();
+        $('#condition5_dropdown_show_hide').hide();        
+        
     });
 
 </script>
 
 
 <!-- models ************************************************************************************** -->
-
+<?php
+    // Retrieve all products
+    $shipping_methods = WC()->shipping->get_shipping_methods();
+    $shipping_method_names = array();			
+    foreach ($shipping_methods as $shipping_method) {
+        $method_title = $shipping_method->get_method_title();
+        if (!in_array($method_title, $shipping_method_names)) {
+            $shipping_method_names[] = $method_title;
+        }
+    }
+?>
 <!-- add modal packing-instruction  -->
 <div id="packing-instruction" style="display: none; position: fixed; z-index: 999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
     <div style="background-color: white; width: 50%; margin: 100px auto; padding: 20px;">
         <div class="models_header">
             <h2>Add New Packing Instruction</h2>
             <div>
-                <button id="close-modal-packing-instruction" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
+                <button type="button" id="close-modal-packing-instruction" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
             </div>
         </div>
         <div id="packing-instruction-form" class="model_form">
@@ -846,6 +965,25 @@ if (!defined('ABSPATH')) {
                         ?>
                     </select>
                 </div>
+                <div class="form-group" id="form_parameter3_category">
+                    <label for="p_parameter3">Parameter 3:</label>
+                    <select name="p_parameter3_category" id="p_parameter3_category" class="form-control">
+                        <?php
+                            // Retrieve all product categories
+                            $product_categories = get_terms( array(
+                                'taxonomy'   => 'product_cat',
+                                'hide_empty' => false,
+                            ) );
+
+                            // Loop through each category
+                            foreach ($product_categories as $category) {
+                                $category_id = $category->slug;
+                                $category_name = $category->name;
+                                echo '<option value="' . esc_attr($category_id) . '">' . esc_html($category_name) . '</option>';
+                            }
+                        ?>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="p_parameter4">Parameter 4:</label>
                     <select name="p_parameter4" id="p_parameter4" class="form-control">
@@ -855,9 +993,19 @@ if (!defined('ABSPATH')) {
                         <option value="<>"><></option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="form_parameter5">
                     <label for="p_parameter5">Parameter 5:</label>
-                    <input type="text" id="p_parameter5"name="p_parameter5" placeholder="Enter Parameter 5" >
+                    <input type="text" id="p_parameter5" name="p_parameter5" placeholder="Enter Parameter 5" >
+                </div>
+                <div class="form-group" id="form_parameter5_dropdown">
+                    <label for="p_parameter5">Parameter 5:</label>
+                    <select name="p_parameter5" id="p_parameter5_dropdown" class="form-control">
+                        <?php
+                            foreach ($shipping_method_names as $shipping_method_name) {
+                                echo '<option value="' . esc_attr($shipping_method_name) . '">' . esc_html($shipping_method_name) . '</option>';
+                            }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="instruction">Instruction:</label>
@@ -883,7 +1031,7 @@ if (!defined('ABSPATH')) {
             </div>
 
             <div class="model_form_save">
-                <button class="btn btn-primary" id="p_save_button">Save</button>
+                <button type="button" class="btn btn-primary" id="p_save_button">Save</button>
                 <span class="spinner" style="margin-top: 11px;"></span>
 
             </div>
@@ -897,7 +1045,7 @@ if (!defined('ABSPATH')) {
         <div class="models_header">
             <h2>Add New Preparation Instruction</h2>
             <div>
-                <button id="close-modal-preparation-instruction" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
+                <button type="button" id="close-modal-preparation-instruction" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
             </div>
         </div>
 
@@ -942,6 +1090,25 @@ if (!defined('ABSPATH')) {
                         ?>
                     </select>
                 </div>
+                <div class="form-group" id="p_parameter3_category_show_hide">
+                    <label for="parameter3">Parameter 3:</label>
+                    <select name="parameter3_category" id="parameter3_category" class="form-control">
+                        <?php
+                            // Retrieve all product categories
+                            $product_categories = get_terms( array(
+                                'taxonomy'   => 'product_cat',
+                                'hide_empty' => false,
+                            ) );
+
+                            // Loop through each category
+                            foreach ($product_categories as $category) {
+                                $category_id = $category->slug;
+                                $category_name = $category->name;
+                                echo '<option value="' . esc_attr($category_id) . '">' . esc_html($category_name) . '</option>';
+                            }
+                        ?>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="parameter4">Parameter 4:</label>
                     <select name="parameter4" id="parameter4" class="form-control">
@@ -951,9 +1118,19 @@ if (!defined('ABSPATH')) {
                         <option value="<>"><></option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="p_parameter5_hide_show">
                     <label for="parameter5">Parameter 5:</label>
                     <input type="text"name="parameter5" id="parameter5" placeholder="Enter Parameter 5">
+                </div>
+                <div class="form-group" id="p_parameter5_dropdown_hide_show">
+                    <label for="parameter5_dropdown">Parameter 5:</label>
+                    <select name="parameter5" id="parameter5_dropdown" class="form-control">
+                        <?php
+                            foreach ($shipping_method_names as $shipping_method_name) {
+                                echo '<option value="' . esc_attr($shipping_method_name) . '">' . esc_html($shipping_method_name) . '</option>';
+                            }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="instruction">Instruction:</label>
@@ -980,7 +1157,7 @@ if (!defined('ABSPATH')) {
             </div>
 
             <div class="model_form_save">
-                <button class="btn btn-primary" id="preparation_save_button">Save</button>
+                <button type="button" class="btn btn-primary" id="preparation_save_button">Save</button>
                 <span class="spinner" style="margin-top: 11px;"></span>
             </div>
         </div>
@@ -995,7 +1172,7 @@ if (!defined('ABSPATH')) {
     <div class="models_header">
             <h2>Add New Condition</h2>
             <div>
-                <button id="close-modal-condition" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
+                <button type="button" id="close-modal-condition" class="button"><?php _e('Close', 'wf-woocommerce-packing-list');?></button>
             </div>
         </div>
 
@@ -1041,6 +1218,26 @@ if (!defined('ABSPATH')) {
                         ?>
                     </select>
                 </div>
+                <div class="form-group" id="condition3_category_show_hide">
+                    <label for="parameter3">Parameter 3:</label>
+                    <select name="parameter3_category" id="condition3_category" class="form-control">
+                        <?php
+                            // Retrieve all product categories
+                            $product_categories = get_terms( array(
+                                'taxonomy'   => 'product_cat',
+                                'hide_empty' => false,
+                            ) );
+
+                            // Loop through each category
+                            foreach ($product_categories as $category) {
+                                $category_id = $category->slug;
+                                $category_name = $category->name;
+                                echo '<option value="' . esc_attr($category_id) . '">' . esc_html($category_name) . '</option>';
+                            }
+                        ?>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="parameter4">Parameter 4:</label>
                     <select name="parameter4" id="condition4" class="form-control">
@@ -1050,14 +1247,24 @@ if (!defined('ABSPATH')) {
                         <option value="<>"><></option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="condition5_show_hide">
                     <label for="parameter5">Parameter 5:</label>
-                    <input type="text"name="parameter5" id="condition5" placeholder="Enter Parameter 5">
+                    <input type="text" name="parameter5" id="condition5" placeholder="Enter Parameter 5">
+                </div>
+                <div class="form-group" id="condition5_dropdown_show_hide">
+                    <label for="condition5_dropdown">Parameter 5:</label>
+                    <select name="parameter5" id="condition5_dropdown" class="form-control">
+                        <?php
+                            foreach ($shipping_method_names as $shipping_method_name) {
+                                echo '<option value="' . esc_attr($shipping_method_name) . '">' . esc_html($shipping_method_name) . '</option>';
+                            }
+                        ?>
+                    </select>
                 </div>
             </div>
 
             <div class="model_form_save">
-                <button class="btn btn-primary" id="add_preparation_condition">Save</button>
+                <button type="button" class="btn btn-primary" id="add_preparation_condition">Save</button>
                 <span class="spinner" style="margin-top: 11px;"></span>
             </div>
         </div>

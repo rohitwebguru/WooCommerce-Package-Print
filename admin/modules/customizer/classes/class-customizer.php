@@ -455,7 +455,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 
 			$lists = array("Parameter 1", "Parameter 2", "Parameter 3", "Parameter 4");
 
-			$html_output ='<ul>';
+			$html_output ='<ul style="padding: 0px 0px 0px 13px">';
 			foreach ($lists as $list_item) {
 				$html_output .= '<li>' . $list_item . '</li>';
 			}
@@ -468,184 +468,15 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			return $html_output;
 		} else {
 
-			// change start
-
-			// $total_weight = 0;
-			// $total_quantity = 0;
-			// $unique_items = array();
-			// $shipping_method_title = '';
-
-			// foreach( $order->get_items() as $item_id => $product_item ){
-			// 	$quantity = $product_item->get_quantity();
-			// 	$product = $product_item->get_product();
-			// 	$product_weight = $product->get_weight();
-			// 	if($product_weight){
-			// 		$total_weight += floatval( $product_weight * $quantity );
-			// 	}
-			// 	if($quantity){
-			// 		$total_quantity += $quantity;
-			// 	}
-
-			// 	$product_id = $product_item->get_product_id();
-			// 	if (!in_array($product_id, $unique_items)) {
-			// 		$unique_items[] = $product_id;
-			// 	}
-			// }
-
-			// $total_unique_items = count($unique_items);
-
-			// // Get shipping methods
-			// $shipping_methods = $order->get_shipping_methods();
-			// if (!empty($shipping_methods)) {
-
-			// 	$first_shipping_method = reset($shipping_methods);
-			// 	$shipping_method_title = $first_shipping_method->get_name();
-			// } else {
-			// 	echo "No shipping method found for this order.";
-			// }
-
-			// // select2
-			// $category_slug = 'test_product';
-			// $category_quantity = 0;
-			// foreach ($order->get_items() as $item_id => $item) {
-			// 	$product_id = $item->get_product_id();
-			// 	$product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'slugs'));
-
-			// 	if (in_array($category_slug, $product_categories)) {
-			// 		$category_quantity += $item->get_quantity();
-			// 	}
-			// }
-
-			// $orderTotalAmount = $order->get_total();
-			// $orderTotalWeight = $total_weight;
-			// $orderTotalNumberOfItems = $total_quantity;
-			// $orderTotalNumberOfDifferentItems = $total_unique_items;
-			// $orderShippingMethod = $shipping_method_title;
-
-			// $lists = [];
-			// // Queries
-			// // query for packing instruction
-			// global $wpdb;
-			// $packing_instructions = $wpdb->prefix . 'packing_instructions';
-			// $packing_conditions = $wpdb->prefix . 'packing_conditions';
-			// $instructions = $wpdb->get_results("SELECT * FROM $packing_instructions WHERE instruction_type = 'preparation_instruction'", ARRAY_A);
-			// // echo "<pre>";
-			// // print_r($instructions);
-			// // die;
-			// if($instructions){
-			// 	foreach($instructions as $instruction){
-			// 		$conditions = $wpdb->get_results(
-			// 			$wpdb->prepare("SELECT * FROM $packing_conditions WHERE instruction_id = %d", $instruction['id']),
-			// 			ARRAY_A
-			// 		);
-					
-			// 		if($conditions){
-			// 			foreach($conditions as $key => $condition){
-			// 				// echo "<pre>";
-			// 				// print_r($orderTotalAmount);
-
-			// 				switch ($condition['p_parameter2']) {
-			// 					case 'quantity_in_the_product': {
-			// 						$product_quantity = 0;
-			// 						foreach ($order->get_items() as $item_id => $item) {
-			// 							$product = wc_get_product($item->get_product_id());
-			// 							if($product->get_sku()==$condition['p_parameter3']){
-			// 								$product_quantity += $item->get_quantity();
-			// 							}
-			// 						}
-			// 						if (self::checkOperator($product_quantity, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						// echo "<pre>";
-			// 						// // print_r($product_quantity);
-			// 						// print_r($result);
-			// 						// die;
-			// 						break;
-			// 					}
-			// 					case 'quantity_in_each_product_of_category': {
-			// 						// $result = 'quantity_in_each_product_of_category';
-			// 						$result = 1;
-			// 						break;
-			// 					}
-			// 					case 'order_total_amount': {
-			// 						if (self::checkOperator($orderTotalAmount, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						break;
-			// 					}
-			// 					case 'order_total_weight': {
-			// 						if (self::checkOperator($orderTotalWeight, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						break;
-			// 					}
-			// 					case 'order_total_number_of_items': {
-			// 						if (self::checkOperator($orderTotalNumberOfItems, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						break;
-			// 					}
-			// 					case 'order_total_number_of_total_different_items': {
-			// 						if (self::checkOperator($orderTotalNumberOfDifferentItems, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						break;
-			// 					}
-			// 					case 'order_shipping_method': {
-			// 						if (self::checkOperator($orderShippingMethod, $condition['p_parameter4'], $condition['p_parameter5'])) {
-			// 							$result = 1;
-			// 						} else {
-			// 							$result = 0;
-			// 						}
-			// 						break;
-			// 					}
-			// 					default: {
-			// 						// Block scoped to default case
-			// 						$result = 'This is the default value';
-			// 						break;
-			// 					}
-			// 				}
-							
-			// 				// $result is accessible here, but its value depends on the case that was matched
-			// 				// echo $result;
-			// 				$conditions[$key]['result'] = $result;
-			// 			}
-			// 		}
-					
-			// 		// $result = self::evaluateConditions($conditions, $instruction, $lists);
-					
-			// 		// echo "<pre>";
-			// 		// print_r($result);
-			// 		// $lists = $result;
-			// 		$lists = self::evaluateConditions($conditions, $instruction, $lists);
-			// 	}
-			// }
-
-			// change end
-
 			$lists = self::getInstructionsListing('preparation_instruction', $order);
-			// echo "<pre>";
-			// print_r($lists);
-			// die;
+			
 			$title = "Preparation Instruction";
 
-			$html_output ='<ul>';
+			$html_output ='<ul style="padding: 0px 0px 0px 13px">';
 			foreach ($lists as $list_item) {
 				$html_output .= '<li>' . $list_item . '</li>';
 			}
 			$html_output .= '</ul>';
-
-			// return $html_output;
 
 			$find_replace['[wfte_preparation_instruction]'] = $html_output;
 			return $find_replace;
@@ -656,10 +487,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 		// change start
 		$lists = [];
 		if($type && $order){
-			// echo "<pre>";
-			// print_r($type);
-			// die;
-			// return $lists;
+			
 			$total_weight = 0;
 			$total_quantity = 0;
 			$unique_items = array();
@@ -668,10 +496,14 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			foreach( $order->get_items() as $item_id => $product_item ){
 				$quantity = $product_item->get_quantity();
 				$product = $product_item->get_product();
-				$product_weight = $product->get_weight();
-				if($product_weight){
-					$total_weight += floatval( $product_weight * $quantity );
+				// echo"<pre>"; print_r($product); die;
+				if($product){
+					$product_weight = $product->get_weight();
+					if($product_weight){
+						$total_weight += floatval( $product_weight * $quantity );
+					}			
 				}
+
 				if($quantity){
 					$total_quantity += $quantity;
 				}
@@ -694,24 +526,31 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 				echo "No shipping method found for this order.";
 			}
 	
-			// select2
-			$category_slug = 'test_product';
-			$category_quantity = 0;
-			foreach ($order->get_items() as $item_id => $item) {
-				$product_id = $item->get_product_id();
-				$product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'slugs'));
-	
-				if (in_array($category_slug, $product_categories)) {
-					$category_quantity += $item->get_quantity();
-				}
-			}
-	
 			$orderTotalAmount = $order->get_total();
 			$orderTotalWeight = $total_weight;
 			$orderTotalNumberOfItems = $total_quantity;
 			$orderTotalNumberOfDifferentItems = $total_unique_items;
 			$orderShippingMethod = $shipping_method_title;
-	
+			// echo "<pre>"; print_r($orderShippingMethod); die;
+
+			// $shipping_methods = WC()->shipping->get_shipping_methods();
+			// $shipping_method_names = array();			
+			// foreach ($shipping_methods as $shipping_method) {
+			// 	$method_title = $shipping_method->get_method_title();
+			// 	if (!in_array($method_title, $shipping_method_names)) {
+			// 		$shipping_method_names[] = $method_title;
+			// 	}
+			// }
+
+
+			// $shipping_methods = $order->get_shipping_methods();
+			// $shipping_method_names = array();
+			// foreach ($shipping_methods as $shipping_method) {
+			// 	$method_title = $shipping_method->get_method_title();
+			// 	$shipping_method_names[] = $method_title;
+			// }
+			// echo "<pre>"; print_r($order->get_shipping_methods()); die;
+
 			$lists = [];
 			// Queries
 			// query for packing instruction
@@ -722,13 +561,10 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			$instructions = $wpdb->get_results(
 				$wpdb->prepare("SELECT * FROM $packing_instructions WHERE instruction_type = %s", $type), ARRAY_A
 			);
-			// if($type == 'packing_instruction'){
-			// 	echo "<pre>";
-			// 	print_r($instructions);
-			// 	die;
-			// }
+			
 			if($instructions){
 				foreach($instructions as $instruction){
+					// echo "<pre>"; print_r($instruction); die;
 					$conditions = $wpdb->get_results(
 						$wpdb->prepare("SELECT * FROM $packing_conditions WHERE instruction_id = %d", $instruction['id']),
 						ARRAY_A
@@ -736,32 +572,41 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 					
 					if($conditions){
 						foreach($conditions as $key => $condition){
-							// echo "<pre>";
-							// print_r($orderTotalAmount);
 	
 							switch ($condition['p_parameter2']) {
 								case 'quantity_in_the_product': {
 									$product_quantity = 0;
 									foreach ($order->get_items() as $item_id => $item) {
 										$product = wc_get_product($item->get_product_id());
-										if($product->get_sku()==$condition['p_parameter3']){
+										// echo"<pre>"; print_r($product); die;
+										if($product && $product->get_sku()==$condition['p_parameter3']){
 											$product_quantity += $item->get_quantity();
 										}
 									}
+									// echo"<pre>"; print_r($product_quantity); die;
 									if (self::checkOperator($product_quantity, $condition['p_parameter4'], $condition['p_parameter5'])) {
 										$result = 1;
 									} else {
 										$result = 0;
 									}
-									// echo "<pre>";
-									// // print_r($product_quantity);
-									// print_r($result);
-									// die;
 									break;
 								}
 								case 'quantity_in_each_product_of_category': {
-									// $result = 'quantity_in_each_product_of_category';
-									$result = 1;
+									$category_slug = $condition['p_parameter3'];
+									$category_quantity = 0;
+									foreach ($order->get_items() as $item_id => $item) {
+										$product_id = $item->get_product_id();
+										$product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'slugs'));
+										
+										if (in_array($category_slug, $product_categories)) {
+											$category_quantity += $item->get_quantity();
+										}
+									}
+									if (self::checkOperator($category_quantity, $condition['p_parameter4'], $condition['p_parameter5'])) {
+										$result = 1;
+									} else {
+										$result = 0;
+									}
 									break;
 								}
 								case 'order_total_amount': {
@@ -797,7 +642,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 									break;
 								}
 								case 'order_shipping_method': {
-									if (self::checkOperator($orderShippingMethod, $condition['p_parameter4'], $condition['p_parameter5'])) {
+									if (self::checkOperator(strtolower($orderShippingMethod), $condition['p_parameter4'], strtolower($condition['p_parameter5']))) {
 										$result = 1;
 									} else {
 										$result = 0;
@@ -806,26 +651,21 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 								}
 								default: {
 									// Block scoped to default case
-									$result = 'This is the default value';
+									$result = 0;
 									break;
 								}
 							}
 							
 							// $result is accessible here, but its value depends on the case that was matched
-							// echo $result;
 							$conditions[$key]['result'] = $result;
 						}
 					}
 					
-					// $result = self::evaluateConditions($conditions, $instruction, $lists);
-					
-					// echo "<pre>";
-					// print_r($result);
-					// $lists = $result;
 					$lists = self::evaluateConditions($conditions, $instruction, $lists);
 				}
 			}
 		}
+		// echo "<pre>"; print_r($lists); die;
 		return $lists;
 		// change end
 	}
@@ -848,7 +688,6 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 
 	public static function evaluateConditions($conditions, $instruction, $lists) {
 
-		// print_r($conditions);
 		$pairArray = [];
 
 		for ($i = 0; $i < count($conditions); $i += 2) {
@@ -863,7 +702,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 
 		if($pairArray){
 			foreach($pairArray as $key => $pairArr){
-				// print_r($pairArray); 
+				
 				if(sizeof($pairArr)==2){
 					if($key > 0){
 						array_push($conditionStr,$pairArr[0]['p_parameter1']);	
@@ -888,27 +727,24 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			$conditionString .= $array[$i];
 		}
 
-		// You can use eval() to evaluate the condition string,
-		// but it's generally not recommended due to security risks.
 		$result = eval("return $conditionString;");
-		// print_r($instruction['text_instruction']); // Output: bool(true)
 
 		if($result){
-			array_push($lists, $instruction['text_instruction']);
+			if($instruction['text_instruction']){
+				array_push($lists, $instruction['text_instruction']);
+			}else if($instruction['file_instruction']){
+				array_push($lists, '<img src="' . $instruction['file_instruction'] . '" alt="Instruction Image" width="100px">');
+			}
 		}
-
-		// Print_r($conditionStr); die;
-		// print_r($pairArray);
 		
 		return $lists;
 	}
 
 	public static function pairedArrEvaluate($pairArr){
-		// echo"<pre>"; print_r($pairArr);
+		
 		switch ($pairArr[1]['p_parameter1']) {
 			case "AND": {
-				// echo "and ";
-				// $message = $pairArr[0]['result'] && $pairArr[1]['result'];
+				
 				if($pairArr[0]['result'] && $pairArr[1]['result']){
 					$result = 1; 
 				}else{
@@ -917,7 +753,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 				return $result;
 			}
 			case 'OR': {
-				// $message = $pairArr[0]['result'] || $pairArr[1]['result'];
+				
 				if($pairArr[0]['result'] || $pairArr[1]['result']){
 					$result = 1; 
 				}else{
@@ -927,19 +763,16 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			}
 			
 		}
-		// echo"<pre>"; print_r($result);
 	}
 
 	public static function packing_instruction($find_replace, $template_type, $html, $order=null) {
-
-
 
 		if (is_null($order)) {
 			$title = "Packing Instruction";
 
 			$lists = array("Parameter 1", "Parameter 2", "Parameter 3", "Parameter 4");
 
-			$html_output ='<ul>';
+			$html_output ='<ul style="padding: 0px 0px 0px 13px">';
 			foreach ($lists as $list_item) {
 				$html_output .= '<li>' . $list_item . '</li>';
 			}
@@ -953,7 +786,7 @@ class Wf_Woocommerce_Packing_List_CustomizerLib
 			$lists = array("Parameter 1", "Parameter 2", "Parameter 3", "Parameter 4");
 			$lists = self::getInstructionsListing('packing_instruction', $order);
 
-			$html_output ='<ul>';
+			$html_output ='<ul style="padding: 0px 0px 0px 13px">';
 			foreach ($lists as $list_item) {
 				$html_output .= '<li>' . $list_item . '</li>';
 			}

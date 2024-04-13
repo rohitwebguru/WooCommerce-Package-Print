@@ -46,10 +46,10 @@
   margin-top:20px;
 }
 .wfte_preparation_instruction{
-  width:40%;
+  width:49%;
 }
 .wfte_packing_instruction{
-width:40%;
+  width:49%;
 }
 </style>
 <div class="wfte_rtl_main wfte_invoice-main">
@@ -160,13 +160,13 @@ width:40%;
     </div>
     <div class="wfte_instructions">
       <div class="wfte_preparation_instruction wfte_text_center" style="color: rgb(171, 206, 156); font-size: 12px;">
-          <div style="border: 2px solid black;  padding:20px 40px">
+          <div style="border: 2px solid black;  padding:20px 10px">
               <span class="wfte_preparation_instruction_label">__[Preparation]__</span>
               [wfte_preparation_instruction]
           </div>
       </div>
       <div class="wfte_packing_instruction wfte_text_right" style="color: rgb(211, 0, 56);">
-          <div style="border: 2px solid black;  padding:20px 40px">
+          <div style="border: 2px solid black;  padding:20px 10px">
               <span class="wfte_packing_instruction_label">__[Packing]__</span>
               [wfte_packing_instruction]
           </div>
